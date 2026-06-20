@@ -20,6 +20,7 @@ package appeng.client.render.model;
 
 
 import appeng.client.render.VertexFormats;
+import appeng.core.AppEng;
 import com.google.common.base.Charsets;
 import com.google.common.base.Throwables;
 import com.google.gson.*;
@@ -137,6 +138,10 @@ public enum UVLModelLoader implements ICustomModelLoader {
 
     @Override
     public boolean accepts(ResourceLocation modelLocation) {
+        if (!modelLocation.getNamespace().equals(AppEng.MOD_ID)) {
+            return false;
+        }
+
         String modelPath = modelLocation.getPath();
         if (modelLocation.getPath().startsWith("models/")) {
             modelPath = modelPath.substring("models/".length());
