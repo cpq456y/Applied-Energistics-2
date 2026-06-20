@@ -11,8 +11,8 @@ import net.minecraftforge.fml.relauncher.Side;
  */
 public class WUTPlugin {
 
-    public static final String MOD_ID = "ae2wut";
-    public static final SimpleNetworkWrapper NET_CHANNEL = NetworkRegistry.INSTANCE.newSimpleChannel(MOD_ID);
+    public static final String NET_CHANNEL_ID = "ae2wut_el";
+    public static final SimpleNetworkWrapper NET_CHANNEL = NetworkRegistry.INSTANCE.newSimpleChannel(NET_CHANNEL_ID);
     public static WUTPlugin INSTANCE;
 
     public WUTPlugin() {
