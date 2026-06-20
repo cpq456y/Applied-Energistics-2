@@ -544,7 +544,7 @@ item.appliedenergistics2.entropy_manipulator.name=엔트로피 조종기
 item.appliedenergistics2.matter_cannon.name=물질 대포
 item.appliedenergistics2.memory_card.name=메모리 카드
 item.appliedenergistics2.color_applicator.name=색상 적용기
-item.appliedenergistics2.wireless_terminal.name무선 터미널
+item.appliedenergistics2.wireless_terminal.name=무선 터미널
 item.appliedenergistics2.biometric_card.name=바이오메트릭 카드
 
 item.appliedenergistics2.debug_card.name=디버그 카드
