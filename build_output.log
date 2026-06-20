@@ -1,0 +1,1148 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/Kelin/.gradle/wrapper/dists/gradle-9.3.0-bin/bhaiewupfitimu8dp3dbwulm2/gradle-9.3.0/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Initialized native services in: C:\Users\Kelin\.gradle\native
+Initialized jansi services in: C:\Users\Kelin\.gradle\native
+The client will now receive all logging from the daemon (pid: 23712). The daemon log file: C:\Users\Kelin\.gradle\daemon\9.3.0\daemon-23712.out.log
+Starting 8th build in daemon [uptime: 46 mins 7.876 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 3 GiB]
+Using 8 worker leases.
+Operational build model parameters: {requiresToolingModels=false, parallelProjectExecution=false, configureOnDemand=false, configurationCache=false, configurationCacheParallelStore=false, configurationCacheParallelLoad=true, isolatedProjects=false, parallelProjectConfiguration=false, intermediateModelCache=false, parallelToolingApiActions=false, invalidateCoupledProjects=false, modelAsProjectDependency=false, resilientModelBuilding=false}
+Invalidating in-memory cache of E:\Git\AE绯籠Applied-Energistics-2-0.56.7\.gradle\9.3.0\fileHashes\fileHashes.bin
+Invalidating in-memory cache of E:\Git\AE绯籠Applied-Energistics-2-0.56.7\.gradle\buildOutputCleanup\outputFiles.bin
+Invalidating in-memory cache of E:\Git\AE绯籠Applied-Energistics-2-0.56.7\.gradle\9.3.0\fileHashes\resourceHashesCache.bin
+Now considering [E:\Git\AE绯籠Applied-Energistics-2-0.56.7] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Resolved plugin [id: 'com.diffplug.blowdryerSetup', version: '1.7.1']
+Invalidating in-memory cache of C:\Users\Kelin\.gradle\caches\journal-1\file-access.bin
+Invalidating in-memory cache of C:\Users\Kelin\.gradle\caches\9.3.0\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kelin\.gradle\caches\9.3.0\fileHashes\resourceHashesCache.bin
+Settings evaluated using settings file 'E:\Git\AE绯籠Applied-Energistics-2-0.56.7\settings.gradle'.
+Projects loaded. Root project using build file 'E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build.gradle'.
+Included projects: [root project 'Applied-Energistics-2-0.56.7']
+
+> Configure project :
+Evaluating root project 'Applied-Energistics-2-0.56.7' using build file 'E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build.gradle'.
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'java-library']
+Resolved plugin [id: 'base']
+Resolved plugin [id: 'eclipse']
+Resolved plugin [id: 'maven-publish']
+Resolved plugin [id: 'org.jetbrains.gradle.plugin.idea-ext', version: '1.1.7']
+Resolved plugin [id: 'com.gtnewhorizons.retrofuturagradle', version: '2.0.2']
+Resolved plugin [id: 'net.darkhax.curseforgegradle', version: '1.1.17', apply: false]
+Resolved plugin [id: 'com.modrinth.minotaur', version: '2.8.6', apply: false]
+Resolved plugin [id: 'com.diffplug.spotless', version: '6.13.0', apply: false]
+Resolved plugin [id: 'com.palantir.git-version', version: '3.0.0', apply: false]
+Resolved plugin [id: 'com.github.johnrengelman.shadow', version: '8.1.1', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '1.8.0', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.kapt', version: '1.8.0', apply: false]
+Resolved plugin [id: 'com.google.devtools.ksp', version: '1.8.0-1.0.9', apply: false]
+Mod version could not be determined! Property 'modVersion' is not set, and either git is not installed or no git tags exist.
+All projects evaluated.
+Task name matched 'clean'
+Task name matched 'build'
+Selected primary task 'clean' from project :
+Selected primary task 'build' from project :
+Tasks to be executed: [task ':clean', task ':compileInjectedInterfacesJava', task ':extractDependencyATs', task ':generateForgeSrgMappings', task ':downloadVanillaJars', task ':mergeVanillaSidedJars', task ':deobfuscateMergedJarToSrg', task ':downloadFernflower', task ':decompileSrgJar', task ':cleanupDecompSrgJar', task ':patchDecompiledJar', task ':applyJST', task ':remapDecompiledJar', task ':decompressDecompiledSources', task ':processInjectedInterfacesResources', task ':injectedInterfacesClasses', task ':compilePatchedMcJava', task ':processPatchedMcResources', task ':patchedMcClasses', task ':compileApiJava', task ':processApiResources', task ':apiClasses', task ':injectTags', task ':compileInjectedTagsJava', task ':extractNatives2', task ':createMcLauncherFiles', task ':compileMcLauncherJava', task ':processInjectedTagsResources', task ':injectedTagsClasses', task ':processMcLauncherResources', task ':mcLauncherClasses', task ':compileJava', task ':generateAssets', task ':processResources', task ':classes', task ':jar', task ':packageMcLauncher', task ':packagePatchedMc', task ':reobfJar', task ':sourcesJar', task ':assemble', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test', task ':check', task ':build']
+Tasks that were excluded: []
+Resolve mutations for :clean (Thread[#612,Execution worker,5,main]) started.
+:clean (Thread[#612,Execution worker,5,main]) started.
+destroyer locations for task group 0 (Thread[#611,included builds,5,main]) started.
+Invalidating in-memory cache of E:\Git\AE绯籠Applied-Energistics-2-0.56.7\.gradle\9.3.0\executionHistory\executionHistory.bin
+
+> Task :clean
+Caching disabled for task ':clean' because:
+  Build cache is disabled
+Task ':clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :compileInjectedInterfacesJava (Thread[#612,Execution worker,5,main]) started.
+:compileInjectedInterfacesJava (Thread[#612,Execution worker,5,main]) started.
+
+> Task :compileInjectedInterfacesJava NO-SOURCE
+Skipping task ':compileInjectedInterfacesJava' as it has no source files and no previous output files.
+Resolve mutations for :extractDependencyATs (Thread[#612,Execution worker,5,main]) started.
+:extractDependencyATs (Thread[#612,Execution worker,5,main]) started.
+
+> Task :extractDependencyATs
+Caching disabled for task ':extractDependencyATs' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Task ':extractDependencyATs' is not up-to-date because:
+  Output property 'outputFile' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\dependency_at.cfg has been removed.
+Resolve mutations for :generateForgeSrgMappings (Thread[#612,Execution worker,5,main]) started.
+:generateForgeSrgMappings (Thread[#612,Execution worker,5,main]) started.
+
+> Task :generateForgeSrgMappings SKIPPED
+Skipping task ':generateForgeSrgMappings' as task onlyIf 'Task satisfies onlyIf spec' is false.
+Resolve mutations for :downloadVanillaJars (Thread[#612,Execution worker,5,main]) started.
+:downloadVanillaJars (Thread[#612,Execution worker,5,main]) started.
+
+> Task :downloadVanillaJars SKIPPED
+Skipping task ':downloadVanillaJars' as task onlyIf 'Task satisfies onlyIf spec' is false.
+Resolve mutations for :mergeVanillaSidedJars (Thread[#612,Execution worker,5,main]) started.
+:mergeVanillaSidedJars (Thread[#612,Execution worker,5,main]) started.
+
+> Task :mergeVanillaSidedJars
+Caching disabled for task ':mergeVanillaSidedJars' because:
+  Build cache is disabled
+Task ':mergeVanillaSidedJars' is not up-to-date because:
+  Task.upToDateWhen is false.
+Resolve mutations for :deobfuscateMergedJarToSrg (Thread[#612,Execution worker,5,main]) started.
+:deobfuscateMergedJarToSrg (Thread[#612,Execution worker,5,main]) started.
+
+> Task :deobfuscateMergedJarToSrg
+Caching disabled for task ':deobfuscateMergedJarToSrg' because:
+  Build cache is disabled
+Task ':deobfuscateMergedJarToSrg' is not up-to-date because:
+  Task.upToDateWhen is false.
+Applying SpecialSource
+Loading 2 AccessTransformers
+C:\Users\Kelin\.gradle\caches\minecraft\net\minecraftforge\forge\1.12.2-14.23.5.2847\unpacked\src\main\resources\forge_at.cfg
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\resources\appliedenergistics2_at.cfg
+Renamed 0 AT entries
+Applying Exceptor
+Cleaning up generated debuginfo
+Resolve mutations for :downloadFernflower (Thread[#612,Execution worker,5,main]) started.
+:downloadFernflower (Thread[#612,Execution worker,5,main]) started.
+
+> Task :downloadFernflower SKIPPED
+Skipping task ':downloadFernflower' as task onlyIf 'Task satisfies onlyIf spec' is false.
+Resolve mutations for :decompileSrgJar (Thread[#612,Execution worker,5,main]) started.
+:decompileSrgJar (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :decompileSrgJar
+Caching disabled for task ':decompileSrgJar' because:
+  Build cache is disabled
+  Uses an internal caching mechanism
+Task ':decompileSrgJar' is not up-to-date because:
+  Task.upToDateWhen is false.
+Using cached decompiled jar from C:\Users\Kelin\.gradle\caches\retro_futura_gradle\fernflower-cache\1.0.342-c39d4698c70f6153bd943647e89d990bb77d3b0e09fb147db878077fcb767c63.jar
+Resolve mutations for :cleanupDecompSrgJar (Thread[#615,Execution worker Thread 4,5,main]) started.
+:cleanupDecompSrgJar (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :cleanupDecompSrgJar
+Caching disabled for task ':cleanupDecompSrgJar' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Task ':cleanupDecompSrgJar' is not up-to-date because:
+  Task.upToDateWhen is false.
+Fixup stage 1 - applying FF patches
+  Stage 1 took 865 ms
+Fixup stage 2 - applying MCP patches
+  Stage 2 took 332 ms
+Fixup stage 3 - applying MCP cleanup
+  Stage 3 took 7949 ms
+Fixup stage 4 - injecting package-info
+  Injected 119 package-infos
+  Stage 4 took 7 ms
+Saving the fixed-up jar
+Resolve mutations for :patchDecompiledJar (Thread[#615,Execution worker Thread 4,5,main]) started.
+:patchDecompiledJar (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :patchDecompiledJar
+Custom actions are attached to task ':patchDecompiledJar'.
+Caching disabled for task ':patchDecompiledJar' because:
+  Build cache is disabled
+Task ':patchDecompiledJar' is not up-to-date because:
+  Task.upToDateWhen is false.
+Patching sources: 1 patch archives, 2 injection directories
+Applied 525 patches
+Resolve mutations for :applyJST (Thread[#615,Execution worker Thread 4,5,main]) started.
+:applyJST (Thread[#612,Execution worker,5,main]) started.
+
+> Task :applyJST
+Caching disabled for task ':applyJST' because:
+  Build cache is disabled
+Task ':applyJST' is not up-to-date because:
+  Task.upToDateWhen is false.
+Applying access transformers: [E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\dependency_at.cfg]
+Using JST: C:\Users\Kelin\.gradle\caches\modules-2\files-2.1\net.neoforged.jst\jst-cli-bundle\1.0.67\20d7d42f8a0d0126e34806ed97ca299a95629cb3\jst-cli-bundle-1.0.67.jar
+Program Args: [--enable-accesstransformers, --access-transformer, E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\dependency_at.cfg, --libraries-list=C:\Users\Kelin\AppData\Local\Temp\jst-libs6471044509498965576.txt, E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\srg_patched_minecraft-sources.jar, E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\post_jst_minecraft-sources.jar]
+Starting process 'command 'C:\Users\Kelin\.gradle\jdks\azul_systems__inc_-21-amd64-windows.2\bin\java.exe''. Working directory: E:\Git\AE绯籠Applied-Energistics-2-0.56.7 Command: C:\Users\Kelin\.gradle\jdks\azul_systems__inc_-21-amd64-windows.2\bin\java.exe -Xms512M -Xmx2G -Dfile.encoding=UTF-8 -Duser.country=CN -Duser.language=zh -Duser.variant -jar C:\Users\Kelin\.gradle\caches\modules-2\files-2.1\net.neoforged.jst\jst-cli-bundle\1.0.67\20d7d42f8a0d0126e34806ed97ca299a95629cb3\jst-cli-bundle-1.0.67.jar --enable-accesstransformers --access-transformer E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\dependency_at.cfg --libraries-list=C:\Users\Kelin\AppData\Local\Temp\jst-libs6471044509498965576.txt E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\srg_patched_minecraft-sources.jar E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\post_jst_minecraft-sources.jar
+Successfully started process 'command 'C:\Users\Kelin\.gradle\jdks\azul_systems__inc_-21-amd64-windows.2\bin\java.exe''
+Access transformer PUBLIC LEAVE E:\Git\AE系\Applied-Energistics-2-0.56.7\build\rfg\dependency_at.cfg:165, targeting net.minecraft.client.renderer.entity.layers.LayerBipedArmor METHOD func_188359_a(Lnet/minecraft/client/model/ModelBase;Lnet/minecraft/inventory/EntityEquipmentSlot;)V did not apply as its target doesn't exist
+Resolve mutations for :remapDecompiledJar (Thread[#615,Execution worker Thread 4,5,main]) started.
+:remapDecompiledJar (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :remapDecompiledJar
+Custom actions are attached to task ':remapDecompiledJar'.
+Caching disabled for task ':remapDecompiledJar' because:
+  Build cache is disabled
+Task ':remapDecompiledJar' is not up-to-date because:
+  Task.upToDateWhen is false.
+Applied 0 missing generics
+Resolve mutations for :decompressDecompiledSources (Thread[#615,Execution worker Thread 4,5,main]) started.
+:decompressDecompiledSources (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :decompressDecompiledSources
+Caching disabled for task ':decompressDecompiledSources' because:
+  Build cache is disabled
+  Not worth caching
+Task ':decompressDecompiledSources' is not up-to-date because:
+  Output property 'destinationDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\minecraft-src has been removed.
+  Output property 'destinationDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\minecraft-src\java has been removed.
+  Output property 'destinationDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\minecraft-src\java\ibxm has been removed.
+  and more...
+Resolve mutations for :processInjectedInterfacesResources (Thread[#615,Execution worker Thread 4,5,main]) started.
+:processInjectedInterfacesResources (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :processInjectedInterfacesResources NO-SOURCE
+Skipping task ':processInjectedInterfacesResources' as it has no source files and no previous output files.
+Resolve mutations for :injectedInterfacesClasses (Thread[#615,Execution worker Thread 4,5,main]) started.
+:injectedInterfacesClasses (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :injectedInterfacesClasses UP-TO-DATE
+Skipping task ':injectedInterfacesClasses' as it has no actions.
+Resolve mutations for :compilePatchedMcJava (Thread[#612,Execution worker,5,main]) started.
+:compilePatchedMcJava (Thread[#612,Execution worker,5,main]) started.
+
+> Task :compilePatchedMcJava
+Caching disabled for task ':compilePatchedMcJava' because:
+  Build cache is disabled
+Task ':compilePatchedMcJava' is not up-to-date because:
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\patchedMc has been removed.
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\patchedMc\ibxm has been removed.
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\patchedMc\ibxm\Channel.class has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':compilePatchedMcJava'.
+Compilation mode: forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Users\Kelin\.gradle\jdks\azul_systems__inc_-8-amd64-windows.2'.
+Starting process 'Gradle Worker Daemon 2'. Working directory: C:\Users\Kelin\.gradle\workers Command: C:\Users\Kelin\.gradle\jdks\azul_systems__inc_-8-amd64-windows.2\bin\java.exe -Djava.security.manager=worker.org.gradle.process.internal.worker.child.BootstrapSecurityManager -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=CN -Duser.language=zh -Duser.variant -cp C:\Users\Kelin\.gradle\caches\9.3.0\workerMain\gradle-worker.jar worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 2'
+Successfully started process 'Gradle Worker Daemon 2'
+Started Gradle worker daemon (2.217 secs) with fork options DaemonForkOptions{executable=C:\Users\Kelin\.gradle\jdks\azul_systems__inc_-8-amd64-windows.2\bin\java.exe, minHeapSize=null, maxHeapSize=null, jvmArgs=[], keepAliveMode=DAEMON}.
+
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+
+> Task :compilePatchedMcJava
+Compiling with JDK Java compiler API.
+娉? 鏌愪簺杈撳叆鏂囦欢浣跨敤鎴栬鐩栦簡宸茶繃鏃剁殑 API銆?
+娉? 鏈夊叧璇︾粏淇℃伅, 璇蜂娇鐢?-Xlint:deprecation 閲嶆柊缂栬瘧銆?
+娉? 鏌愪簺杈撳叆鏂囦欢浣跨敤浜嗘湭缁忔鏌ユ垨涓嶅畨鍏ㄧ殑鎿嶄綔銆?
+娉? 鏈夊叧璇︾粏淇℃伅, 璇蜂娇鐢?-Xlint:unchecked 閲嶆柊缂栬瘧銆?
+Invalidating in-memory cache of E:\Git\AE绯籠Applied-Energistics-2-0.56.7\.gradle\9.3.0\fileHashes\fileHashes.bin
+Invalidating in-memory cache of E:\Git\AE绯籠Applied-Energistics-2-0.56.7\.gradle\9.3.0\fileHashes\resourceHashesCache.bin
+
+Stopped 1 worker daemon(s).
+
+> Task :compilePatchedMcJava
+Class dependency analysis for incremental compilation took 46.038 secs.
+Created classpath snapshot for incremental compilation in 0.076 secs.
+Resolve mutations for :processPatchedMcResources (Thread[#615,Execution worker Thread 4,5,main]) started.
+:processPatchedMcResources (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :processPatchedMcResources
+Caching disabled for task ':processPatchedMcResources' because:
+  Build cache is disabled
+  Not worth caching
+Task ':processPatchedMcResources' is not up-to-date because:
+  Output property 'destinationDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\resources\patchedMc has been removed.
+  Output property 'destinationDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\resources\patchedMc\assets has been removed.
+  Output property 'destinationDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\resources\patchedMc\assets\.mcassetsroot has been removed.
+  and more...
+Resolve mutations for :patchedMcClasses (Thread[#615,Execution worker Thread 4,5,main]) started.
+:patchedMcClasses (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :patchedMcClasses
+Skipping task ':patchedMcClasses' as it has no actions.
+Resolve mutations for :compileApiJava (Thread[#615,Execution worker Thread 4,5,main]) started.
+:compileApiJava (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :compileApiJava
+Caching disabled for task ':compileApiJava' because:
+  Build cache is disabled
+Task ':compileApiJava' is not up-to-date because:
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\api has been removed.
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\api\appeng has been removed.
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\api\appeng\api has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':compileApiJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\BellSoft\LibericaJDK-17-Full'.
+Starting process 'Gradle Worker Daemon 3'. Working directory: C:\Users\Kelin\.gradle\workers Command: C:\Program Files\BellSoft\LibericaJDK-17-Full\bin\java.exe --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED @C:\Users\Kelin\.gradle\.tmp\gradle-worker-classpath4059086397905148441txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=CN -Duser.language=zh -Duser.variant worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 3'
+Successfully started process 'Gradle Worker Daemon 3'
+Started Gradle worker daemon (1.467 secs) with fork options DaemonForkOptions{executable=C:\Program Files\BellSoft\LibericaJDK-17-Full\bin\java.exe, minHeapSize=null, maxHeapSize=null, jvmArgs=[--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED, --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED], keepAliveMode=DAEMON}.
+
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+
+> Task :compileApiJava
+Compiling with JDK Java compiler API.
+娉? E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\api\java\appeng\api\util\AEColor.java浣跨敤鎴栬鐩栦簡宸茶繃鏃剁殑 API銆?
+娉? 鏈夊叧璇︾粏淇℃伅, 璇蜂娇鐢?-Xlint:deprecation 閲嶆柊缂栬瘧銆?
+Class dependency analysis for incremental compilation took 0.715 secs.
+Created classpath snapshot for incremental compilation in 0.081 secs.
+Resolve mutations for :processApiResources (Thread[#615,Execution worker Thread 4,5,main]) started.
+:processApiResources (Thread[#615,Execution worker Thread 4,5,main]) started.
+
+> Task :processApiResources NO-SOURCE
+Skipping task ':processApiResources' as it has no source files and no previous output files.
+Resolve mutations for :apiClasses (Thread[#615,Execution worker Thread 4,5,main]) started.
+:apiClasses (Thread[#616,Execution worker Thread 5,5,main]) started.
+
+> Task :apiClasses
+Skipping task ':apiClasses' as it has no actions.
+Resolve mutations for :injectTags (Thread[#616,Execution worker Thread 5,5,main]) started.
+:injectTags (Thread[#616,Execution worker Thread 5,5,main]) started.
+
+> Task :injectTags
+Caching disabled for task ':injectTags' because:
+  Build cache is disabled
+Task ':injectTags' is not up-to-date because:
+  Output property 'outputDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\generated\sources\injectTags has been removed.
+  Output property 'outputDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\generated\sources\injectTags\appeng has been removed.
+  Output property 'outputDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\generated\sources\injectTags\appeng\Tags.java has been removed.
+Resolve mutations for :compileInjectedTagsJava (Thread[#611,included builds,5,main]) started.
+:compileInjectedTagsJava (Thread[#611,included builds,5,main]) started.
+
+> Task :compileInjectedTagsJava
+Caching disabled for task ':compileInjectedTagsJava' because:
+  Build cache is disabled
+Task ':compileInjectedTagsJava' is not up-to-date because:
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\injectedTags has been removed.
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\injectedTags\appeng has been removed.
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\injectedTags\appeng\Tags.class has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':compileInjectedTagsJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\BellSoft\LibericaJDK-17-Full'.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.002 secs.
+Created classpath snapshot for incremental compilation in 0.0 secs.
+Resolve mutations for :extractNatives2 (Thread[#611,included builds,5,main]) started.
+:extractNatives2 (Thread[#611,included builds,5,main]) started.
+
+> Task :extractNatives2 UP-TO-DATE
+Caching disabled for task ':extractNatives2' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':extractNatives2' as it is up-to-date.
+Resolve mutations for :createMcLauncherFiles (Thread[#611,included builds,5,main]) started.
+:createMcLauncherFiles (Thread[#611,included builds,5,main]) started.
+
+> Task :createMcLauncherFiles
+Caching disabled for task ':createMcLauncherFiles' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Task ':createMcLauncherFiles' is not up-to-date because:
+  Output property 'outputDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\launcher-src has been removed.
+  Output property 'outputDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\launcher-src\GradleStart.java has been removed.
+  Output property 'outputDir' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\rfg\launcher-src\GradleStartServer.java has been removed.
+  and more...
+Resolve mutations for :compileMcLauncherJava (Thread[#611,included builds,5,main]) started.
+:compileMcLauncherJava (Thread[#611,included builds,5,main]) started.
+
+> Task :compileMcLauncherJava
+Caching disabled for task ':compileMcLauncherJava' because:
+  Build cache is disabled
+Task ':compileMcLauncherJava' is not up-to-date because:
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\mcLauncher has been removed.
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\mcLauncher\GradleStart.class has been removed.
+  Output property 'destinationDirectory' file E:\Git\AE绯籠Applied-Energistics-2-0.56.7\build\classes\java\mcLauncher\GradleStartServer.class has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':compileMcLauncherJava'.
+Compilation mode: forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Users\Kelin\.gradle\jdks\azul_systems__inc_-8-amd64-windows.2'.
+Stopped 1 worker daemon(s).
+Starting process 'Gradle Worker Daemon 4'. Working directory: C:\Users\Kelin\.gradle\workers Command: C:\Users\Kelin\.gradle\jdks\azul_systems__inc_-8-amd64-windows.2\bin\java.exe -Djava.security.manager=worker.org.gradle.process.internal.worker.child.BootstrapSecurityManager -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=CN -Duser.language=zh -Duser.variant -cp C:\Users\Kelin\.gradle\caches\9.3.0\workerMain\gradle-worker.jar worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 4'
+Successfully started process 'Gradle Worker Daemon 4'
+Started Gradle worker daemon (2.884 secs) with fork options DaemonForkOptions{executable=C:\Users\Kelin\.gradle\jdks\azul_systems__inc_-8-amd64-windows.2\bin\java.exe, minHeapSize=null, maxHeapSize=null, jvmArgs=[], keepAliveMode=DAEMON}.
+
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+
+> Task :compileMcLauncherJava
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.017 secs.
+Created classpath snapshot for incremental compilation in 0.043 secs.
+Resolve mutations for :processInjectedTagsResources (Thread[#611,included builds,5,main]) started.
+:processInjectedTagsResources (Thread[#611,included builds,5,main]) started.
+
+> Task :processInjectedTagsResources NO-SOURCE
+Skipping task ':processInjectedTagsResources' as it has no source files and no previous output files.
+Resolve mutations for :injectedTagsClasses (Thread[#611,included builds,5,main]) started.
+:injectedTagsClasses (Thread[#611,included builds,5,main]) started.
+
+> Task :injectedTagsClasses
+Skipping task ':injectedTagsClasses' as it has no actions.
+Resolve mutations for :processMcLauncherResources (Thread[#611,included builds,5,main]) started.
+:processMcLauncherResources (Thread[#611,included builds,5,main]) started.
+
+> Task :processMcLauncherResources NO-SOURCE
+Skipping task ':processMcLauncherResources' as it has no source files and no previous output files.
+Resolve mutations for :mcLauncherClasses (Thread[#611,included builds,5,main]) started.
+:mcLauncherClasses (Thread[#611,included builds,5,main]) started.
+
+> Task :mcLauncherClasses
+Skipping task ':mcLauncherClasses' as it has no actions.
+Resolve mutations for :compileJava (Thread[#611,included builds,5,main]) started.
+:compileJava (Thread[#611,included builds,5,main]) started.
+Stopped 1 worker daemon(s).
+
+> Task :compileJava
+Caching disabled for task ':compileJava' because:
+  Build cache is disabled
+Task ':compileJava' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':compileJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\BellSoft\LibericaJDK-17-Full'.
+Invalidating in-memory cache of C:\Users\Kelin\.gradle\caches\9.3.0\fileContent\java-modules.bin
+Invalidating in-memory cache of C:\Users\Kelin\.gradle\caches\9.3.0\fileContent\annotation-processors.bin
+Starting process 'Gradle Worker Daemon 5'. Working directory: C:\Users\Kelin\.gradle\workers Command: C:\Program Files\BellSoft\LibericaJDK-17-Full\bin\java.exe --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED @C:\Users\Kelin\.gradle\.tmp\gradle-worker-classpath15510776395704408026txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=CN -Duser.language=zh -Duser.variant worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 5'
+Successfully started process 'Gradle Worker Daemon 5'
+Started Gradle worker daemon (1.029 secs) with fork options DaemonForkOptions{executable=C:\Program Files\BellSoft\LibericaJDK-17-Full\bin\java.exe, minHeapSize=null, maxHeapSize=null, jvmArgs=[--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED, --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED], keepAliveMode=DAEMON}.
+
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+
+> Task :compileJava
+Compiling with JDK Java compiler API.
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:33: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?		var minecraft = toastGui.getMinecraft();
+		    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:34: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?		var fontRenderer = minecraft.fontRenderer;
+		    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:42: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?		var statusText = cancelled ? GuiText.CraftingToastCancelled : GuiText.CraftingToastDone;
+		    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:966: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            final var slot = this.getSlot(slotId);
+                      ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:969: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                var slotStack = slot.getStack();
+                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:970: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                var draggedStack = this.invPlayer.getItemStack();
+                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:978: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                            var maxSize = Math.min(appEngSlot.getSlotStackLimit(), draggedStack.getMaxStackSize());
+                                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:981: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                            var maxInsertable = Math.min(draggedStack.getCount(),
+                                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:985: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                                var toInsert = Math.min(maxInsertable, dragType == 0 ? maxInsertable : 1);
+                                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:999: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                        var result = slotStack.copy();
+                            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:1000: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                        var toTake = Math.min(slotStack.getCount(), slotStack.getMaxStackSize());
+                            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:210: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                var itemStack = playerSlot.getStack();
+                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:212: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                    var handler = new WrapperFilteredItemHandler(
+                        ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\slot\AppEngSlot.java:162: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var draggedStack = par1EntityPlayer.inventory.getItemStack();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:17: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var format = (DecimalFormat) DecimalFormat.getInstance();
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:18: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var symbols = format.getDecimalFormatSymbols();
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:34: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        for (var c : components) {
+                 ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\FluidHandlerAdapter.java:197: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                var contents = tankProperty.getContents();
+                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:226: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var filteredChanges = this.filterChanges(change);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:556: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var storageFilter = this.getConfigManager().getSetting(Settings.STORAGE_FILTER);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:558: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var filteredList = new ArrayList<IAEFluidStack>();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1035: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var mon = te.getCapability(Capabilities.STORAGE_MONITORABLE_ACCESSOR, s.getOpposite());
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1061: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                            var allItemsCanBeInserted = true;
+                                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1184: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var lockMode = cm.getSetting(Settings.UNLOCK);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1551: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var remainingAmount = unlockStack.getStackSize() - stack.getStackSize();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1563: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var entity = this.iHost.getTileEntity();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\jei\JEIPlugin.java:191: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var facade = (ItemFacade)itemFacade.get();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\jei\JEIPlugin.java:197: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var list = NonNullList.<ItemStack>create();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\waila\part\AnnihilationPlaneDataProvider.java:31: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                for (var enchantment : enchantments.keySet()) {
+                         ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\items\parts\ItemPart.java:198: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var enchantments = EnchantmentHelper.getEnchantments(stack);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\me\cluster\implementations\CraftingCPUCluster.java:399: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var player = AppEng.proxy.getPlayerByUUID(this.requestingPlayerUUID);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\me\storage\MEInventoryHandler.java:127: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                var stackList = this.internal.getAvailableItems(this.getChannel().createList());
+                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:484: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var efficiencyFactor = 1f;
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:485: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var efficiencyLevel = 0;
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:497: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var levelSum = enchantments.values().stream().reduce(0, Integer::sum) - efficiencyLevel;
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:55: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var rulesList = OreDictFilterMatcher.parseExpression(oreExp);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:154: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var ruleList = OreDictFilterMatcher.parseExpression(oreExp);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:171: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var ruleList = OreDictFilterMatcher.parseExpression(oreMatch);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:225: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var filteredChanges = this.filterChanges(change);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:587: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var storageFilter = this.getConfigManager().getSetting(Settings.STORAGE_FILTER);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:589: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var filteredList = new ArrayList<IAEItemStack>();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\EnchantmentUtil.java:50: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var list = data.getTagList("Enchantments",10);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\EnchantmentUtil.java:51: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var enchants = deserializeEnchantments(list);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:45: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var hash = HASH_STRATEGY.hashCode(itemStack);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:46: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var ret = REGISTRY.get(hash);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:53: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var itemStackCopy = itemStack.copy();
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:55: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var sharedStack = new AESharedItemStack(itemStackCopy);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\render\cablebus\CableBusBakedModel.java:74: 閿欒: 鎵句笉鍒扮鍙?                    public List<BakedQuad> load(@Nonnull CableBusRenderState rs) {
+                                                 ^
+  绗﹀彿: 绫?Nonnull
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\me\cluster\implementations\CraftingCPUCluster.java:399: 閿欒: 鎵句笉鍒扮鍙?        var player = AppEng.proxy.getPlayerByUUID(this.requestingPlayerUUID);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?CraftingCPUCluster
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\slot\AppEngSlot.java:162: 閿欒: 鎵句笉鍒扮鍙?            var draggedStack = par1EntityPlayer.inventory.getItemStack();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AppEngSlot
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\jei\JEIPlugin.java:191: 閿欒: 鎵句笉鍒扮鍙?            var facade = (ItemFacade)itemFacade.get();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?JEIPlugin
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\jei\JEIPlugin.java:197: 閿欒: 鎵句笉鍒扮鍙?            var list = NonNullList.<ItemStack>create();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?JEIPlugin
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:966: 閿欒: 鎵句笉鍒扮鍙?            final var slot = this.getSlot(slotId);
+                  ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:969: 閿欒: 鎵句笉鍒扮鍙?                var slotStack = slot.getStack();
+                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:970: 閿欒: 鎵句笉鍒扮鍙?                var draggedStack = this.invPlayer.getItemStack();
+                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:978: 閿欒: 鎵句笉鍒扮鍙?                            var maxSize = Math.min(appEngSlot.getSlotStackLimit(), draggedStack.getMaxStackSize());
+                            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:981: 閿欒: 鎵句笉鍒扮鍙?                            var maxInsertable = Math.min(draggedStack.getCount(),
+                            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:985: 閿欒: 鎵句笉鍒扮鍙?                                var toInsert = Math.min(maxInsertable, dragType == 0 ? maxInsertable : 1);
+                                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:999: 閿欒: 鎵句笉鍒扮鍙?                        var result = slotStack.copy();
+                        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:1000: 閿欒: 鎵句笉鍒扮鍙?                        var toTake = Math.min(slotStack.getCount(), slotStack.getMaxStackSize());
+                        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\implementations\GuiUpgradeable.java:239: 閿欒: 鏃犳硶鎺ㄦ柇Target<I>鐨勭被鍨嬪弬鏁?            Target<Object> targetItem = new Target<>() {
+                                                  ^
+  鍘熷洜: -source 8 涓笉鏀寔 '<>' 鍏锋湁鍖垮悕鐨勫唴閮ㄧ被
+    (璇蜂娇鐢?-source 9 鎴栨洿楂樼増鏈互鍚敤 '<>' 鍏锋湁鍖垮悕鐨勫唴閮ㄧ被)
+  鍏朵腑, I鏄被鍨嬪彉閲?
+    I鎵╁睍宸插湪鎺ュ彛 Target涓０鏄庣殑Object
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\me\storage\MEInventoryHandler.java:127: 閿欒: 鎵句笉鍒扮鍙?                var stackList = this.internal.getAvailableItems(this.getChannel().createList());
+                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?MEInventoryHandler<T>
+  鍏朵腑, T鏄被鍨嬪彉閲?
+    T鎵╁睍宸插湪绫?MEInventoryHandler涓０鏄庣殑IAEStack<T>
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1035: 閿欒: 鎵句笉鍒扮鍙?            var mon = te.getCapability(Capabilities.STORAGE_MONITORABLE_ACCESSOR, s.getOpposite());
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?DualityInterface
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1061: 閿欒: 鎵句笉鍒扮鍙?                            var allItemsCanBeInserted = true;
+                            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?DualityInterface
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1184: 閿欒: 鎵句笉鍒扮鍙?        var lockMode = cm.getSetting(Settings.UNLOCK);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?DualityInterface
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1551: 閿欒: 鎵句笉鍒扮鍙?            var remainingAmount = unlockStack.getStackSize() - stack.getStackSize();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?DualityInterface
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1563: 閿欒: 鎵句笉鍒扮鍙?            var entity = this.iHost.getTileEntity();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?DualityInterface
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:225: 閿欒: 鎵句笉鍒扮鍙?            var filteredChanges = this.filterChanges(change);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:587: 閿欒: 鎵句笉鍒扮鍙?        var storageFilter = this.getConfigManager().getSetting(Settings.STORAGE_FILTER);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:589: 閿欒: 鎵句笉鍒扮鍙?            var filteredList = new ArrayList<IAEItemStack>();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:55: 閿欒: 鎵句笉鍒扮鍙?        var rulesList = OreDictFilterMatcher.parseExpression(oreExp);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartOreDicStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:154: 閿欒: 鎵句笉鍒扮鍙?            var ruleList = OreDictFilterMatcher.parseExpression(oreExp);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartOreDicStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:171: 閿欒: 鎵句笉鍒扮鍙?            var ruleList = OreDictFilterMatcher.parseExpression(oreMatch);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartOreDicStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:33: 閿欒: 鎵句笉鍒扮鍙?		var minecraft = toastGui.getMinecraft();
+		^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?CraftingStatusToast
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:34: 閿欒: 鎵句笉鍒扮鍙?		var fontRenderer = minecraft.fontRenderer;
+		^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?CraftingStatusToast
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:42: 閿欒: 鎵句笉鍒扮鍙?		var statusText = cancelled ? GuiText.CraftingToastCancelled : GuiText.CraftingToastDone;
+		^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?CraftingStatusToast
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:210: 閿欒: 鎵句笉鍒扮鍙?                var itemStack = playerSlot.getStack();
+                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?ContainerInterfaceTerminal
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:212: 閿欒: 鎵句笉鍒扮鍙?                    var handler = new WrapperFilteredItemHandler(
+                    ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?ContainerInterfaceTerminal
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:403: 閿欒: 鎵句笉鍒扮鍙?            Slot playerSlot = this.inventorySlots.get(idx);
+            ^
+  绗﹀彿:   绫?Slot
+  浣嶇疆: 绫?ContainerInterfaceTerminal
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:406: 閿欒: 鎵句笉鍒扮鍙?                    if (slotObj instanceof SlotDisconnected && !((Slot) slotObj).getHasStack()) {
+                                                                  ^
+  绗﹀彿:   绫?Slot
+  浣嶇疆: 绫?ContainerInterfaceTerminal
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:409: 閿欒: 鎵句笉鍒扮鍙?                        Slot playerAppEngSlot = (AppEngSlot) playerSlot;
+                        ^
+  绗﹀彿:   绫?Slot
+  浣嶇疆: 绫?ContainerInterfaceTerminal
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\items\parts\ItemPart.java:198: 閿欒: 鎵句笉鍒扮鍙?            var enchantments = EnchantmentHelper.getEnchantments(stack);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?ItemPart
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:17: 閿欒: 鎵句笉鍒扮鍙?        var format = (DecimalFormat) DecimalFormat.getInstance();
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?Tooltips
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:18: 閿欒: 鎵句笉鍒扮鍙?        var symbols = format.getDecimalFormatSymbols();
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?Tooltips
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:34: 閿欒: 鎵句笉鍒扮鍙?        for (var c : components) {
+             ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?Tooltips
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:226: 閿欒: 鎵句笉鍒扮鍙?            var filteredChanges = this.filterChanges(change);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartFluidStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:556: 閿欒: 鎵句笉鍒扮鍙?        var storageFilter = this.getConfigManager().getSetting(Settings.STORAGE_FILTER);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartFluidStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:558: 閿欒: 鎵句笉鍒扮鍙?            var filteredList = new ArrayList<IAEFluidStack>();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartFluidStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\FluidHandlerAdapter.java:197: 閿欒: 鎵句笉鍒扮鍙?                var contents = tankProperty.getContents();
+                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?InventoryCache
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\waila\part\AnnihilationPlaneDataProvider.java:31: 閿欒: 鎵句笉鍒扮鍙?                for (var enchantment : enchantments.keySet()) {
+                     ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AnnihilationPlaneDataProvider
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:484: 閿欒: 鎵句笉鍒扮鍙?            var efficiencyFactor = 1f;
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartAnnihilationPlane
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:485: 閿欒: 鎵句笉鍒扮鍙?            var efficiencyLevel = 0;
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartAnnihilationPlane
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:497: 閿欒: 鎵句笉鍒扮鍙?            var levelSum = enchantments.values().stream().reduce(0, Integer::sum) - efficiencyLevel;
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartAnnihilationPlane
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\EnchantmentUtil.java:50: 閿欒: 鎵句笉鍒扮鍙?            var list = data.getTagList("Enchantments",10);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?EnchantmentUtil
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\EnchantmentUtil.java:51: 閿欒: 鎵句笉鍒扮鍙?            var enchants = deserializeEnchantments(list);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?EnchantmentUtil
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:45: 閿欒: 鎵句笉鍒扮鍙?        var hash = HASH_STRATEGY.hashCode(itemStack);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEItemStackRegistry
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:46: 閿欒: 鎵句笉鍒扮鍙?        var ret = REGISTRY.get(hash);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEItemStackRegistry
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:53: 閿欒: 鎵句笉鍒扮鍙?        var itemStackCopy = itemStack.copy();
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEItemStackRegistry
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:55: 閿欒: 鎵句笉鍒扮鍙?        var sharedStack = new AESharedItemStack(itemStackCopy);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEItemStackRegistry
+娉? 鏌愪簺杈撳叆鏂囦欢浣跨敤鎴栬鐩栦簡宸茶繃鏃剁殑 API銆?
+娉? 鏈夊叧璇︾粏淇℃伅, 璇蜂娇鐢?-Xlint:deprecation 閲嶆柊缂栬瘧銆?
+娉? 鏌愪簺杈撳叆鏂囦欢浣跨敤浜嗘湭缁忔鏌ユ垨涓嶅畨鍏ㄧ殑鎿嶄綔銆?
+娉? 鏈夊叧璇︾粏淇℃伅, 璇蜂娇鐢?-Xlint:unchecked 閲嶆柊缂栬瘧銆?
+52 涓敊璇?
+47 涓鍛?
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///E:/Git/AE%E7%B3%BB/Applied-Energistics-2-0.56.7/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:33: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?  		var minecraft = toastGui.getMinecraft();
+  		    ^
+  52 涓敊璇?
+  47 涓鍛?
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileJava'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:135)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:288)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:133)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.DefaultNodeExecutor.executeLocalTaskNode(DefaultNodeExecutor.java:55)
+	at org.gradle.execution.plan.DefaultNodeExecutor.execute(DefaultNodeExecutor.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:355)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:343)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:339)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:84)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:339)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:328)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:146)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:131)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:276)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:187)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:45)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:187)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.lambda$withLocksAcquired$0(DefaultWorkerLeaseService.java:269)
+	at org.gradle.internal.work.ResourceLockStatistics$1.measure(ResourceLockStatistics.java:42)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocksAcquired(DefaultWorkerLeaseService.java:267)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:259)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:84)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:33: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?		var minecraft = toastGui.getMinecraft();
+		    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:34: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?		var fontRenderer = minecraft.fontRenderer;
+		    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:42: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?		var statusText = cancelled ? GuiText.CraftingToastCancelled : GuiText.CraftingToastDone;
+		    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:966: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            final var slot = this.getSlot(slotId);
+                      ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:969: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                var slotStack = slot.getStack();
+                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:970: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                var draggedStack = this.invPlayer.getItemStack();
+                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:978: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                            var maxSize = Math.min(appEngSlot.getSlotStackLimit(), draggedStack.getMaxStackSize());
+                                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:981: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                            var maxInsertable = Math.min(draggedStack.getCount(),
+                                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:985: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                                var toInsert = Math.min(maxInsertable, dragType == 0 ? maxInsertable : 1);
+                                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:999: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                        var result = slotStack.copy();
+                            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:1000: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                        var toTake = Math.min(slotStack.getCount(), slotStack.getMaxStackSize());
+                            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:210: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                var itemStack = playerSlot.getStack();
+                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:212: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                    var handler = new WrapperFilteredItemHandler(
+                        ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\slot\AppEngSlot.java:162: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var draggedStack = par1EntityPlayer.inventory.getItemStack();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:17: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var format = (DecimalFormat) DecimalFormat.getInstance();
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:18: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var symbols = format.getDecimalFormatSymbols();
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:34: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        for (var c : components) {
+                 ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\FluidHandlerAdapter.java:197: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                var contents = tankProperty.getContents();
+                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:226: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var filteredChanges = this.filterChanges(change);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:556: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var storageFilter = this.getConfigManager().getSetting(Settings.STORAGE_FILTER);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:558: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var filteredList = new ArrayList<IAEFluidStack>();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1035: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var mon = te.getCapability(Capabilities.STORAGE_MONITORABLE_ACCESSOR, s.getOpposite());
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1061: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                            var allItemsCanBeInserted = true;
+                                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1184: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var lockMode = cm.getSetting(Settings.UNLOCK);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1551: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var remainingAmount = unlockStack.getStackSize() - stack.getStackSize();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1563: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var entity = this.iHost.getTileEntity();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\jei\JEIPlugin.java:191: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var facade = (ItemFacade)itemFacade.get();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\jei\JEIPlugin.java:197: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var list = NonNullList.<ItemStack>create();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\waila\part\AnnihilationPlaneDataProvider.java:31: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                for (var enchantment : enchantments.keySet()) {
+                         ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\items\parts\ItemPart.java:198: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var enchantments = EnchantmentHelper.getEnchantments(stack);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\me\cluster\implementations\CraftingCPUCluster.java:399: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var player = AppEng.proxy.getPlayerByUUID(this.requestingPlayerUUID);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\me\storage\MEInventoryHandler.java:127: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?                var stackList = this.internal.getAvailableItems(this.getChannel().createList());
+                    ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:484: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var efficiencyFactor = 1f;
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:485: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var efficiencyLevel = 0;
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:497: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var levelSum = enchantments.values().stream().reduce(0, Integer::sum) - efficiencyLevel;
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:55: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var rulesList = OreDictFilterMatcher.parseExpression(oreExp);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:154: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var ruleList = OreDictFilterMatcher.parseExpression(oreExp);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:171: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var ruleList = OreDictFilterMatcher.parseExpression(oreMatch);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:225: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var filteredChanges = this.filterChanges(change);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:587: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var storageFilter = this.getConfigManager().getSetting(Settings.STORAGE_FILTER);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:589: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var filteredList = new ArrayList<IAEItemStack>();
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\EnchantmentUtil.java:50: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var list = data.getTagList("Enchantments",10);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\EnchantmentUtil.java:51: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?            var enchants = deserializeEnchantments(list);
+                ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:45: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var hash = HASH_STRATEGY.hashCode(itemStack);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:46: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var ret = REGISTRY.get(hash);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:53: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var itemStackCopy = itemStack.copy();
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:55: 璀﹀憡: 浠庡彂琛岀増 10 寮€濮嬶紝'var' 鏄彈闄愮被鍨嬪悕绉帮紝涓嶈兘鐢ㄤ簬绫诲瀷澹版槑锛屼篃涓嶈兘鐢ㄤ綔鏁扮粍鐨勫厓绱犵被鍨?        var sharedStack = new AESharedItemStack(itemStackCopy);
+            ^
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\render\cablebus\CableBusBakedModel.java:74: 閿欒: 鎵句笉鍒扮鍙?                    public List<BakedQuad> load(@Nonnull CableBusRenderState rs) {
+                                                 ^
+  绗﹀彿: 绫?Nonnull
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\me\cluster\implementations\CraftingCPUCluster.java:399: 閿欒: 鎵句笉鍒扮鍙?        var player = AppEng.proxy.getPlayerByUUID(this.requestingPlayerUUID);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?CraftingCPUCluster
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\slot\AppEngSlot.java:162: 閿欒: 鎵句笉鍒扮鍙?            var draggedStack = par1EntityPlayer.inventory.getItemStack();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AppEngSlot
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\jei\JEIPlugin.java:191: 閿欒: 鎵句笉鍒扮鍙?            var facade = (ItemFacade)itemFacade.get();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?JEIPlugin
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\jei\JEIPlugin.java:197: 閿欒: 鎵句笉鍒扮鍙?            var list = NonNullList.<ItemStack>create();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?JEIPlugin
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:966: 閿欒: 鎵句笉鍒扮鍙?            final var slot = this.getSlot(slotId);
+                  ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:969: 閿欒: 鎵句笉鍒扮鍙?                var slotStack = slot.getStack();
+                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:970: 閿欒: 鎵句笉鍒扮鍙?                var draggedStack = this.invPlayer.getItemStack();
+                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:978: 閿欒: 鎵句笉鍒扮鍙?                            var maxSize = Math.min(appEngSlot.getSlotStackLimit(), draggedStack.getMaxStackSize());
+                            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:981: 閿欒: 鎵句笉鍒扮鍙?                            var maxInsertable = Math.min(draggedStack.getCount(),
+                            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:985: 閿欒: 鎵句笉鍒扮鍙?                                var toInsert = Math.min(maxInsertable, dragType == 0 ? maxInsertable : 1);
+                                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:999: 閿欒: 鎵句笉鍒扮鍙?                        var result = slotStack.copy();
+                        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\AEBaseContainer.java:1000: 閿欒: 鎵句笉鍒扮鍙?                        var toTake = Math.min(slotStack.getCount(), slotStack.getMaxStackSize());
+                        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEBaseContainer
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\implementations\GuiUpgradeable.java:239: 閿欒: 鏃犳硶鎺ㄦ柇Target<I>鐨勭被鍨嬪弬鏁?            Target<Object> targetItem = new Target<>() {
+                                                  ^
+  鍘熷洜: -source 8 涓笉鏀寔 '<>' 鍏锋湁鍖垮悕鐨勫唴閮ㄧ被
+    (璇蜂娇鐢?-source 9 鎴栨洿楂樼増鏈互鍚敤 '<>' 鍏锋湁鍖垮悕鐨勫唴閮ㄧ被)
+  鍏朵腑, I鏄被鍨嬪彉閲?
+    I鎵╁睍宸插湪鎺ュ彛 Target涓０鏄庣殑Object
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\me\storage\MEInventoryHandler.java:127: 閿欒: 鎵句笉鍒扮鍙?                var stackList = this.internal.getAvailableItems(this.getChannel().createList());
+                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?MEInventoryHandler<T>
+  鍏朵腑, T鏄被鍨嬪彉閲?
+    T鎵╁睍宸插湪绫?MEInventoryHandler涓０鏄庣殑IAEStack<T>
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1035: 閿欒: 鎵句笉鍒扮鍙?            var mon = te.getCapability(Capabilities.STORAGE_MONITORABLE_ACCESSOR, s.getOpposite());
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?DualityInterface
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1061: 閿欒: 鎵句笉鍒扮鍙?                            var allItemsCanBeInserted = true;
+                            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?DualityInterface
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1184: 閿欒: 鎵句笉鍒扮鍙?        var lockMode = cm.getSetting(Settings.UNLOCK);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?DualityInterface
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1551: 閿欒: 鎵句笉鍒扮鍙?            var remainingAmount = unlockStack.getStackSize() - stack.getStackSize();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?DualityInterface
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\helpers\DualityInterface.java:1563: 閿欒: 鎵句笉鍒扮鍙?            var entity = this.iHost.getTileEntity();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?DualityInterface
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:225: 閿欒: 鎵句笉鍒扮鍙?            var filteredChanges = this.filterChanges(change);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:587: 閿欒: 鎵句笉鍒扮鍙?        var storageFilter = this.getConfigManager().getSetting(Settings.STORAGE_FILTER);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartStorageBus.java:589: 閿欒: 鎵句笉鍒扮鍙?            var filteredList = new ArrayList<IAEItemStack>();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:55: 閿欒: 鎵句笉鍒扮鍙?        var rulesList = OreDictFilterMatcher.parseExpression(oreExp);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartOreDicStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:154: 閿欒: 鎵句笉鍒扮鍙?            var ruleList = OreDictFilterMatcher.parseExpression(oreExp);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartOreDicStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\misc\PartOreDicStorageBus.java:171: 閿欒: 鎵句笉鍒扮鍙?            var ruleList = OreDictFilterMatcher.parseExpression(oreMatch);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartOreDicStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:33: 閿欒: 鎵句笉鍒扮鍙?		var minecraft = toastGui.getMinecraft();
+		^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?CraftingStatusToast
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:34: 閿欒: 鎵句笉鍒扮鍙?		var fontRenderer = minecraft.fontRenderer;
+		^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?CraftingStatusToast
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\client\gui\toasts\CraftingStatusToast.java:42: 閿欒: 鎵句笉鍒扮鍙?		var statusText = cancelled ? GuiText.CraftingToastCancelled : GuiText.CraftingToastDone;
+		^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?CraftingStatusToast
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:210: 閿欒: 鎵句笉鍒扮鍙?                var itemStack = playerSlot.getStack();
+                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?ContainerInterfaceTerminal
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:212: 閿欒: 鎵句笉鍒扮鍙?                    var handler = new WrapperFilteredItemHandler(
+                    ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?ContainerInterfaceTerminal
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:403: 閿欒: 鎵句笉鍒扮鍙?            Slot playerSlot = this.inventorySlots.get(idx);
+            ^
+  绗﹀彿:   绫?Slot
+  浣嶇疆: 绫?ContainerInterfaceTerminal
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:406: 閿欒: 鎵句笉鍒扮鍙?                    if (slotObj instanceof SlotDisconnected && !((Slot) slotObj).getHasStack()) {
+                                                                  ^
+  绗﹀彿:   绫?Slot
+  浣嶇疆: 绫?ContainerInterfaceTerminal
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\container\implementations\ContainerInterfaceTerminal.java:409: 閿欒: 鎵句笉鍒扮鍙?                        Slot playerAppEngSlot = (AppEngSlot) playerSlot;
+                        ^
+  绗﹀彿:   绫?Slot
+  浣嶇疆: 绫?ContainerInterfaceTerminal
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\items\parts\ItemPart.java:198: 閿欒: 鎵句笉鍒扮鍙?            var enchantments = EnchantmentHelper.getEnchantments(stack);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?ItemPart
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:17: 閿欒: 鎵句笉鍒扮鍙?        var format = (DecimalFormat) DecimalFormat.getInstance();
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?Tooltips
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:18: 閿欒: 鎵句笉鍒扮鍙?        var symbols = format.getDecimalFormatSymbols();
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?Tooltips
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\core\localization\Tooltips.java:34: 閿欒: 鎵句笉鍒扮鍙?        for (var c : components) {
+             ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?Tooltips
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:226: 閿欒: 鎵句笉鍒扮鍙?            var filteredChanges = this.filterChanges(change);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartFluidStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:556: 閿欒: 鎵句笉鍒扮鍙?        var storageFilter = this.getConfigManager().getSetting(Settings.STORAGE_FILTER);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartFluidStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\PartFluidStorageBus.java:558: 閿欒: 鎵句笉鍒扮鍙?            var filteredList = new ArrayList<IAEFluidStack>();
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartFluidStorageBus
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\fluids\parts\FluidHandlerAdapter.java:197: 閿欒: 鎵句笉鍒扮鍙?                var contents = tankProperty.getContents();
+                ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?InventoryCache
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\integration\modules\waila\part\AnnihilationPlaneDataProvider.java:31: 閿欒: 鎵句笉鍒扮鍙?                for (var enchantment : enchantments.keySet()) {
+                     ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AnnihilationPlaneDataProvider
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:484: 閿欒: 鎵句笉鍒扮鍙?            var efficiencyFactor = 1f;
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartAnnihilationPlane
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:485: 閿欒: 鎵句笉鍒扮鍙?            var efficiencyLevel = 0;
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartAnnihilationPlane
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\parts\automation\PartAnnihilationPlane.java:497: 閿欒: 鎵句笉鍒扮鍙?            var levelSum = enchantments.values().stream().reduce(0, Integer::sum) - efficiencyLevel;
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?PartAnnihilationPlane
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\EnchantmentUtil.java:50: 閿欒: 鎵句笉鍒扮鍙?            var list = data.getTagList("Enchantments",10);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?EnchantmentUtil
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\EnchantmentUtil.java:51: 閿欒: 鎵句笉鍒扮鍙?            var enchants = deserializeEnchantments(list);
+            ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?EnchantmentUtil
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:45: 閿欒: 鎵句笉鍒扮鍙?        var hash = HASH_STRATEGY.hashCode(itemStack);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEItemStackRegistry
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:46: 閿欒: 鎵句笉鍒扮鍙?        var ret = REGISTRY.get(hash);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEItemStackRegistry
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:53: 閿欒: 鎵句笉鍒扮鍙?        var itemStackCopy = itemStack.copy();
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEItemStackRegistry
+E:\Git\AE绯籠Applied-Energistics-2-0.56.7\src\main\java\appeng\util\item\AEItemStackRegistry.java:55: 閿欒: 鎵句笉鍒扮鍙?        var sharedStack = new AESharedItemStack(itemStackCopy);
+        ^
+  绗﹀彿:   绫?var
+  浣嶇疆: 绫?AEItemStackRegistry
+娉? 鏌愪簺杈撳叆鏂囦欢浣跨敤鎴栬鐩栦簡宸茶繃鏃剁殑 API銆?
+娉? 鏈夊叧璇︾粏淇℃伅, 璇蜂娇鐢?-Xlint:deprecation 閲嶆柊缂栬瘧銆?
+娉? 鏌愪簺杈撳叆鏂囦欢浣跨敤浜嗘湭缁忔鏌ユ垨涓嶅畨鍏ㄧ殑鎿嶄綔銆?
+娉? 鏈夊叧璇︾粏淇℃伅, 璇蜂娇鐢?-Xlint:unchecked 閲嶆柊缂栬瘧銆?
+52 涓敊璇?
+47 涓鍛?
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:89)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.daemon.AbstractIsolatedCompilerWorkerExecutor$CompilerWorkAction.execute(AbstractIsolatedCompilerWorkerExecutor.java:79)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:68)
+	at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:54)
+	at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:48)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:102)
+	at org.gradle.workers.internal.AbstractClassLoaderWorker.executeInClassLoader(AbstractClassLoaderWorker.java:48)
+	at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:32)
+	at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:22)
+	at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:109)
+	at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:78)
+	at org.gradle.process.internal.worker.request.WorkerAction.lambda$run$1(WorkerAction.java:150)
+	at org.gradle.process.internal.worker.child.WorkerLogEventListener.withWorkerLoggingProtocol(WorkerLogEventListener.java:41)
+	at org.gradle.process.internal.worker.request.WorkerAction.lambda$run$2(WorkerAction.java:150)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:84)
+	at org.gradle.process.internal.worker.request.WorkerAction.run(WorkerAction.java:142)
+	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 8m 3s
+19 actionable tasks: 18 executed, 1 up-to-date
+Watched directory hierarchies: [E:\Git\AE绯籠Applied-Energistics-2-0.56.7]
