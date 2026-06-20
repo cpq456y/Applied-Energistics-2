@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WT",
+    "CP"
+  ],
+  "key": {
+    "W": {
+      "item": "appliedenergistics2:wireless_terminal"
+    },
+    "T": {
+      "item": "appliedenergistics2:wireless_crafting_terminal"
+    },
+    "C": {
+      "item": "appliedenergistics2:wireless_fluid_terminal"
+    },
+    "P": {
+      "item": "appliedenergistics2:wireless_pattern_terminal"
+    }
+  },
+  "result": {
+    "item": "appliedenergistics2:wireless_universal_terminal",
+    "count": 1,
+    "nbt": {
+      "has_item": true,
+      "has_crafting": true,
+      "has_fluid": true,
+      "has_pattern": true,
+      "currentTerminal": "item"
+    }
+  }
+}

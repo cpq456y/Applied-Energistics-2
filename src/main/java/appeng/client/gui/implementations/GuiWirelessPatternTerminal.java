@@ -20,16 +20,62 @@ package appeng.client.gui.implementations;
 
 
 import appeng.container.implementations.ContainerWirelessPatternTerminal;
+import appeng.ext.wut.ItemWirelessUniversalTerminal;
+import appeng.ext.wut.WUTPlugin;
+import appeng.ext.wut.client.CycleTerminalButton;
+import appeng.ext.wut.network.WUTNetworkHandler;
 import appeng.helpers.WirelessTerminalGuiObject;
 import net.minecraft.client.gui.Gui;
+import net.minecraft.client.gui.GuiButton;
 import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.item.ItemStack;
+
+import java.io.IOException;
 
 
 public class GuiWirelessPatternTerminal extends GuiPatternTerm {
 
+    private CycleTerminalButton cycleTerminalBtn;
+    private boolean isWUT = false;
+    private ItemStack wutStack;
+
     public GuiWirelessPatternTerminal(final InventoryPlayer inventoryPlayer, final WirelessTerminalGuiObject te) {
         super(inventoryPlayer, te, new ContainerWirelessPatternTerminal(inventoryPlayer, te));
         this.setReservedSpace(81);
+        
+        // 检查是否是WUT
+        ItemStack heldItem = inventoryPlayer.getCurrentItem();
+        if (heldItem.getItem() instanceof ItemWirelessUniversalTerminal) {
+            isWUT = true;
+            wutStack = heldItem;
+        }
+    }
+
+    @Override
+    public void initGui() {
+        super.initGui();
+        
+        // 如果是WUT，添加切换按钮
+        if (isWUT && wutStack != null) {
+            int btnX = this.guiLeft - 18;
+            int btnY = this.guiTop + 8 + jeiOffset + 100;
+            cycleTerminalBtn = new CycleTerminalButton(
+                1001, 
+                btnX, 
+                btnY
+            );
+            this.buttonList.add(cycleTerminalBtn);
+        }
+    }
+
+    @Override
+    protected void actionPerformed(GuiButton button) {
+        if (button == cycleTerminalBtn) {
+            // 发送切换终端的网络包
+            WUTPlugin.NET_CHANNEL.sendToServer(new WUTNetworkHandler.CycleTerminalMessage((byte) 1));
+            return;
+        }
+        super.actionPerformed(button);
     }
 
     @Override

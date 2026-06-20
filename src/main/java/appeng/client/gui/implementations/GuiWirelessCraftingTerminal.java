@@ -28,6 +28,10 @@ import appeng.container.slot.SlotCraftingMatrix;
 import appeng.core.localization.GuiText;
 import appeng.core.sync.network.NetworkHandler;
 import appeng.core.sync.packets.PacketInventoryAction;
+import appeng.ext.wut.ItemWirelessUniversalTerminal;
+import appeng.ext.wut.WUTPlugin;
+import appeng.ext.wut.client.CycleTerminalButton;
+import appeng.ext.wut.network.WUTNetworkHandler;
 import appeng.helpers.InventoryAction;
 import appeng.helpers.WirelessTerminalGuiObject;
 import net.minecraft.client.gui.Gui;
@@ -35,19 +39,38 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
+import net.minecraft.item.ItemStack;
+
+import java.io.IOException;
 
 
 public class GuiWirelessCraftingTerminal extends GuiMEMonitorable {
 
     private GuiImgButton clearBtn;
+    private CycleTerminalButton cycleTerminalBtn;
+    private boolean isWUT = false;
+    private ItemStack wutStack;
 
     public GuiWirelessCraftingTerminal(final InventoryPlayer inventoryPlayer, final WirelessTerminalGuiObject te) {
         super(inventoryPlayer, te, new ContainerWirelessCraftingTerminal(inventoryPlayer, te));
         this.setReservedSpace(73);
+        
+        // 检查是否是WUT
+        ItemStack heldItem = inventoryPlayer.getCurrentItem();
+        if (heldItem.getItem() instanceof ItemWirelessUniversalTerminal) {
+            isWUT = true;
+            wutStack = heldItem;
+        }
     }
 
     @Override
     protected void actionPerformed(final GuiButton btn) {
+        if (btn == cycleTerminalBtn) {
+            // 发送切换终端的网络包
+            WUTPlugin.NET_CHANNEL.sendToServer(new WUTNetworkHandler.CycleTerminalMessage((byte) 1));
+            return;
+        }
+        
         super.actionPerformed(btn);
 
         if (this.clearBtn == btn) {
@@ -71,6 +94,18 @@ public class GuiWirelessCraftingTerminal extends GuiMEMonitorable {
         super.initGui();
         this.buttonList.add(this.clearBtn = new GuiImgButton(this.guiLeft + 92, this.guiTop + this.ySize - 156, Settings.ACTIONS, ActionItems.STASH));
         this.clearBtn.setHalfSize(true);
+        
+        // 如果是WUT，添加切换按钮
+        if (isWUT && wutStack != null) {
+            int btnX = this.guiLeft - 18;
+            int btnY = this.guiTop + 8 + jeiOffset + 100; // 在左侧按钮区域下方
+            cycleTerminalBtn = new CycleTerminalButton(
+                1001, 
+                btnX, 
+                btnY
+            );
+            this.buttonList.add(cycleTerminalBtn);
+        }
     }
 
     @Override

@@ -630,6 +630,7 @@ item.appliedenergistics2.wireless_interface_terminal.name=Wireless Interface Ter
 item.appliedenergistics2.wireless_crafting_terminal.name=Wireless Crafting Terminal
 item.appliedenergistics2.wireless_pattern_terminal.name=Wireless Pattern Terminal
 item.appliedenergistics2.wireless_fluid_terminal.name=Wireless Fluid Terminal
+item.appliedenergistics2.wireless_universal_terminal.name=Wireless Universal Terminal
 item.appliedenergistics2.biometric_card.name=Biometric Card
 
 item.appliedenergistics2.debug_card.name=Dev.DebugCard

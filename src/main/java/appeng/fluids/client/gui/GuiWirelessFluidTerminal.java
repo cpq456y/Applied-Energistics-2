@@ -20,20 +20,65 @@ package appeng.fluids.client.gui;
 
 
 import appeng.api.implementations.guiobjects.IPortableCell;
+import appeng.ext.wut.ItemWirelessUniversalTerminal;
+import appeng.ext.wut.WUTPlugin;
+import appeng.ext.wut.client.CycleTerminalButton;
+import appeng.ext.wut.network.WUTNetworkHandler;
 import appeng.fluids.container.ContainerWirelessFluidTerminal;
 import appeng.helpers.WirelessTerminalGuiObject;
 import net.minecraft.client.gui.Gui;
+import net.minecraft.client.gui.GuiButton;
 import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.item.ItemStack;
 
 import java.awt.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class GuiWirelessFluidTerminal extends GuiMEPortableFluidCell {
 
+    private CycleTerminalButton cycleTerminalBtn;
+    private boolean isWUT = false;
+    private ItemStack wutStack;
+
     public GuiWirelessFluidTerminal(final InventoryPlayer inventoryPlayer, final WirelessTerminalGuiObject te) {
         super(inventoryPlayer, te, new ContainerWirelessFluidTerminal(inventoryPlayer, te));
+        
+        // 检查是否是WUT
+        ItemStack heldItem = inventoryPlayer.getCurrentItem();
+        if (heldItem.getItem() instanceof ItemWirelessUniversalTerminal) {
+            isWUT = true;
+            wutStack = heldItem;
+        }
+    }
+
+    @Override
+    public void initGui() {
+        super.initGui();
+        
+        // 如果是WUT，添加切换按钮（紧跟在排序按钮下方）
+        if (isWUT && wutStack != null) {
+            int btnX = this.guiLeft - 18;
+            int btnY = this.guiTop + 40; // 紧跟在排序方向按钮下方
+            cycleTerminalBtn = new CycleTerminalButton(
+                1001, 
+                btnX, 
+                btnY
+            );
+            this.buttonList.add(cycleTerminalBtn);
+        }
+    }
+
+    @Override
+    protected void actionPerformed(GuiButton button) throws IOException {
+        if (button == cycleTerminalBtn) {
+            // 发送切换终端的网络包
+            WUTPlugin.NET_CHANNEL.sendToServer(new WUTNetworkHandler.CycleTerminalMessage((byte) 1));
+            return;
+        }
+        super.actionPerformed(button);
     }
 
     @Override

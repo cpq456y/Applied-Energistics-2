@@ -594,6 +594,7 @@ item.appliedenergistics2.wireless_terminal.name=Беспроводной тер�
 item.appliedenergistics2.wireless_crafting_terminal.name=Беспроводной терминал изготовления
 item.appliedenergistics2.wireless_pattern_terminal.name=Беспроводной терминал шаблонов
 item.appliedenergistics2.wireless_fluid_terminal.name=Беспроводной жидкостный терминал
+item.appliedenergistics2.wireless_universal_terminal.name=Беспроводной Универсальный терминал
 item.appliedenergistics2.biometric_card.name=Биометрическая карта
 
 item.appliedenergistics2.debug_card.name=Отладочная карта разработчика

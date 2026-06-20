@@ -53,6 +53,8 @@ import appeng.core.stats.AdvancementTriggers;
 import appeng.core.stats.PartItemPredicate;
 import appeng.core.stats.Stats;
 import appeng.core.worlddata.SpatialDimensionManager;
+import appeng.ext.wut.recipe.RecipeCombineWUT;
+import appeng.ext.wut.recipe.RecipeUpgradeWUT;
 import appeng.fluids.registries.BasicFluidCellGuiHandler;
 import appeng.hooks.TickHandler;
 import appeng.hooks.WrenchClickHook;
@@ -131,6 +133,9 @@ final class Registration {
 
         // Register
         definitions.getRegistry().getBootstrapComponents(IPreInitComponent.class).forEachRemaining(b -> b.preInitialize(event.getSide()));
+
+        // 初始化 WUT 插件（注册网络消息 - 必须在 preInit 阶段）
+        appeng.ext.wut.WUTPlugin.init();
     }
 
     private void registerSpatialBiome(IForgeRegistry<Biome> registry) {
@@ -280,6 +285,13 @@ final class Registration {
                 registry.register(f.setRegistryName(AppEng.MOD_ID.toLowerCase(), "facade"));
             });
         }
+
+        // 注册 WUT 配方
+        RecipeCombineWUT combineWUT = new RecipeCombineWUT();
+        registry.register(combineWUT.setRegistryName(AppEng.MOD_ID.toLowerCase(), "wut_combine"));
+
+        RecipeUpgradeWUT upgradeWUT = new RecipeUpgradeWUT();
+        registry.register(upgradeWUT.setRegistryName(AppEng.MOD_ID.toLowerCase(), "wut_upgrade"));
 
         definitions.getRegistry().getBootstrapComponents(IRecipeRegistrationComponent.class).forEachRemaining(b -> b.recipeRegistration(side, registry));
 
@@ -446,6 +458,10 @@ final class Registration {
         }
         items.wirelessFluidTerminal().maybeItem().ifPresent(terminal -> registries.wireless().registerWirelessHandler((IWirelessTermHandler) terminal));
         items.wirelessInterfaceTerminal().maybeItem().ifPresent(terminal -> registries.wireless().registerWirelessHandler((IWirelessTermHandler) terminal));
+        items.wirelessUniversalTerminal().maybeItem().ifPresent(terminal -> {
+            registries.wireless().registerWirelessHandler((IWirelessTermHandler) terminal);
+            Upgrades.MAGNET.registerItem(items.wirelessUniversalTerminal(), 1);
+        });
 
         // Charge Rates
         items.chargedStaff().maybeItem().ifPresent(chargedStaff -> registries.charger().addChargeRate(chargedStaff, 320d));

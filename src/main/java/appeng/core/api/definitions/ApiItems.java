@@ -50,6 +50,7 @@ import appeng.items.storage.ItemViewCell;
 import appeng.items.tools.*;
 import appeng.items.tools.powered.*;
 import appeng.items.tools.quartz.*;
+import appeng.ext.wut.ItemWirelessUniversalTerminal;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
@@ -124,6 +125,9 @@ public final class ApiItems implements IItems {
     private final IItemDefinition toolReplicatorCard;
 
     private final IItemDefinition dummyFluidItem;
+
+    // WUT - Wireless Universal Terminal
+    private final IItemDefinition wirelessUniversalTerminal;
 
     public ApiItems(FeatureFactory registry) {
         FeatureFactory certusTools = registry.features(AEFeature.CERTUS_QUARTZ_TOOLS);
@@ -270,6 +274,11 @@ public final class ApiItems implements IItems {
         this.toolReplicatorCard = debugTools.item("debug_replicator_card", ToolReplicatorCard::new).build();
 
         this.dummyFluidItem = registry.item("dummy_fluid_item", FluidDummyItem::new).rendering(new FluidDummyItemRendering()).build();
+
+        // WUT - Wireless Universal Terminal
+        this.wirelessUniversalTerminal = powerTools.item("wireless_universal_terminal", ItemWirelessUniversalTerminal::new)
+                .addFeatures(AEFeature.WIRELESS_ACCESS_TERMINAL)
+                .build();
     }
 
     @Override
@@ -370,6 +379,11 @@ public final class ApiItems implements IItems {
     @Override
     public IItemDefinition wirelessInterfaceTerminal() {
         return wirelessInterfaceTerminal;
+    }
+
+    @Override
+    public IItemDefinition wirelessUniversalTerminal() {
+        return wirelessUniversalTerminal;
     }
 
     @Override

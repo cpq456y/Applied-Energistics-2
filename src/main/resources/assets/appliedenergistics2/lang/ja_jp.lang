@@ -604,6 +604,7 @@ item.appliedenergistics2.wireless_terminal.name=無線アクセスターミナ�
 item.appliedenergistics2.wireless_crafting_terminal.name=無線クラフティングターミナル
 item.appliedenergistics2.wireless_pattern_terminal.name=無線パターンターミナル
 item.appliedenergistics2.wireless_fluid_terminal.name=無線液体ターミナル
+item.appliedenergistics2.wireless_universal_terminal.name=無線ユニバーサルターミナル
 item.appliedenergistics2.biometric_card.name=生体認証カード
 
 item.appliedenergistics2.debug_card.name=開発用.デバッグ用カード
