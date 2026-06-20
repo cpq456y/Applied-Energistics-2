@@ -554,11 +554,30 @@ sourceSets {
         java {
             compileClasspath += patchedMc.output + mcLauncher.output
             runtimeClasspath += patchedMc.output + mcLauncher.output
+            
+            // 如果禁用 JUnit，排除测试源码
+            if (!enableJUnit.toBoolean()) {
+                srcDirs = []
+            }
         }
     }
 }
 
+// 禁用测试编译任务
+tasks.withType(Test).configureEach {
+    enabled = enableJUnit.toBoolean()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    if (it.name == 'compileTestJava') {
+        enabled = enableJUnit.toBoolean()
+    }
+}
+
 test {
+    // 如果禁用 JUnit，跳过测试任务
+    enabled = enableJUnit.toBoolean()
+    
     // ensure tests are run with java17
     javaLauncher = javaToolchains.launcherFor {
         languageVersion = JavaLanguageVersion.of(17)
