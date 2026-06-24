@@ -103,6 +103,9 @@ public class GuiWirelessInterfaceTerminal extends GuiInterfaceTerminal {
             this.buttonList.add(cycleTerminalBtn);
             // 手动渲染按钮
             cycleTerminalBtn.drawButton(mc, mouseX, mouseY, partialTicks);
+            
+            // 手动处理tooltip显示
+            drawTooltip(cycleTerminalBtn, mouseX, mouseY);
         }
     }
 
