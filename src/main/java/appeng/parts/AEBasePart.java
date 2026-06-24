@@ -41,6 +41,7 @@ import appeng.items.tools.quartz.ToolQuartzCuttingKnife;
 import appeng.me.helpers.AENetworkProxy;
 import appeng.me.helpers.IGridProxyable;
 import appeng.parts.automation.PartLevelEmitter;
+import appeng.parts.misc.PartOreDicStorageBus;
 import appeng.parts.networking.PartCable;
 import appeng.tile.inventory.AppEngInternalAEInventory;
 import appeng.util.Platform;
@@ -317,6 +318,11 @@ public abstract class AEBasePart implements IPart, IGridProxyable, IActionHost, 
             }
         }
 
+        if (this instanceof PartOreDicStorageBus) {
+            PartOreDicStorageBus oreDicStorageBus = (PartOreDicStorageBus) this;
+            oreDicStorageBus.saveOreMatch(compound.getString("oreMatch"));
+        }
+
         if (this instanceof IPriorityHost) {
             final IPriorityHost pHost = (IPriorityHost) this;
             pHost.setPriority(compound.getInteger("priority"));
@@ -376,6 +382,11 @@ public abstract class AEBasePart implements IPart, IGridProxyable, IActionHost, 
         final IConfigManager cm = this.getConfigManager();
         if (cm != null) {
             cm.writeToNBT(output);
+        }
+
+        if (this instanceof PartOreDicStorageBus) {
+            PartOreDicStorageBus oreDicStorageBus = (PartOreDicStorageBus) this;
+            output.setString("oreMatch", oreDicStorageBus.getOreExp());
         }
 
         if (this instanceof IPriorityHost) {
