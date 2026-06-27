@@ -25,11 +25,17 @@ import java.util.Collections;
 public class GuiFluidSlot extends GuiCustomSlot implements IJEITargetSlot {
     private final IAEFluidTank fluids;
     private final int slot;
+    private final boolean isConfigSlot;
 
     public GuiFluidSlot(final IAEFluidTank fluids, final int slot, final int id, final int x, final int y) {
+        this(fluids, slot, id, x, y, id >= 1000 && id < 2000);
+    }
+
+    public GuiFluidSlot(final IAEFluidTank fluids, final int slot, final int id, final int x, final int y, final boolean isConfigSlot) {
         super(id, x, y);
         this.fluids = fluids;
         this.slot = slot;
+        this.isConfigSlot = isConfigSlot;
     }
 
     @Override
@@ -50,17 +56,48 @@ public class GuiFluidSlot extends GuiCustomSlot implements IJEITargetSlot {
             GlStateManager.color(red, green, blue);
 
             this.drawTexturedModalRect(this.xPos(), this.yPos(), sprite, this.getWidth(), this.getHeight());
+            
+            // Draw fluid amount text
+            GlStateManager.disableLighting();
+            GlStateManager.disableBlend();
+            final long amountInB = fs.getStackSize() / Fluid.BUCKET_VOLUME;
+            final String text = amountInB + "B";
+            final float scaleFactor = 0.5f;
+            final float inverseScaleFactor = 1.0f / scaleFactor;
+            final int offset = -1;
+            
+            // Disable unicode rendering to match item stack size rendering
+            final boolean unicodeFlag = mc.fontRenderer.getUnicodeFlag();
+            mc.fontRenderer.setUnicodeFlag(false);
+            
+            GlStateManager.pushMatrix();
+            GlStateManager.scale(scaleFactor, scaleFactor, scaleFactor);
+            final int X = (int) (((float) this.xPos() + offset + 16.0f - mc.fontRenderer.getStringWidth(text) * scaleFactor) * inverseScaleFactor);
+            final int Y = (int) (((float) this.yPos() + offset + 16.0f - 7.0f * scaleFactor) * inverseScaleFactor);
+            mc.fontRenderer.drawStringWithShadow(text, X, Y, 16777215);
+            GlStateManager.popMatrix();
+            
+            // Restore unicode flag
+            mc.fontRenderer.setUnicodeFlag(unicodeFlag);
         }
     }
 
     @Override
     public boolean canClick(final EntityPlayer player) {
+        // Storage slots (non-config) are read-only
+        if (!this.isConfigSlot) {
+            return false;
+        }
         final ItemStack mouseStack = player.inventory.getItemStack();
         return mouseStack.isEmpty() || mouseStack.hasCapability(CapabilityFluidHandler.FLUID_HANDLER_ITEM_CAPABILITY, null);
     }
 
     @Override
     public void slotClicked(final ItemStack clickStack, int mouseButton) {
+        // Storage slots (non-config) are read-only
+        if (!this.isConfigSlot) {
+            return;
+        }
         if (clickStack.isEmpty() || mouseButton == 1) {
             this.setFluidStack(null);
         } else if (mouseButton == 0) {
@@ -102,6 +139,10 @@ public class GuiFluidSlot extends GuiCustomSlot implements IJEITargetSlot {
     @Override
     public Object getIngredient() {
         return this.getFluidStack() == null ? null : this.getFluidStack().getFluidStack();
+    }
+
+    public boolean isSlotEnabled() {
+        return true;
     }
 
 }

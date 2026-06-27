@@ -19,11 +19,11 @@
 package appeng.core.sync.packets;
 
 
-import appeng.api.storage.data.IAEFluidStack;
+import appeng.api.storage.data.IAEItemStack;
 import appeng.core.sync.AppEngPacket;
 import appeng.core.sync.network.INetworkInfo;
-import appeng.fluids.container.IFluidSyncContainer;
-import appeng.fluids.util.AEFluidStack;
+import appeng.container.IItemSyncContainer;
+import appeng.util.item.AEItemStack;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import net.minecraft.entity.player.EntityPlayer;
@@ -35,17 +35,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class PacketFluidSlot extends AppEngPacket {
-    private final Map<Integer, IAEFluidStack> list;
+public class PacketItemConfigSlot extends AppEngPacket {
+    private final Map<Integer, IAEItemStack> list;
 
-    public PacketFluidSlot(final ByteBuf stream) {
+    public PacketItemConfigSlot(final ByteBuf stream) {
         this.list = new HashMap<>();
         NBTTagCompound tag = ByteBufUtils.readTag(stream);
 
         for (final String key : tag.getKeySet()) {
-            NBTTagCompound fluidTag = tag.getCompoundTag(key);
-            if (!fluidTag.isEmpty()) {
-                this.list.put(Integer.parseInt(key), AEFluidStack.fromNBT(fluidTag));
+            NBTTagCompound itemTag = tag.getCompoundTag(key);
+            if (!itemTag.isEmpty()) {
+                this.list.put(Integer.parseInt(key), AEItemStack.fromNBT(itemTag));
             } else {
                 this.list.put(Integer.parseInt(key), null);
             }
@@ -53,15 +53,15 @@ public class PacketFluidSlot extends AppEngPacket {
     }
 
     // api
-    public PacketFluidSlot(final Map<Integer, IAEFluidStack> list) {
+    public PacketItemConfigSlot(final Map<Integer, IAEItemStack> list) {
         this.list = list;
         final NBTTagCompound sendTag = new NBTTagCompound();
-        for (Map.Entry<Integer, IAEFluidStack> fs : list.entrySet()) {
+        for (Map.Entry<Integer, IAEItemStack> is : list.entrySet()) {
             final NBTTagCompound tag = new NBTTagCompound();
-            if (fs.getValue() != null) {
-                fs.getValue().writeToNBT(tag);
+            if (is.getValue() != null) {
+                is.getValue().writeToNBT(tag);
             }
-            sendTag.setTag(fs.getKey().toString(), tag);
+            sendTag.setTag(is.getKey().toString(), tag);
         }
 
         final ByteBuf data = Unpooled.buffer();
@@ -73,16 +73,16 @@ public class PacketFluidSlot extends AppEngPacket {
     @Override
     public void clientPacketData(final INetworkInfo manager, final AppEngPacket packet, final EntityPlayer player) {
         final Container c = player.openContainer;
-        if (c instanceof IFluidSyncContainer) {
-            ((IFluidSyncContainer) c).receiveFluidSlots(this.list);
+        if (c instanceof IItemSyncContainer) {
+            ((IItemSyncContainer) c).receiveItemSlots(this.list);
         }
     }
 
     @Override
     public void serverPacketData(INetworkInfo manager, AppEngPacket packet, EntityPlayer player) {
         final Container c = player.openContainer;
-        if (c instanceof IFluidSyncContainer) {
-            ((IFluidSyncContainer) c).receiveFluidSlots(this.list);
+        if (c instanceof IItemSyncContainer) {
+            ((IItemSyncContainer) c).receiveItemSlots(this.list);
         }
     }
 }

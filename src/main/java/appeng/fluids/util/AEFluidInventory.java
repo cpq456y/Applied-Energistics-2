@@ -94,8 +94,12 @@ public class AEFluidInventory implements IAEFluidTank {
 
         final IAEFluidStack fluid = this.fluids[slot];
 
-        if (fluid != null && !fluid.equals(resource)) {
-            return 0;
+        // Fix: Compare fluid types properly - IAEFluidStack vs FluidStack
+        if (fluid != null) {
+            final FluidStack storedFluid = fluid.getFluidStack();
+            if (storedFluid == null || storedFluid.getFluid() != resource.getFluid()) {
+                return 0;
+            }
         }
 
         int amountToStore = this.capacity;
@@ -120,7 +124,12 @@ public class AEFluidInventory implements IAEFluidTank {
 
     public FluidStack drain(final int slot, final FluidStack resource, final boolean doDrain) {
         final IAEFluidStack fluid = this.fluids[slot];
-        if (resource == null || fluid == null || !fluid.equals(resource)) {
+        if (resource == null || fluid == null) {
+            return null;
+        }
+        // Fix: Compare fluid types properly - IAEFluidStack vs FluidStack
+        final FluidStack storedFluid = fluid.getFluidStack();
+        if (storedFluid == null || storedFluid.getFluid() != resource.getFluid()) {
             return null;
         }
         return this.drain(slot, resource.amount, doDrain);
