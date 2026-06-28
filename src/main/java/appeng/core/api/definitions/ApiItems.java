@@ -190,6 +190,10 @@ public final class ApiItems implements IItems {
         this.wirelessPatternTerminal = powerTools.item("wireless_pattern_terminal", ToolWirelessPatternTerminal::new).addFeatures(AEFeature.WIRELESS_PATTERN_TERMINAL).build();
         this.wirelessFluidTerminal = powerTools.item("wireless_fluid_terminal", ToolWirelessFluidTerminal::new).addFeatures(AEFeature.WIRELESS_FLUID_TERMINAL).build();
         this.wirelessInterfaceTerminal = powerTools.item("wireless_interface_terminal",ToolWirelessInterfaceTerminal::new).addFeatures(AEFeature.WIRELESS_INTERFACE_TERMINAL).build();
+        // WUT - Wireless Universal Terminal (在无线接口终端之后注册)
+        this.wirelessUniversalTerminal = powerTools.item("wireless_universal_terminal", ItemWirelessUniversalTerminal::new)
+                .addFeatures(AEFeature.WIRELESS_ACCESS_TERMINAL)
+                .build();
 
         this.chargedStaff = powerTools.item("charged_staff", ToolChargedStaff::new).addFeatures(AEFeature.CHARGED_STAFF).build();
         this.massCannon = powerTools.item("matter_cannon", ToolMatterCannon::new)
@@ -274,11 +278,6 @@ public final class ApiItems implements IItems {
         this.toolReplicatorCard = debugTools.item("debug_replicator_card", ToolReplicatorCard::new).build();
 
         this.dummyFluidItem = registry.item("dummy_fluid_item", FluidDummyItem::new).rendering(new FluidDummyItemRendering()).build();
-
-        // WUT - Wireless Universal Terminal
-        this.wirelessUniversalTerminal = powerTools.item("wireless_universal_terminal", ItemWirelessUniversalTerminal::new)
-                .addFeatures(AEFeature.WIRELESS_ACCESS_TERMINAL)
-                .build();
     }
 
     @Override
