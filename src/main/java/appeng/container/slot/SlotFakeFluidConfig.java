@@ -27,9 +27,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;
 
 
-/**
- * 配置槽位，支持左键标记物品、右键标记流体
- */
 public class SlotFakeFluidConfig extends SlotFake {
 
     private final IAEFluidTank fluidConfig;
@@ -42,13 +39,8 @@ public class SlotFakeFluidConfig extends SlotFake {
         this.slotIndex = slotIndex;
     }
 
-    /**
-     * 处理右键点击，提取流体容器的流体并设置到流体配置槽
-     * 始终返回true以阻止物品标记
-     */
     public boolean handleRightClick(EntityPlayer player) {
         boolean result = FluidSlotMarker.handleRightClick(player, this.fluidConfig, this.slotIndex);
-        // 清除物品配置，确保流体处理生效
         this.putStack(ItemStack.EMPTY);
         return result;
     }

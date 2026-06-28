@@ -12,8 +12,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
- * 终端切换按钮
- * 用于在无线通用终端GUI中切换不同的终端模式
+ * Terminal switch button for cycling between terminal modes in WUT GUI
  */
 @SideOnly(Side.CLIENT)
 public class CycleTerminalButton extends GuiButton implements ITooltip {
@@ -22,9 +21,6 @@ public class CycleTerminalButton extends GuiButton implements ITooltip {
         super(buttonId, x, y, 16, 16, "");
     }
 
-    /**
-     * 每次从玩家手持物品获取最新的WUT和ItemStack，避免引用过期
-     */
     private ItemStack getWutStack() {
         EntityPlayer player = Minecraft.getMinecraft().player;
         if (player == null) return ItemStack.EMPTY;
@@ -57,7 +53,6 @@ public class CycleTerminalButton extends GuiButton implements ITooltip {
             GlStateManager.color(0.5F, 0.5F, 0.5F, 1.0F);
         }
 
-        // 直接绘制当前终端的图标，不绘制多余背景
         ItemWirelessUniversalTerminal wut = getWut();
         ItemStack wutStack = getWutStack();
         if (wut != null && !wutStack.isEmpty()) {

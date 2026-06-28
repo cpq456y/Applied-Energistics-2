@@ -140,7 +140,6 @@ public class ContainerInterface extends ContainerUpgradeable implements IOptiona
                 int key = entry.getKey();
                 IAEFluidStack fluid = entry.getValue();
                 if (key >= 0 && key < DualityInterface.NUMBER_OF_CONFIG_SLOTS) {
-                    // Check if the fluid actually changed
                     final IAEFluidStack currentFluid = this.myDuality.getFluidConfig().getFluidInSlot(key);
                     final boolean fluidChanged = (currentFluid == null && fluid != null) ||
                                                  (currentFluid != null && !currentFluid.equals(fluid)) ||
@@ -152,31 +151,24 @@ public class ContainerInterface extends ContainerUpgradeable implements IOptiona
                         configChanged = true;
                     }
                     
-                    // Only clear item config if setting a new fluid (not when clearing fluid)
                     if (fluid != null && !this.myDuality.getConfig().getStackInSlot(key).isEmpty()) {
                         ((appeng.tile.inventory.AppEngInternalAEInventory) this.myDuality.getConfig()).setStackInSlot(key, net.minecraft.item.ItemStack.EMPTY);
                         configChanged = true;
                     }
                 }
             }
-            // IMPORTANT: Call readFluidConfig() FIRST to update hasFluidConfig flag
-            // Then call readConfig() so updatePlan() sees the correct hasFluidConfig value
             if (configChanged) {
                 this.myDuality.readFluidConfig();
                 this.myDuality.readConfig();
-                // Save changes to ensure persistence
                 this.myDuality.saveChanges();
             }
         } else {
-            // Client side: update both config and storage
             for (Map.Entry<Integer, IAEFluidStack> entry : fluids.entrySet()) {
                 int key = entry.getKey();
                 if (key >= 0 && key < DualityInterface.NUMBER_OF_CONFIG_SLOTS) {
-                    // Config slot
                     this.myDuality.getFluidConfig().setFluidInSlot(key, entry.getValue());
                 } else if (key >= DualityInterface.NUMBER_OF_STORAGE_SLOTS && 
                            key < DualityInterface.NUMBER_OF_STORAGE_SLOTS + DualityInterface.NUMBER_OF_STORAGE_SLOTS) {
-                    // Storage slot (key = slotIndex + NUMBER_OF_STORAGE_SLOTS)
                     int slotIndex = key - DualityInterface.NUMBER_OF_STORAGE_SLOTS;
                     this.myDuality.getFluidStorage().setFluidInSlot(slotIndex, entry.getValue());
                 }

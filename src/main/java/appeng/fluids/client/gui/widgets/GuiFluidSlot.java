@@ -48,8 +48,6 @@ public class GuiFluidSlot extends GuiCustomSlot implements IJEITargetSlot {
             mc.getTextureManager().bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
             final TextureAtlasSprite sprite = mc.getTextureMapBlocks().getAtlasSprite(fluid.getStill().toString());
 
-            // Set color for dynamic fluids
-            // Convert int color to RGB
             final float red = (fluid.getColor() >> 16 & 255) / 255.0F;
             final float green = (fluid.getColor() >> 8 & 255) / 255.0F;
             final float blue = (fluid.getColor() & 255) / 255.0F;
@@ -57,18 +55,16 @@ public class GuiFluidSlot extends GuiCustomSlot implements IJEITargetSlot {
 
             this.drawTexturedModalRect(this.xPos(), this.yPos(), sprite, this.getWidth(), this.getHeight());
             
-            // Draw fluid amount text
-            GlStateManager.disableLighting();
-            GlStateManager.disableBlend();
             final long amountInB = fs.getStackSize() / Fluid.BUCKET_VOLUME;
             final String text = amountInB + "B";
             final float scaleFactor = 0.5f;
             final float inverseScaleFactor = 1.0f / scaleFactor;
             final int offset = -1;
             
-            // Disable unicode rendering to match item stack size rendering
             final boolean unicodeFlag = mc.fontRenderer.getUnicodeFlag();
             mc.fontRenderer.setUnicodeFlag(false);
+            
+            GlStateManager.disableDepth();
             
             GlStateManager.pushMatrix();
             GlStateManager.scale(scaleFactor, scaleFactor, scaleFactor);
@@ -77,7 +73,8 @@ public class GuiFluidSlot extends GuiCustomSlot implements IJEITargetSlot {
             mc.fontRenderer.drawStringWithShadow(text, X, Y, 16777215);
             GlStateManager.popMatrix();
             
-            // Restore unicode flag
+            GlStateManager.enableDepth();
+            
             mc.fontRenderer.setUnicodeFlag(unicodeFlag);
         }
     }

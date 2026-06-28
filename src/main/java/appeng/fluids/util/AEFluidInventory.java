@@ -94,7 +94,6 @@ public class AEFluidInventory implements IAEFluidTank {
 
         final IAEFluidStack fluid = this.fluids[slot];
 
-        // Fix: Compare fluid types properly - IAEFluidStack vs FluidStack
         if (fluid != null) {
             final FluidStack storedFluid = fluid.getFluidStack();
             if (storedFluid == null || storedFluid.getFluid() != resource.getFluid()) {
@@ -127,7 +126,6 @@ public class AEFluidInventory implements IAEFluidTank {
         if (resource == null || fluid == null) {
             return null;
         }
-        // Fix: Compare fluid types properly - IAEFluidStack vs FluidStack
         final FluidStack storedFluid = fluid.getFluidStack();
         if (storedFluid == null || storedFluid.getFluid() != resource.getFluid()) {
             return null;
