@@ -6,7 +6,6 @@ import appeng.api.features.IWirelessTermRegistry;
 import appeng.core.localization.PlayerMessages;
 import appeng.core.sync.GuiBridge;
 import appeng.ext.wut.ItemWirelessUniversalTerminal;
-import appeng.helpers.WirelessTerminalGuiObject;
 import appeng.util.Platform;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayer;

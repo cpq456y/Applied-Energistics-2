@@ -22,7 +22,6 @@ public class GuiWirelessInterfaceTerminal extends GuiInterfaceTerminal {
     public GuiWirelessInterfaceTerminal(InventoryPlayer inventoryPlayer, final WirelessTerminalGuiObject te) {
         super(inventoryPlayer, te);
         
-        // 检查是否是WUT
         ItemStack heldItem = inventoryPlayer.getCurrentItem();
         if (heldItem.getItem() instanceof ItemWirelessUniversalTerminal) {
             isWUT = true;
@@ -34,12 +33,8 @@ public class GuiWirelessInterfaceTerminal extends GuiInterfaceTerminal {
     public void initGui() {
         super.initGui();
         
-        // 如果是WUT，添加切换按钮（紧跟在接口终端的按钮下方）
         if (isWUT && wutStack != null) {
             int btnX = this.guiLeft - 18;
-            // 接口终端有4个按钮，每个间隔20像素：
-            // terminalStyleBox(8 + jeiButtonPadding), guiButtonBrokenRecipes(+20), guiButtonHideFull(+20), guiButtonAssemblersOnly(+20)
-            // 切换按钮放在第五个位置，需要加上JEI偏移
             int jeiPadding = getJEIPadding();
             int btnY = this.guiTop + 88 + jeiPadding;
             cycleTerminalBtn = new CycleTerminalButton(
