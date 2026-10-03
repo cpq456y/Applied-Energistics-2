@@ -28,7 +28,7 @@ public class GuiFluidSlot extends GuiCustomSlot implements IJEITargetSlot {
     private final boolean isConfigSlot;
 
     public GuiFluidSlot(final IAEFluidTank fluids, final int slot, final int id, final int x, final int y) {
-        this(fluids, slot, id, x, y, id >= 1000 && id < 2000);
+        this(fluids, slot, id, x, y, true);
     }
 
     public GuiFluidSlot(final IAEFluidTank fluids, final int slot, final int id, final int x, final int y, final boolean isConfigSlot) {

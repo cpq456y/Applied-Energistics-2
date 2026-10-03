@@ -77,8 +77,8 @@ public class GuiInterface extends GuiUpgradeable {
             final boolean hasFluidConfig = duality.getFluidConfig().getFluidInSlot(i) != null;
 
             if (hasFluidConfig) {
-                this.guiSlots.add(new GuiFluidSlot(duality.getFluidConfig(), i, 1000 + i, 8 + 18 * i, 35));
-                this.guiSlots.add(new GuiFluidSlot(duality.getFluidStorage(), i, 2000 + i, 8 + 18 * i, 53));
+                this.guiSlots.add(new GuiFluidSlot(duality.getFluidConfig(), i, 1000 + i, 8 + 18 * i, 35, true));
+                this.guiSlots.add(new GuiFluidSlot(duality.getFluidStorage(), i, 2000 + i, 8 + 18 * i, 53, false));
             }
         }
     }
