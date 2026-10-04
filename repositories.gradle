@@ -1,0 +1,21 @@
+// Extra repositories for the dependencies added by the merged AE-Additions code
+// (appeng.ext.aeadditions). build.gradle applies this file automatically when it exists:
+//   if (getFile('repositories.gradle').exists()) { apply from: 'repositories.gradle' }
+//
+// NOTE: do NOT declare repositories in settings.gradle - Settings has no repositories() method and the
+// build fails with "Could not find method repositories()". Also avoid repositories whose host cannot be
+// resolved (e.g. maven.hypherionmc.me): a single unreachable host aborts the whole dependency resolution.
+repositories {
+    maven {
+        name 'CoFH Maven'
+        url 'https://maven.covers1624.net/'
+    }
+    maven {
+        name 'OpenComputers Maven'
+        url 'https://maven.cil.li/'
+    }
+    maven {
+        name 'BuildCraft Maven'
+        url 'https://mod-buildcraft.com/maven/'
+    }
+}
