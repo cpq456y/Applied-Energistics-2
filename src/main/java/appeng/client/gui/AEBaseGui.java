@@ -1027,7 +1027,8 @@ public abstract class AEBaseGui extends GuiContainer implements IMTModGuiContain
     }
 
     // TODO: remove this when refactoring slot rendering
-    private void updateDragSplitting()
+    // NOTE: public because the mapped GuiContainer declares this method public; a weaker modifier is rejected.
+    public void updateDragSplitting()
     {
         ItemStack itemstack = this.mc.player.inventory.getItemStack();
 

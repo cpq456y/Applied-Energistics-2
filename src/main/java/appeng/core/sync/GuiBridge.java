@@ -100,6 +100,10 @@ public enum GuiBridge implements IGuiHandler {
     GUI_ME(ContainerMEMonitorable.class, ITerminalHost.class, GuiHostType.WORLD, null),
 
     GUI_PORTABLE_CELL(ContainerMEPortableCell.class, IPortableCell.class, GuiHostType.ITEM, null),
+    GUI_PORTABLE_FLUID_CELL(appeng.ext.aeadditions.container.fluid.ContainerPortableFluidCell.class,
+            appeng.api.implementations.guiobjects.IGuiItemObject.class, GuiHostType.ITEM, null),
+    GUI_PORTABLE_GAS_CELL(appeng.ext.aeadditions.container.gas.ContainerPortableGasCell.class,
+            appeng.api.implementations.guiobjects.IGuiItemObject.class, GuiHostType.ITEM, null),
 
     GUI_WIRELESS_TERM(ContainerWirelessTerm.class, WirelessTerminalGuiObject.class, GuiHostType.ITEM, null),
     GUI_WIRELESS_CRAFTING_TERMINAL(ContainerWirelessCraftingTerminal.class, WirelessTerminalGuiObject.class, GuiHostType.ITEM, null),
@@ -240,6 +244,14 @@ public enum GuiBridge implements IGuiHandler {
 
     @Override
     public Object getServerGuiElement(final int ordinal, final EntityPlayer player, final World w, final int x, final int y, final int z) {
+        // AE2 encodes its own ids as (GuiBridge.ordinal() << 4) | side, so ordinals 0..15 always resolve to
+        // values()[0] (NULL, whose type is null) and are never produced by AE2 itself. The AE-Additions
+        // extension layer uses that gap for its own GUIs: this handler is registered during postInit, i.e.
+        // after the extension's one, and would otherwise swallow (and NPE on) every extension-GUI request.
+        if (ordinal < 16) {
+            return appeng.ext.aeadditions.network.GuiHandler.INSTANCE.getServerGuiElement(ordinal, player, w, x, y,
+                    z);
+        }
         final AEPartLocation side = AEPartLocation.fromOrdinal(ordinal & 0x07);
         final GuiBridge ID = values()[ordinal >> 4];
         final boolean usingItemOnTile = ((ordinal >> 3) & 1) == 1;
@@ -355,6 +367,11 @@ public enum GuiBridge implements IGuiHandler {
 
     @Override
     public Object getClientGuiElement(final int ordinal, final EntityPlayer player, final World w, final int x, final int y, final int z) {
+        // See getServerGuiElement: ordinals below 16 belong to the AE-Additions extension layer.
+        if (ordinal < 16) {
+            return appeng.ext.aeadditions.network.GuiHandler.INSTANCE.getClientGuiElement(ordinal, player, w, x, y,
+                    z);
+        }
         final AEPartLocation side = AEPartLocation.fromOrdinal(ordinal & 0x07);
         final GuiBridge ID = values()[ordinal >> 4];
         final boolean usingItemOnTile = ((ordinal >> 3) & 1) == 1;

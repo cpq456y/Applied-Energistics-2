@@ -23,7 +23,10 @@ import appeng.api.AEApi;
 import appeng.api.definitions.*;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 import java.util.Optional;
 
@@ -37,6 +40,19 @@ public final class CreativeTab extends CreativeTabs {
 
     static void init() {
         instance = new CreativeTab();
+    }
+
+    /**
+     * Vanilla iterates {@code Item.REGISTRY}, which is backed by a plain {@link java.util.HashMap}, so the tab
+     * would list the entries in hash order - effectively scrambled. Forge's registry iterator walks the
+     * numerical ids instead, i.e. the registration order, which is also the order JEI uses. Keeping both in the
+     * same order makes the storage components/cells read as item -> fluid -> gas and 1k -> 4k -> ... -> 16384k.
+     */
+    @Override
+    public void displayAllRelevantItems(final NonNullList<ItemStack> items) {
+        for (final Item item : ForgeRegistries.ITEMS) {
+            item.getSubItems(this, items);
+        }
     }
 
     @Override

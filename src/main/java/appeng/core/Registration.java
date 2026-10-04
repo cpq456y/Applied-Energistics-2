@@ -136,6 +136,9 @@ final class Registration {
 
         // 初始化 WUT 插件（注册网络消息 - 必须在 preInit 阶段）
         appeng.ext.wut.WUTPlugin.init();
+
+        // 初始化合并进来的 AE-Additions 扩展层
+        appeng.ext.aeadditions.AEAdditionsIntegration.preInit(event);
     }
 
     private void registerSpatialBiome(IForgeRegistry<Biome> registry) {
@@ -196,6 +199,9 @@ final class Registration {
         definitions.getRegistry().getBootstrapComponents(IInitComponent.class).forEachRemaining(b -> b.initialize(event.getSide()));
 
         MinecraftForge.EVENT_BUS.register(TickHandler.INSTANCE);
+
+        // 初始化合并进来的 AE-Additions 扩展层
+        appeng.ext.aeadditions.AEAdditionsIntegration.init();
 
         MinecraftForge.EVENT_BUS.register(new WrenchClickHook());
 
@@ -320,6 +326,9 @@ final class Registration {
         final IParts parts = definitions.parts();
         final IBlocks blocks = definitions.blocks();
         final IItems items = definitions.items();
+
+        // 收尾合并进来的 AE-Additions 扩展层
+        appeng.ext.aeadditions.AEAdditionsIntegration.postInit();
 
         this.registerSpatialDimension();
 
