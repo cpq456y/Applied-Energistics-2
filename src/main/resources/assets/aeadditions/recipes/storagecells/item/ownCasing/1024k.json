@@ -1,0 +1,26 @@
+{
+    "result": {
+        "item": "appliedenergistics2:storage_cell_1024k"
+    },
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "dad",
+        "asa",
+        "bbb"
+    ],
+    "key": {
+        "a": {
+			"item": "#aeadditions:dustFluix"
+        },
+		"b": {
+			"type": "forge:ore_dict",
+            "ore": "gemDiamond"
+		},
+		"d": {
+			"item": "#aeadditions:glassQuartz"
+		},
+		"s": {
+			"item": "appliedenergistics2:material", "data": 63
+		}
+    }
+}

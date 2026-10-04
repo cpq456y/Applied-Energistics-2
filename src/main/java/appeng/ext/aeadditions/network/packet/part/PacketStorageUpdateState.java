@@ -1,0 +1,47 @@
+package appeng.ext.aeadditions.network.packet.part;
+
+import java.io.IOException;
+
+import net.minecraft.entity.player.EntityPlayer;
+
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+import appeng.ext.aeadditions.container.ContainerStorage;
+import appeng.ext.aeadditions.network.packet.IPacketHandlerClient;
+import appeng.ext.aeadditions.network.packet.Packet;
+import appeng.ext.aeadditions.network.packet.PacketBufferEC;
+import appeng.ext.aeadditions.network.packet.PacketId;
+import appeng.ext.aeadditions.util.GuiUtil;
+
+public class PacketStorageUpdateState extends Packet {
+	boolean hasTermHandler;
+
+	public PacketStorageUpdateState(boolean hasTermHandler) {
+		this.hasTermHandler = hasTermHandler;
+	}
+
+	@Override
+	public void writeData(PacketBufferEC data) throws IOException {
+		data.writeBoolean(hasTermHandler);
+	}
+
+	@Override
+	public PacketId getPacketId() {
+		return PacketId.STORAGE_UPDATE_STATE;
+	}
+
+	@SideOnly(Side.CLIENT)
+	public static class Handler implements IPacketHandlerClient {
+		@Override
+		public void onPacketData(PacketBufferEC data, EntityPlayer player) throws IOException {
+			boolean hasTermHandler = data.readBoolean();
+			ContainerStorage containerStorage = GuiUtil.getContainer(player, ContainerStorage.class);
+			if (containerStorage == null) {
+				return;
+			}
+
+			containerStorage.hasWirelessTermHandler = hasTermHandler;
+		}
+	}
+}

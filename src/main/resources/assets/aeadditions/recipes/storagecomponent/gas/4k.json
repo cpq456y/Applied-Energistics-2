@@ -1,0 +1,31 @@
+{
+    "conditions": [
+        {
+            "type": "aeadditions:mod_integration",
+            "mod": "mekanismgas"
+        }
+    ],
+    "result": {
+        "item": "appliedenergistics2:material", "data": 70
+    },
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "aba",
+        "cdc",
+        "aca"
+    ],
+    "key": {
+        "a": {
+			"item": "#aeadditions:flower"
+        },
+		"b": {
+			"item": "#aeadditions:calcProcessor"
+		},
+		"c": {
+			"item": "appliedenergistics2:material", "data": 69
+		},
+		"d": {
+			"item": "#aeadditions:glassQuartz"
+		}
+    }
+}

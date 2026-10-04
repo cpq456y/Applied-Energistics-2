@@ -1,0 +1,122 @@
+//**********//
+//AE Additions//
+//**********//
+
+//Items
+appeng.ext.aeadditions.item.storage.physical.256k.name=Célula de Armazenamento ME 256k
+appeng.ext.aeadditions.item.storage.physical.1024k.name=Célula de Armazenamento ME 1024k
+appeng.ext.aeadditions.item.storage.physical.4096k.name=Célula de Armazenamento ME 4096k
+appeng.ext.aeadditions.item.storage.physical.16384k.name=Célula de Armazenamento ME 16384k
+appeng.ext.aeadditions.item.storage.physical.container.name=Contêiner de Blocos ME
+appeng.ext.aeadditions.item.storage.fluid.1k.name=Célula de Armazenamento de Fluidos ME 1k
+appeng.ext.aeadditions.item.storage.fluid.4k.name=Célula de Armazenamento de Fluidos ME 4k
+appeng.ext.aeadditions.item.storage.fluid.16k.name=Célula de Armazenamento de Fluidos ME 16k
+appeng.ext.aeadditions.item.storage.fluid.64k.name=Célula de Armazenamento de Fluidos ME 64k
+appeng.ext.aeadditions.item.storage.fluid.256k.name=Célula de Armazenamento de Fluidos ME 256k
+appeng.ext.aeadditions.item.storage.fluid.1024k.name=Célula de Armazenamento de Fluidos ME 1024k
+appeng.ext.aeadditions.item.storage.fluid.4096k.name=Célula de Armazenamento de Fluidos ME 4096k
+appeng.ext.aeadditions.item.storage.gas.1k.name=Célula de Armazenamento de Gás ME 1k
+appeng.ext.aeadditions.item.storage.gas.4k.name=Célula de Armazenamento de Gás ME 4k
+appeng.ext.aeadditions.item.storage.gas.16k.name=Célula de Armazenamento de Gás ME 16k
+appeng.ext.aeadditions.item.storage.gas.64k.name=Célula de Armazenamento de Gás ME 64k
+appeng.ext.aeadditions.item.storage.gas.256k.name=Célula de Armazenamento de Gás ME 256k
+appeng.ext.aeadditions.item.storage.gas.1024k.name=Célula de Armazenamento de Gás ME 1024k
+appeng.ext.aeadditions.item.storage.gas.4096k.name=Célula de Armazenamento de Gás ME 4096k
+appeng.ext.aeadditions.item.storage.gas.portable.name=Armazenamento Portátil de Gás ME
+appeng.ext.aeadditions.item.storage.component.physical.256k.name=Componente de Armazenamento ME 256k
+appeng.ext.aeadditions.item.storage.component.physical.1024k.name=Componente de Armazenamento ME 1024k
+appeng.ext.aeadditions.item.storage.component.physical.4096k.name=Componente de Armazenamento ME 4096k
+appeng.ext.aeadditions.item.storage.component.physical.16384k.name=Componente de Armazenamento ME 16384k
+appeng.ext.aeadditions.item.storage.component.fluid.1k.name=Componente de Armazenamento de Fluidos ME 1k
+appeng.ext.aeadditions.item.storage.component.fluid.4k.name=Componente de Armazenamento de Fluidos ME 4k
+appeng.ext.aeadditions.item.storage.component.fluid.16k.name=Componente de Armazenamento de Fluidos ME 16k
+appeng.ext.aeadditions.item.storage.component.fluid.64k.name=Componente de Armazenamento de Fluidos ME 64k
+appeng.ext.aeadditions.item.storage.component.fluid.256k.name=Componente de Armazenamento de Fluidos ME 256k
+appeng.ext.aeadditions.item.storage.component.fluid.1024k.name=Componente de Armazenamento de Fluidos ME 1024k
+appeng.ext.aeadditions.item.storage.component.fluid.4096k.name=Componente de Armazenamento de Fluidos ME 4096k
+appeng.ext.aeadditions.item.storage.component.gas.1k.name=Componente de Armazenamento de Gases ME 1k
+appeng.ext.aeadditions.item.storage.component.gas.4k.name=Componente de Armazenamento de Gases ME 4k
+appeng.ext.aeadditions.item.storage.component.gas.16k.name=Componente de Armazenamento de Gases ME 16k
+appeng.ext.aeadditions.item.storage.component.gas.64k.name=Componente de Armazenamento de Gases ME 64k
+appeng.ext.aeadditions.item.storage.component.gas.256k.name=Componente de Armazenamento de Gases ME 256k
+appeng.ext.aeadditions.item.storage.component.gas.1024k.name=Componente de Armazenamento de Gases ME 1024k
+appeng.ext.aeadditions.item.storage.component.gas.4096k.name=Componente de Armazenamento de Gases ME 4096k
+appeng.ext.aeadditions.item.storage.casing.physical.name=Encaixe de Armazenamento Avançado ME
+appeng.ext.aeadditions.item.storage.casing.fluid.name=Encaixe de Armazenamento de Fluidos ME
+appeng.ext.aeadditions.item.storage.casing.gas.name=Encaixe de Armazenamento de Gases ME
+appeng.ext.aeadditions.item.terminal.gas.wireless.name=Terminal de Gases Sem Fio
+appeng.ext.aeadditions.item.terminal.universal.wireless.name=Terminal Universal Sem Fio
+appeng.ext.aeadditions.item.fluid.pattern=Padrão de Fluidos ME
+appeng.ext.aeadditions.item.oc.upgrade.name=Melhoria ME
+
+//Creative Tab
+itemGroup.AE_Additions=AE Additions
+
+//Item Groups
+appeng.ext.aeadditions.fluid.IO=Barramento de Importação/Exportação de Fluidos ME
+appeng.ext.aeadditions.fluid.plane=Plano de Aniquilaçã/Formação de Fluidos ME
+
+//Parts
+appeng.ext.aeadditions.part.fluid.export.name=Barramento de Exportação de Fluidos ME
+appeng.ext.aeadditions.part.fluid.import.name=Barramento de Importação de Fluidos ME
+appeng.ext.aeadditions.part.fluid.storage.name=Barramento de Armazenamento de Fluidos ME
+appeng.ext.aeadditions.part.fluid.plane.annihilation.name=Plano de Aniquilação de Fluidos ME
+appeng.ext.aeadditions.part.fluid.plane.formation.name=Plano de Formação de Fluidos ME
+appeng.ext.aeadditions.part.fluid.levelemitter.name=Emissor de Nível de Fluidos ME
+appeng.ext.aeadditions.part.drive.name=Fixação do Acionador ME
+appeng.ext.aeadditions.part.battery.name=Fixação da Célula de Energia ME
+appeng.ext.aeadditions.part.fluid.conversion.monitor.name=Monitor de Conversão de Fluidos ME
+appeng.ext.aeadditions.part.fluid.monitor.name=Monitor de Armazenamento de Fluidos ME
+appeng.ext.aeadditions.part.oredict.export.name=Barramento de Exportação Ore Dictionary ME
+appeng.ext.aeadditions.part.gas.export.name=Barramento de Exportação de Gases ME
+appeng.ext.aeadditions.part.gas.import.name=Barramento de Importação de Gases ME
+appeng.ext.aeadditions.part.gas.terminal.name=Terminal de Gases ME
+appeng.ext.aeadditions.part.gas.storage.name=Barramento de Armazenamento de Gases ME
+appeng.ext.aeadditions.part.gas.levelemitter.name=Emissor de Nível de Gases ME
+appeng.ext.aeadditions.part.gas.conversion.monitor.name=Monitor de Conversão de Gases ME
+appeng.ext.aeadditions.part.gas.monitor.name=Monitor de Armazenamento de Gases ME
+
+//Blocks
+appeng.ext.aeadditions.block.certustank=Tanque de Quartzo Certus
+appeng.ext.aeadditions.block.walrus.name=Morsa
+tile.appeng.ext.aeadditions.block.fluidcrafter.name=Montador de Fluidos ME
+tile.appeng.ext.aeadditions.block.fluidinterface.name=Interface de Fluidos ME
+tile.appeng.ext.aeadditions.block.fluidfiller.name=Auto Preenchedor de Fluidos ME
+tile.appeng.ext.aeadditions.block.vibrantchamberfluid.name=Câmara de Vibração de Fluidos
+tile.appeng.ext.aeadditions.block.hardmedrive.name=Acionador ME Resistente à Explosões
+
+//Tooltips and Chat-Messages
+appeng.ext.aeadditions.tooltip.amount=Quantia
+appeng.ext.aeadditions.tooltip.fluid=Fluido
+appeng.ext.aeadditions.tooltip.storage.physical.types=%s de %s tipos de itens usados.
+appeng.ext.aeadditions.tooltip.storage.fluid.types=%s de %s tipos de fluidos usados.
+appeng.ext.aeadditions.tooltip.storage.physical.bytes=%s de %s bytes de item usados.
+appeng.ext.aeadditions.tooltip.storage.fluid.bytes=%s de %s bytes de fluido usados.
+appeng.ext.aeadditions.tooltip.storage.fluid.content=contém %s mB de fluidos.
+appeng.ext.aeadditions.tooltip.storage.physical.content=contém %s itens.
+appeng.ext.aeadditions.tooltip.storage.gas.bytes=%s de %s bytes de gás usados.
+appeng.ext.aeadditions.tooltip.storage.gas.content=contains %s de gás.
+appeng.ext.aeadditions.tooltip.storage.gas.types=%s de %s tipos de gás usados.
+appeng.ext.aeadditions.tooltip.direction.0=Baixo
+appeng.ext.aeadditions.tooltip.direction.1=Cima
+appeng.ext.aeadditions.tooltip.direction.2=Norte
+appeng.ext.aeadditions.tooltip.direction.3=Sul
+appeng.ext.aeadditions.tooltip.direction.4=Oeste
+appeng.ext.aeadditions.tooltip.direction.5=Leste
+appeng.ext.aeadditions.tooltip.empty1=Vazio
+appeng.ext.aeadditions.tooltip.storage.container.0=Modo: Modo de Colocação
+appeng.ext.aeadditions.tooltip.storage.container.1=Modo: Modo de Troca Equivalente (1*1)
+appeng.ext.aeadditions.tooltip.storage.container.2=Modo: Modo de Troca Equivalente (3*3)
+appeng.ext.aeadditions.tooltip.onlyblocks=Você não pode colocar Itens! Coloque um Bloco no Contêiner de BLOCOS!
+appeng.ext.aeadditions.tooltip.save=Salvar
+appeng.ext.aeadditions.tooltip.oredict=Nome do Ore Dictionary
+appeng.ext.aeadditions.tooltip.mode=Modo
+appeng.ext.aeadditions.tooltip.item=Item
+appeng.ext.aeadditions.tooltip.gas=Gás
+appeng.ext.aeadditions.tooltip.essentia=Essentia
+appeng.ext.aeadditions.tooltip.installed=Instalado:
+appeng.ext.aeadditions.tooltip.crafting=Fabricação
+
+//Buttons
+appeng.ext.aeadditions.gui.craft=Fabricar
+appeng.ext.aeadditions.item.storage.fluid.portable.name=Célula de Armazenamento Portátil de Fluidos

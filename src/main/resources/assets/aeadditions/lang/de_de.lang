@@ -1,0 +1,86 @@
+//**********//
+//AE Additions//
+//**********//
+
+//Items
+appeng.ext.aeadditions.item.storage.physical.256k.name=256k ME-Speicher
+appeng.ext.aeadditions.item.storage.physical.1024k.name=1024k ME-Speicher
+appeng.ext.aeadditions.item.storage.physical.4096k.name=4096k ME-Speicher
+appeng.ext.aeadditions.item.storage.physical.16348k.name=16348k ME-Speicher
+appeng.ext.aeadditions.item.storage.physical.container.name=ME-Block-Speicher
+appeng.ext.aeadditions.item.storage.fluid.1k.name=1k ME-Flüssigkeitsspeicher
+appeng.ext.aeadditions.item.storage.fluid.4k.name=4k ME-Flüssigkeitsspeicher
+appeng.ext.aeadditions.item.storage.fluid.16k.name=16k ME-Flüssigkeitsspeicher
+appeng.ext.aeadditions.item.storage.fluid.64k.name=64k ME-Flüssigkeitsspeicher
+appeng.ext.aeadditions.item.storage.fluid.256k.name=256k ME-Flüssigkeitsspeicher
+appeng.ext.aeadditions.item.storage.fluid.1024k.name=1024k ME-Flüssigkeitsspeicher
+appeng.ext.aeadditions.item.storage.fluid.4096k.name=4096k ME-Flüssigkeitsspeicher
+appeng.ext.aeadditions.item.storage.component.physical.256k.name=256k-ME-Speicherkomponente
+appeng.ext.aeadditions.item.storage.component.physical.1024k.name=1024k-ME-Speicherkomponente
+appeng.ext.aeadditions.item.storage.component.physical.4096k.name=4096k-ME-Speicherkomponente
+appeng.ext.aeadditions.item.storage.component.physical.16384k.name=16348k-ME-Speicherkomponente
+appeng.ext.aeadditions.item.storage.component.fluid.1k.name=1k-ME-Flüssigkeitsspeicherkomponente
+appeng.ext.aeadditions.item.storage.component.fluid.4k.name=4k-ME-Flüssigkeitsspeicherkomponente
+appeng.ext.aeadditions.item.storage.component.fluid.16k.name=16k-ME-Flüssigkeitsspeicherkomponente
+appeng.ext.aeadditions.item.storage.component.fluid.64k.name=64k-ME-Flüssigkeitsspeicherkomponente
+appeng.ext.aeadditions.item.storage.component.fluid.256k.name=256k-ME-Flüssigkeitsspeicherkomponente
+appeng.ext.aeadditions.item.storage.component.fluid.1024k.name=1024k-ME-Flüssigkeitsspeicherkomponente
+appeng.ext.aeadditions.item.storage.component.fluid.4096k.name=4096k-ME-Flüssigkeitsspeicherkomponente
+appeng.ext.aeadditions.item.storage.casing.physical.name=Erweitertes Speichergehäuse
+appeng.ext.aeadditions.item.storage.casing.fluid.name=Flüssigkeits-Speichergehäuse
+appeng.ext.aeadditions.item.fluid.pattern=ME Flüssigkeitsschablone
+
+//Creative Tab
+itemGroup.AE_Additions=AE Additions
+
+//Item Groups
+appeng.ext.aeadditions.fluid.IO=ME-Flüssigkeits-Export-/Importbus
+appeng.ext.aeadditions.fluid.plane=ME-Flüssigkeits-Annihilations-/Formationsfeld
+
+//Parts
+appeng.ext.aeadditions.part.fluid.export.name=ME-Flüssigkeits-Exportbus
+appeng.ext.aeadditions.part.fluid.import.name=ME-Flüssigkeits-Importbus
+appeng.ext.aeadditions.part.fluid.storage.name=ME-Flüssigkeits-Speicherbus
+appeng.ext.aeadditions.part.fluid.plane.annihilation.name=ME-Flüssigkeits-Annihilationsfeld
+appeng.ext.aeadditions.part.fluid.plane.formation.name=ME-Flüssigkeits-Formationsfeld
+appeng.ext.aeadditions.part.fluid.levelemitter.name=ME-Flüssigkeits-Füllstandemitter
+appeng.ext.aeadditions.part.drive.name=ME-Laufwerkhalterung
+appeng.ext.aeadditions.part.battery.name=ME-Energiezellenhalterung
+appeng.ext.aeadditions.part.fluid.conversion.monitor.name=ME-Flüssigkeits-Konversionsmonitor
+appeng.ext.aeadditions.part.fluid.monitor.name=ME-Flüssigkeits-Speichermonitor
+appeng.ext.aeadditions.part.oredict.export.name=ME-Ore-Dictionary-Exportbus
+
+//Blocks
+appeng.ext.aeadditions.block.certustank=Certus-Quarz-Tank
+appeng.ext.aeadditions.block.walrus.name=Walross
+tile.appeng.ext.aeadditions.block.fluidcrafter.name=ME-Flüssigkeits-Fertigungskammer
+tile.appeng.ext.aeadditions.block.fluidinterface.name=ME-Flüssigkeits-Interface
+tile.appeng.ext.aeadditions.block.fluidfiller.name=ME-Flüssigkeitsfüller
+tile.appeng.ext.aeadditions.block.hardmedrive.name=Explosionssicheres ME-Laufwerk
+
+//Tooltips and Chat-Messages
+appeng.ext.aeadditions.tooltip.amount=Menge
+appeng.ext.aeadditions.tooltip.fluid=Flüssigkeit
+appeng.ext.aeadditions.tooltip.storage.physical.types=%s von %s Item-Typen verwendet.
+appeng.ext.aeadditions.tooltip.storage.fluid.types=%s von %s Flüssigkeits-Typen verwendet.
+appeng.ext.aeadditions.tooltip.storage.physical.bytes=%s von %s Item-Bytes verwendet.
+appeng.ext.aeadditions.tooltip.storage.fluid.bytes=%s von %s Flüssigkeits-Bytes verwendet.
+appeng.ext.aeadditions.tooltip.storage.fluid.content=Enthält %s mB Flüssigkeit.
+appeng.ext.aeadditions.tooltip.storage.physical.content=Enthält %s Items.
+appeng.ext.aeadditions.tooltip.direction.0=Unten
+appeng.ext.aeadditions.tooltip.direction.1=Oben
+appeng.ext.aeadditions.tooltip.direction.2=Norden
+appeng.ext.aeadditions.tooltip.direction.3=Süden
+appeng.ext.aeadditions.tooltip.direction.4=Westen
+appeng.ext.aeadditions.tooltip.direction.5=Osten
+appeng.ext.aeadditions.tooltip.empty1=Leer
+appeng.ext.aeadditions.tooltip.storage.container.0=Modus: Plazier-Modus
+appeng.ext.aeadditions.tooltip.storage.container.1=Modus: Gleicher-Handel-Modus (1*1)
+appeng.ext.aeadditions.tooltip.storage.container.2=Modus: Gleicher-Handel-Modus (3*3)
+appeng.ext.aeadditions.tooltip.onlyblocks=Du kannst keine Items platzieren! Packe einen Block in den BLOCK-Container
+appeng.ext.aeadditions.tooltip.save=Speichern
+appeng.ext.aeadditions.tooltip.oredict=Ore-Dictionary Name
+
+//Buttons
+appeng.ext.aeadditions.gui.craft=Herstellen
+appeng.ext.aeadditions.item.storage.fluid.portable.name=Portabler ME-Flüssigkeitsspeicher

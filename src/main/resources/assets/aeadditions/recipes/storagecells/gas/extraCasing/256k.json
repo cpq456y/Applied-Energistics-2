@@ -1,0 +1,20 @@
+{
+    "conditions": [
+        {
+            "type": "aeadditions:mod_integration",
+            "mod": "mekanismgas"
+        }
+    ],
+    "result": {
+        "item": "appliedenergistics2:gas_storage_cell_256k"
+    },
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+		{
+			"item": "appliedenergistics2:material", "data": 78
+        },
+		{
+			"item": "appliedenergistics2:material", "data": 73
+        }
+    ]
+}

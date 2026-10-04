@@ -1,0 +1,31 @@
+{
+    "conditions": [
+        {
+            "type": "aeadditions:mod_integration",
+            "mod": "mekanismgas"
+        }
+    ],
+    "result": {
+        "item": "appliedenergistics2:gas_storage_cell_1024k"
+    },
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "dad",
+        "asa",
+        "bbb"
+    ],
+    "key": {
+        "a": {
+			"item": "#aeadditions:dustFluix"
+        },
+		"b": {
+			"item": "#aeadditions:gold"
+		},
+		"d": {
+			"item": "#aeadditions:glassQuartz"
+		},
+		"s": {
+			"item": "appliedenergistics2:material", "data": 74
+		}
+    }
+}

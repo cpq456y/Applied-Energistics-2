@@ -1,0 +1,25 @@
+{
+    "result": {
+        "item": "appliedenergistics2:material", "data": 68
+    },
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "aba",
+        "cdc",
+        "aca"
+    ],
+    "key": {
+        "a": {
+			"item": "#aeadditions:lapis"
+        },
+		"b": {
+			"item": "#aeadditions:engProcessor"
+		},
+		"c": {
+			"item": "appliedenergistics2:material", "data": 67
+		},
+		"d": {
+			"item": "#aeadditions:logProcessor"
+		}
+    }
+}
