@@ -61,6 +61,18 @@ public final class BasicFluidStorageCell extends AbstractStorageCell<IAEFluidSta
                 this.idleDrain = 2.0;
                 this.perType = 512;
                 break;
+            case FLUID_CELL256K_PART:
+                this.idleDrain = 2.5;
+                this.perType = 2048;
+                break;
+            case FLUID_CELL1024K_PART:
+                this.idleDrain = 3.0;
+                this.perType = 8192;
+                break;
+            case FLUID_CELL4096K_PART:
+                this.idleDrain = 3.5;
+                this.perType = 32768;
+                break;
             default:
                 this.idleDrain = 0.0;
                 this.perType = 8;

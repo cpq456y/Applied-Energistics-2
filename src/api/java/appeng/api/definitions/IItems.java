@@ -85,6 +85,10 @@ public interface IItems {
 
 	IItemDefinition portableCell();
 
+	IItemDefinition fluidPortableCell();
+
+	IItemDefinition gasPortableCell();
+
 	IItemDefinition cellCreative();
 
 	IItemDefinition viewCell();
@@ -97,6 +101,14 @@ public interface IItems {
 
 	IItemDefinition cell64k();
 
+    IItemDefinition cell256k();
+
+    IItemDefinition cell1024k();
+
+    IItemDefinition cell4096k();
+
+    IItemDefinition cell16384k();
+
 	IItemDefinition fluidCell1k();
 
 	IItemDefinition fluidCell4k();
@@ -104,6 +116,26 @@ public interface IItems {
 	IItemDefinition fluidCell16k();
 
 	IItemDefinition fluidCell64k();
+
+    IItemDefinition fluidCell256k();
+
+    IItemDefinition fluidCell1024k();
+
+    IItemDefinition fluidCell4096k();
+
+    IItemDefinition gasCell1k();
+
+    IItemDefinition gasCell4k();
+
+    IItemDefinition gasCell16k();
+
+    IItemDefinition gasCell64k();
+
+    IItemDefinition gasCell256k();
+
+    IItemDefinition gasCell1024k();
+
+    IItemDefinition gasCell4096k();
 
 	IItemDefinition spatialCell2();
 

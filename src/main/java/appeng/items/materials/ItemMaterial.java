@@ -217,10 +217,67 @@ public final class ItemMaterial extends AEBaseItem implements IStorageComponent,
         return "item.appliedenergistics2.material." + this.nameOf(is).toLowerCase();
     }
 
+    /**
+     * Display order of the storage components in the creative tab and JEI: item, fluid, gas and spatial
+     * components, each group ordered by tier. Everything else keeps the previous alphabetical order and is
+     * listed afterwards.
+     *
+     * <p>Sorting by {@link MaterialType#name()} alone produced nonsense such as 1024k, 128^3 spatial, 16384k,
+     * because "CELL1024K_PART" &lt; "CELL128_SPATIAL_PART" &lt; "CELL16384K_PART" as strings.
+     */
+    private static final List<MaterialType> STORAGE_COMPONENT_ORDER = Arrays.asList(
+            MaterialType.CELL1K_PART,
+            MaterialType.CELL4K_PART,
+            MaterialType.CELL16K_PART,
+            MaterialType.CELL64K_PART,
+            MaterialType.CELL256K_PART,
+            MaterialType.CELL1024K_PART,
+            MaterialType.CELL4096K_PART,
+            MaterialType.CELL16384K_PART,
+            MaterialType.FLUID_CELL1K_PART,
+            MaterialType.FLUID_CELL4K_PART,
+            MaterialType.FLUID_CELL16K_PART,
+            MaterialType.FLUID_CELL64K_PART,
+            MaterialType.FLUID_CELL256K_PART,
+            MaterialType.FLUID_CELL1024K_PART,
+            MaterialType.FLUID_CELL4096K_PART,
+            MaterialType.GAS_CELL1K_PART,
+            MaterialType.GAS_CELL4K_PART,
+            MaterialType.GAS_CELL16K_PART,
+            MaterialType.GAS_CELL64K_PART,
+            MaterialType.GAS_CELL256K_PART,
+            MaterialType.GAS_CELL1024K_PART,
+            MaterialType.GAS_CELL4096K_PART,
+            MaterialType.CELL2_SPATIAL_PART,
+            MaterialType.CELL16_SPATIAL_PART,
+            MaterialType.CELL128_SPATIAL_PART,
+            MaterialType.EMPTY_STORAGE_CELL,
+            MaterialType.ITEM_CELL_CASING,
+            MaterialType.FLUID_CELL_CASING,
+            MaterialType.GAS_CELL_CASING);
+
     @Override
     protected void getCheckedSubItems(final CreativeTabs creativeTab, final NonNullList<ItemStack> itemStacks) {
         final List<MaterialType> types = Arrays.asList(MaterialType.values());
-        Collections.sort(types, (o1, o2) -> o1.name().compareTo(o2.name()));
+        Collections.sort(types, (o1, o2) ->
+        {
+            final int left = STORAGE_COMPONENT_ORDER.indexOf(o1);
+            final int right = STORAGE_COMPONENT_ORDER.indexOf(o2);
+
+            if (left < 0 && right < 0) {
+                return o1.name().compareTo(o2.name());
+            }
+
+            if (left < 0) {
+                return 1;
+            }
+
+            if (right < 0) {
+                return -1;
+            }
+
+            return Integer.compare(left, right);
+        });
 
         for (final MaterialType mat : types) {
             if (mat.getDamageValue() >= 0 && mat.isRegistered() && mat.getItemInstance() == this) {

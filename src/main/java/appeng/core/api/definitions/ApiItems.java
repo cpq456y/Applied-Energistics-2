@@ -43,6 +43,10 @@ import appeng.items.materials.MaterialType;
 import appeng.items.misc.*;
 import appeng.items.parts.FacadeRendering;
 import appeng.items.parts.ItemFacade;
+import appeng.ext.aeadditions.item.storage.BasicFluidPortableCell;
+import appeng.ext.aeadditions.item.storage.BasicGasPortableCell;
+import appeng.ext.aeadditions.item.storage.BasicGasStorageCell;
+import appeng.core.features.ItemDefinition;
 import appeng.items.storage.BasicItemStorageCell;
 import appeng.items.storage.ItemCreativeStorageCell;
 import appeng.items.storage.ItemSpatialStorageCell;
@@ -53,6 +57,7 @@ import appeng.items.tools.quartz.*;
 import appeng.ext.wut.ItemWirelessUniversalTerminal;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.oredict.OreDictionary;
 
@@ -89,6 +94,8 @@ public final class ApiItems implements IItems {
     private final IItemDefinition memoryCard;
     private final IItemDefinition networkTool;
     private final IItemDefinition portableCell;
+    private final IItemDefinition fluidPortableCell;
+    private final IItemDefinition gasPortableCell;
 
     private final IItemDefinition cellCreative;
     private final IItemDefinition viewCell;
@@ -97,11 +104,26 @@ public final class ApiItems implements IItems {
     private final IItemDefinition cell4k;
     private final IItemDefinition cell16k;
     private final IItemDefinition cell64k;
+    private final IItemDefinition cell256k;
+    private final IItemDefinition cell1024k;
+    private final IItemDefinition cell4096k;
+    private final IItemDefinition cell16384k;
 
     private final IItemDefinition fluidCell1k;
     private final IItemDefinition fluidCell4k;
     private final IItemDefinition fluidCell16k;
     private final IItemDefinition fluidCell64k;
+    private final IItemDefinition fluidCell256k;
+    private final IItemDefinition fluidCell1024k;
+    private final IItemDefinition fluidCell4096k;
+
+    private final IItemDefinition gasCell1k;
+    private final IItemDefinition gasCell4k;
+    private final IItemDefinition gasCell16k;
+    private final IItemDefinition gasCell64k;
+    private final IItemDefinition gasCell256k;
+    private final IItemDefinition gasCell1024k;
+    private final IItemDefinition gasCell4096k;
 
     private final IItemDefinition spatialCell2;
     private final IItemDefinition spatialCell16;
@@ -201,6 +223,12 @@ public final class ApiItems implements IItems {
                 .dispenserBehavior(DispenserMatterCannon::new)
                 .build();
         this.portableCell = powerTools.item("portable_cell", ToolPortableCell::new).addFeatures(AEFeature.PORTABLE_CELL, AEFeature.STORAGE_CELLS).build();
+        this.fluidPortableCell = powerTools.item("fluid_portable_cell", BasicFluidPortableCell::new).addFeatures(AEFeature.PORTABLE_CELL, AEFeature.STORAGE_CELLS).build();
+        if (Loader.isModLoaded("mekanism")) {
+            this.gasPortableCell = powerTools.item("gas_portable_cell", BasicGasPortableCell::new).addFeatures(AEFeature.PORTABLE_CELL, AEFeature.STORAGE_CELLS).build();
+        } else {
+            this.gasPortableCell = new ItemDefinition("gas_portable_cell", null);
+        }
         this.colorApplicator = powerTools.item("color_applicator", ToolColorApplicator::new)
                 .addFeatures(AEFeature.COLOR_APPLICATOR)
                 .dispenserBehavior(DispenserBlockTool::new)
@@ -227,11 +255,39 @@ public final class ApiItems implements IItems {
         this.cell4k = storageCells.item("storage_cell_4k", () -> new BasicItemStorageCell(MaterialType.CELL4K_PART, 4)).build();
         this.cell16k = storageCells.item("storage_cell_16k", () -> new BasicItemStorageCell(MaterialType.CELL16K_PART, 16)).build();
         this.cell64k = storageCells.item("storage_cell_64k", () -> new BasicItemStorageCell(MaterialType.CELL64K_PART, 64)).build();
+        this.cell256k = storageCells.item("storage_cell_256k", () -> new BasicItemStorageCell(MaterialType.CELL256K_PART, 256)).build();
+        this.cell1024k = storageCells.item("storage_cell_1024k", () -> new BasicItemStorageCell(MaterialType.CELL1024K_PART, 1024)).build();
+        this.cell4096k = storageCells.item("storage_cell_4096k", () -> new BasicItemStorageCell(MaterialType.CELL4096K_PART, 4096)).build();
+        this.cell16384k = storageCells.item("storage_cell_16384k", () -> new BasicItemStorageCell(MaterialType.CELL16384K_PART, 16384)).build();
 
         this.fluidCell1k = storageCells.item("fluid_storage_cell_1k", () -> new BasicFluidStorageCell(MaterialType.FLUID_CELL1K_PART, 1)).build();
         this.fluidCell4k = storageCells.item("fluid_storage_cell_4k", () -> new BasicFluidStorageCell(MaterialType.FLUID_CELL4K_PART, 4)).build();
         this.fluidCell16k = storageCells.item("fluid_storage_cell_16k", () -> new BasicFluidStorageCell(MaterialType.FLUID_CELL16K_PART, 16)).build();
         this.fluidCell64k = storageCells.item("fluid_storage_cell_64k", () -> new BasicFluidStorageCell(MaterialType.FLUID_CELL64K_PART, 64)).build();
+        this.fluidCell256k = storageCells.item("fluid_storage_cell_256k", () -> new BasicFluidStorageCell(MaterialType.FLUID_CELL256K_PART, 256)).build();
+        this.fluidCell1024k = storageCells.item("fluid_storage_cell_1024k", () -> new BasicFluidStorageCell(MaterialType.FLUID_CELL1024K_PART, 1024)).build();
+        this.fluidCell4096k = storageCells.item("fluid_storage_cell_4096k", () -> new BasicFluidStorageCell(MaterialType.FLUID_CELL4096K_PART, 4096)).build();
+
+        // Gas cells are registered right after the fluid ones so that the creative tab and JEI list them as
+        // item -> fluid -> gas -> spatial. Without the Mekanism integration the gas channel does not exist, so
+        // the items are not registered at all and the definitions stay empty.
+        if (Loader.isModLoaded("mekanism")) {
+            this.gasCell1k = storageCells.item("gas_storage_cell_1k", () -> new BasicGasStorageCell(MaterialType.GAS_CELL1K_PART, 1)).build();
+            this.gasCell4k = storageCells.item("gas_storage_cell_4k", () -> new BasicGasStorageCell(MaterialType.GAS_CELL4K_PART, 4)).build();
+            this.gasCell16k = storageCells.item("gas_storage_cell_16k", () -> new BasicGasStorageCell(MaterialType.GAS_CELL16K_PART, 16)).build();
+            this.gasCell64k = storageCells.item("gas_storage_cell_64k", () -> new BasicGasStorageCell(MaterialType.GAS_CELL64K_PART, 64)).build();
+            this.gasCell256k = storageCells.item("gas_storage_cell_256k", () -> new BasicGasStorageCell(MaterialType.GAS_CELL256K_PART, 256)).build();
+            this.gasCell1024k = storageCells.item("gas_storage_cell_1024k", () -> new BasicGasStorageCell(MaterialType.GAS_CELL1024K_PART, 1024)).build();
+            this.gasCell4096k = storageCells.item("gas_storage_cell_4096k", () -> new BasicGasStorageCell(MaterialType.GAS_CELL4096K_PART, 4096)).build();
+        } else {
+            this.gasCell1k = new ItemDefinition("gas_storage_cell_1k", null);
+            this.gasCell4k = new ItemDefinition("gas_storage_cell_4k", null);
+            this.gasCell16k = new ItemDefinition("gas_storage_cell_16k", null);
+            this.gasCell64k = new ItemDefinition("gas_storage_cell_64k", null);
+            this.gasCell256k = new ItemDefinition("gas_storage_cell_256k", null);
+            this.gasCell1024k = new ItemDefinition("gas_storage_cell_1024k", null);
+            this.gasCell4096k = new ItemDefinition("gas_storage_cell_4096k", null);
+        }
 
         FeatureFactory spatialCells = registry.features(AEFeature.SPATIAL_IO);
         this.spatialCell2 = spatialCells.item("spatial_storage_cell_2_cubed", () -> new ItemSpatialStorageCell(2)).build();
@@ -416,6 +472,16 @@ public final class ApiItems implements IItems {
     }
 
     @Override
+    public IItemDefinition fluidPortableCell() {
+        return this.fluidPortableCell;
+    }
+
+    @Override
+    public IItemDefinition gasPortableCell() {
+        return this.gasPortableCell;
+    }
+
+    @Override
     public IItemDefinition cellCreative() {
         return this.cellCreative;
     }
@@ -446,6 +512,26 @@ public final class ApiItems implements IItems {
     }
 
     @Override
+    public IItemDefinition cell256k() {
+        return this.cell256k;
+    }
+
+    @Override
+    public IItemDefinition cell1024k() {
+        return this.cell1024k;
+    }
+
+    @Override
+    public IItemDefinition cell4096k() {
+        return this.cell4096k;
+    }
+
+    @Override
+    public IItemDefinition cell16384k() {
+        return this.cell16384k;
+    }
+
+    @Override
     public IItemDefinition fluidCell1k() {
         return this.fluidCell1k;
     }
@@ -463,6 +549,56 @@ public final class ApiItems implements IItems {
     @Override
     public IItemDefinition fluidCell64k() {
         return this.fluidCell64k;
+    }
+
+    @Override
+    public IItemDefinition fluidCell256k() {
+        return this.fluidCell256k;
+    }
+
+    @Override
+    public IItemDefinition fluidCell1024k() {
+        return this.fluidCell1024k;
+    }
+
+    @Override
+    public IItemDefinition fluidCell4096k() {
+        return this.fluidCell4096k;
+    }
+
+    @Override
+    public IItemDefinition gasCell1k() {
+        return this.gasCell1k;
+    }
+
+    @Override
+    public IItemDefinition gasCell4k() {
+        return this.gasCell4k;
+    }
+
+    @Override
+    public IItemDefinition gasCell16k() {
+        return this.gasCell16k;
+    }
+
+    @Override
+    public IItemDefinition gasCell64k() {
+        return this.gasCell64k;
+    }
+
+    @Override
+    public IItemDefinition gasCell256k() {
+        return this.gasCell256k;
+    }
+
+    @Override
+    public IItemDefinition gasCell1024k() {
+        return this.gasCell1024k;
+    }
+
+    @Override
+    public IItemDefinition gasCell4096k() {
+        return this.gasCell4096k;
     }
 
     @Override
