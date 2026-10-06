@@ -1,6 +1,7 @@
 {
     "result": {
-        "item": "appliedenergistics2:material", "data": 67
+        "item": "appliedenergistics2:material",
+        "data": 68
     },
     "type": "forge:ore_shaped",
     "pattern": [
@@ -10,16 +11,17 @@
     ],
     "key": {
         "a": {
-			"item": "#aeadditions:lapis"
+            "item": "#aeadditions:lapis"
         },
-		"b": {
-			"item": "#aeadditions:engProcessor"
-		},
-		"c": {
-			"item": "appliedenergistics2:material", "data": 66
-		},
-		"d": {
-			"item": "#aeadditions:logProcessor"
-		}
+        "b": {
+            "item": "#aeadditions:engProcessor"
+        },
+        "c": {
+            "item": "appliedenergistics2:material",
+            "data": 67
+        },
+        "d": {
+            "item": "#aeadditions:logProcessor"
+        }
     }
 }

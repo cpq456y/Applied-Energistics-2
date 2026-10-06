@@ -30,7 +30,6 @@ public class Plugin implements IModPlugin {
         }
 
         this.hideItem(new ItemStack(ItemEnum.FLUIDITEM.getItem()), registry);
-        this.hideItem(new ItemStack(ItemEnum.GASITEM.getItem()), registry);
         this.hideItem(new ItemStack(ItemEnum.CRAFTINGPATTERN.getItem()), registry);
 
         for (final ItemEnum item : ItemEnum.values()) {

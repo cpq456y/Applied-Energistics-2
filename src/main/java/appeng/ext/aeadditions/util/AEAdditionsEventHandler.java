@@ -4,7 +4,6 @@ import appeng.api.config.SecurityPermissions;
 import appeng.api.util.AEPartLocation;
 import appeng.ext.aeadditions.api.IECTileEntity;
 import appeng.ext.aeadditions.container.ITickContainer;
-import appeng.ext.aeadditions.container.gas.ContainerGasStorage;
 import appeng.ext.aeadditions.integration.Integration;
 import net.minecraft.inventory.Container;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -30,9 +29,6 @@ public class AEAdditionsEventHandler {
         if (event.phase == TickEvent.Phase.START && event.side == Side.SERVER && event.player != null) {
             if (event.player.openContainer != null) {
                 Container con = event.player.openContainer;
-                if (con instanceof ContainerGasStorage)
-                    ((ContainerGasStorage) con).removeEnergyTick();
-
                 if (con instanceof ITickContainer)
                     ((ITickContainer) con).onTick();
             }

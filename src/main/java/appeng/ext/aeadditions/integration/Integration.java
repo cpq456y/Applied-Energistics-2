@@ -13,7 +13,6 @@ import net.minecraftforge.fml.common.ModAPIManager;
 import net.minecraftforge.fml.relauncher.Side;
 
 import appeng.ext.aeadditions.integration.mekanism.Mekanism;
-import appeng.ext.aeadditions.integration.mekanism.gas.MekanismGas;
 import appeng.ext.aeadditions.integration.waila.Waila;
 
 public class Integration {
@@ -22,7 +21,6 @@ public class Integration {
 		WAILA("waila"),
 		OPENCOMPUTERS("opencomputers"),
 		BCFUEL("BuildCraftAPI|fuels", "BuildCraftFuel"),
-		MEKANISMGAS("mekanism", "MekanismGas"),
 		THAUMATICENERGISTICS("thaumicenergistics", "Thaumatic Energistics"),
 		MEKANISM("mekanism"),
 		WIRELESSCRAFTING("wct", "AE2 Wireless Crafting Terminal"),
@@ -102,8 +100,6 @@ public class Integration {
 
 //		if (Mods.IGW.correctSide() && Mods.IGW.shouldLoad)
 //			IGW.initNotifier();
-		if (Mods.MEKANISMGAS.isEnabled())
-			MekanismGas.preInit();
 	}
 
 	public void init() {
@@ -111,8 +107,6 @@ public class Integration {
 			Waila.init();
 		if (Mods.OPENCOMPUTERS.isEnabled())
 			OpenComputers.init();
-		if (Mods.MEKANISMGAS.isEnabled())
-			MekanismGas.init();
 //		if (Mods.IGW.isEnabled())
 //			IGW.init();
 		if (Mods.MEKANISM.isEnabled())
@@ -125,9 +119,7 @@ public class Integration {
 	}
 
 	public void postInit() {
-		if (Mods.MEKANISMGAS.isEnabled()) {
-			MekanismGas.postInit();
-		}
+		// gas handling is provided by appeng.ext.mekeng
 	}
 
 }

@@ -1,7 +1,7 @@
 {
     "result": {
         "item": "appliedenergistics2:material",
-        "data": 67
+        "data": 66
     },
     "type": "forge:ore_shaped",
     "pattern": [
@@ -11,14 +11,14 @@
     ],
     "key": {
         "a": {
-            "item": "#aeadditions:lapis"
+            "item": "#aeadditions:dustGlowstone"
         },
         "b": {
             "item": "#aeadditions:engProcessor"
         },
         "c": {
-            "type": "appliedenergistics2:part",
-            "part": "material.fluid_cell64k_part"
+            "item": "appliedenergistics2:material",
+            "data": 65
         },
         "d": {
             "item": "#aeadditions:logProcessor"

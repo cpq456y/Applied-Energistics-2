@@ -6,7 +6,8 @@
     "type": "appliedenergistics2:part_shapeless",
     "ingredients": [
         {
-            "item": "appliedenergistics2:material", "data": 77
+            "item": "appliedenergistics2:material",
+            "data": 80
         }
     ]
 }

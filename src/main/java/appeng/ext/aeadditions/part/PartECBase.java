@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.Random;
 
 import appeng.api.networking.events.MENetworkChannelsChanged;
-import appeng.ext.aeadditions.api.gas.IAEGasStack;
-import appeng.ext.aeadditions.integration.mekanism.gas.Capabilities;
 import appeng.ext.aeadditions.util.MachineSource;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -55,7 +53,6 @@ import appeng.ext.aeadditions.network.GuiHandler;
 import appeng.ext.aeadditions.registries.ItemEnum;
 import appeng.ext.aeadditions.registries.PartEnum;
 import io.netty.buffer.ByteBuf;
-import mekanism.api.gas.IGasHandler;
 
 public abstract class PartECBase implements IPart, IGridHost, IActionHost, IPowerChannelState {
 
@@ -73,7 +70,6 @@ public abstract class PartECBase implements IPart, IGridHost, IActionHost, IPowe
 	@Nullable
 	private IFluidHandler facingTank;
 	@Nullable
-	private Object facingGasTank;
 	private boolean redstonePowered;
 	private boolean isActive;
 	private boolean isPowerd = false;
@@ -107,28 +103,6 @@ public abstract class PartECBase implements IPart, IGridHost, IActionHost, IPowe
 		return false;
 	}
 
-	protected final IAEGasStack extractGas(IAEGasStack toExtract, Actionable action) {
-		if (this.gridBlock == null || this.facingGasTank == null) {
-			return null;
-		}
-		IMEMonitor<IAEGasStack> monitor = this.gridBlock.getGasMonitor();
-		if (monitor == null) {
-			return null;
-		}
-		return monitor.extractItems(toExtract, action, new MachineSource(this));
-	}
-
-	protected final IAEGasStack injectGas(IAEGasStack toInject, Actionable action) {
-		if (this.gridBlock == null || this.facingGasTank == null) {
-			return toInject;
-		}
-		IMEMonitor<IAEGasStack> monitor = this.gridBlock.getGasMonitor();
-		if (monitor == null) {
-			return toInject;
-		}
-		return monitor.injectItems(toInject, action, new MachineSource(this));
-	}
-
 	@Override
 	public final IGridNode getActionableNode() {
 		return this.node;
@@ -157,15 +131,6 @@ public abstract class PartECBase implements IPart, IGridHost, IActionHost, IPowe
 
 	public IFluidHandler getFacingTank() {
 		return this.facingTank;
-	}
-
-	@Optional.Method(modid = "mekanism")
-	public IGasHandler getFacingGasTank() {
-		if(facingGasTank == null)
-			return null;
-		else if(((TileEntity)facingGasTank).hasCapability(Capabilities.GAS_HANDLER_CAPABILITY, this.getSide().getFacing().getOpposite()))
-			return ((TileEntity)facingGasTank).getCapability(Capabilities.GAS_HANDLER_CAPABILITY, this.getSide().getFacing().getOpposite());
-		return null;
 	}
 
 	public ECBaseGridBlock getGridBlock() {
@@ -330,24 +295,11 @@ public abstract class PartECBase implements IPart, IGridHost, IActionHost, IPowe
 			} else {
 				facingTank = null;
 			}
-			if (Integration.Mods.MEKANISMGAS.isEnabled()) {
-				updateCheckGasTank(tileEntity);
-			}
 		} else {
 			facingTank = null;
-			facingGasTank = null;
 		}
 		// TODO: Confirm this works
 		this.redstonePowered = world.getRedstonePowerFromNeighbors(pos) > 0 || world.getRedstonePowerFromNeighbors(pos.up()) > 0;
-	}
-
-	@Optional.Method(modid = "mekanism")
-	private void updateCheckGasTank(TileEntity tile) {
-		if (tile.hasCapability(Capabilities.GAS_HANDLER_CAPABILITY, this.getSide().getFacing().getOpposite())) {
-			this.facingGasTank = tile;
-		} else {
-			this.facingGasTank = null;
-		}
 	}
 
 	@Override

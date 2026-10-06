@@ -10,7 +10,6 @@ import java.util.Map;
 
 import appeng.ext.aeadditions.Constants;
 import appeng.ext.aeadditions.integration.Integration;
-import appeng.ext.aeadditions.models.blocks.GasItemModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
@@ -175,8 +174,6 @@ public class ModelManager {
 		OBJLoader.INSTANCE.addDomain(Constants.MOD_ID);
 		ModelLoaderRegistry.registerLoader(new FluidItemModel.ModelLoader());
 		ModelLoaderRegistry.registerLoader(new AEAModelLoader(customModels));
-		if(Integration.Mods.MEKANISMGAS.isEnabled())
-			ModelLoaderRegistry.registerLoader(new GasItemModel.ModelLoader());
 	}
 
 	public static void onBakeModels(ModelBakeEvent event) {

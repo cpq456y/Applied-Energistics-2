@@ -5,7 +5,6 @@ import java.util.Map;
 import java.util.Optional;
 
 import appeng.ext.aeadditions.Constants;
-import appeng.ext.aeadditions.part.gas.*;
 import org.apache.commons.lang3.tuple.Pair;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -28,14 +27,7 @@ public enum PartEnum {
 	DRIVE("drive", PartDrive.class),
 	BATTERY("battery", PartBattery.class),
 	INTERFACE("interface", PartFluidInterface.class),
-	OREDICTEXPORTBUS("oredict.export", PartOreDictExporter.class),
-	GASIMPORT("gas.import", PartGasImport.class, "gas.IO", Integration.Mods.MEKANISMGAS, generatePair(Upgrades.CAPACITY, 2), generatePair(Upgrades.REDSTONE, 1), generatePair(Upgrades.SPEED, 4)),
-	GASEXPORT("gas.export", PartGasExport.class, "gas.IO", Integration.Mods.MEKANISMGAS, generatePair(Upgrades.CAPACITY, 2), generatePair(Upgrades.REDSTONE, 1), generatePair(Upgrades.SPEED, 4)),
-	GASTERMINAL("gas.terminal", PartGasTerminal.class, Integration.Mods.MEKANISMGAS),
-	GASSTORAGE("gas.storage", PartGasStorage.class, null, Integration.Mods.MEKANISMGAS, generatePair(Upgrades.INVERTER, 1)),
-	GASLEVELEMITTER("gas.levelemitter", PartGasLevelEmitter.class, Integration.Mods.MEKANISMGAS),
-	GASMONITOR("gas.monitor", PartGasStorageMonitor.class, Integration.Mods.MEKANISMGAS),
-	GASCONVERSIONMONITOR("gas.conversion.monitor", PartGasConversionMonitor.class, Integration.Mods.MEKANISMGAS);
+	OREDICTEXPORTBUS("oredict.export", PartOreDictExporter.class);
 
 	private Integration.Mods mod;
 

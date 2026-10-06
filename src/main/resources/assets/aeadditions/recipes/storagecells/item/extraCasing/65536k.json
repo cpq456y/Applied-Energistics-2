@@ -1,6 +1,6 @@
 {
     "result": {
-        "item": "appliedenergistics2:storage_cell_256k"
+        "item": "appliedenergistics2:storage_cell_65536k"
     },
     "type": "forge:ore_shapeless",
     "ingredients": [
@@ -10,7 +10,7 @@
         },
         {
             "item": "appliedenergistics2:material",
-            "data": 62
+            "data": 66
         }
     ]
 }

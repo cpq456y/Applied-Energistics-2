@@ -6,30 +6,8 @@ import net.minecraftforge.fluids.FluidStack;
 
 import appeng.ext.aeadditions.api.AEAApi;
 import appeng.ext.aeadditions.util.FluidHelper;
-import appeng.ext.aeadditions.util.GasUtil;
 
 public enum StorageType {
-	GAS("gas", "Kilo", "Mega", "") {
-		@Override
-		public boolean isEmpty(ItemStack stack) {
-			return GasUtil.isEmpty(stack);
-		}
-
-		@Override
-		public boolean isFilled(ItemStack stack) {
-			return GasUtil.isFilled(stack);
-		}
-
-		@Override
-		public boolean canSee(FluidStack fluidStack) {
-			return AEAApi.instance().isGasStack(fluidStack);
-		}
-
-		@Override
-		public boolean isContainer(ItemStack stack) {
-			return GasUtil.isGasContainer(stack);
-		}
-	},
 	FLUID("fluid", "KiloB", "MegaB", "B") {
 		@Override
 		public boolean isEmpty(ItemStack stack) {

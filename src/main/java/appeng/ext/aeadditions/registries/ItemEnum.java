@@ -14,9 +14,7 @@ public enum ItemEnum {
 	FLUIDPATTERN("pattern.fluid", new ItemFluidPattern()),
 	FLUIDITEM("fluid.item", new ItemFluid(), null, null, true), // Internal EC Item
 	CRAFTINGPATTERN("pattern.crafting", new ItemInternalCraftingPattern(), null, null, true),// Internal EC Item
-	GASWIRELESSTERMINAL("terminal.gas.wireless", ItemWirelessTerminalGas.INSTANCE, Integration.Mods.MEKANISMGAS),
-	OCUPGRADE("oc.upgrade", ItemOCUpgrade.INSTANCE, Integration.Mods.OPENCOMPUTERS, false),
-	GASITEM("gas.item", ItemGas.INSTANCE, Integration.Mods.MEKANISMGAS, null, true); //Internal EC Item
+	OCUPGRADE("oc.upgrade", ItemOCUpgrade.INSTANCE, Integration.Mods.OPENCOMPUTERS, false);
 
 	private final String internalName;
 	private Item item;

@@ -33,19 +33,11 @@ public interface IAEAdditionsAPI {
 
 	String getVersion();
 
-	IWirelessGasFluidTermHandler getWirelessTermHandler(ItemStack is);
-
 	boolean isWirelessFluidTerminal(ItemStack is);
-
-	ItemStack openPortableGasCellGui(EntityPlayer player, EnumHand hand, World world);
 
 	ItemStack openPortableFluidCellGui(EntityPlayer player, EnumHand hand, World world);
 
-	ItemStack openWirelessGasTerminal(EntityPlayer player, EnumHand hand, World world);
-
 	IPartDefinition parts();
-
-	void registerWirelessTermHandler(IWirelessGasFluidTermHandler handler);
 
 	@Deprecated
 	void registerWirelessFluidTermHandler(IWirelessFluidTermHandler handler);
@@ -57,53 +49,6 @@ public interface IAEAdditionsAPI {
 	void registryWirelessFluidTermHandler(IWirelessFluidTermHandler handler);
 
 	void registerFuelBurnTime(Fluid fuel, int burnTime);
-
-	boolean isGasStack(IAEFluidStack stack);
-
-	boolean isGasStack(FluidStack stack);
-
-	boolean isGas(Fluid fluid);
-
-	/**
-	 * Converts an IAEFluid stack to a GasStack
-	 *
-	 * @param fluidStack
-	 * @return GasStack
-	 */
-	Object createGasStack(IAEFluidStack fluidStack);
-
-	/**
-	 * Create the fluidstack from the specific gas
-	 *
-	 * @param gasStack
-	 * @return FluidStack
-	 */
-	IAEFluidStack createFluidStackFromGas(Object gasStack);
-
-	/**
-	 * Create the ec fluid from the specific gas
-	 *
-	 * @param gas
-	 * @return Fluid
-	 */
-	Fluid getGasFluid(Object gas);
-
-	/**
-	 * A registry for StorageBus interactions
-	 *
-	 * @param esh storage handler
-	 */
-	void addExternalStorageInterface(IExternalGasStorageHandler esh);
-
-	/**
-	 * @param te       tile entity
-	 * @param opposite direction
-	 * @param mySrc    source
-	 * @return the handler for a given tile / forge direction
-	 */
-	IExternalGasStorageHandler getHandler(TileEntity te, EnumFacing opposite, IActionSource mySrc);
-
-	boolean isGasSystemEnabled();
 
 	void registerWrenchHandler(IWrenchHandler wrenchHandler);
 }

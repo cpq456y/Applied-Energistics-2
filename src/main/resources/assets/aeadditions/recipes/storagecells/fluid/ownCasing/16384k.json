@@ -1,6 +1,6 @@
 {
     "result": {
-        "item": "appliedenergistics2:storage_cell_256k"
+        "item": "appliedenergistics2:fluid_storage_cell_16384k"
     },
     "type": "forge:ore_shaped",
     "pattern": [
@@ -13,15 +13,14 @@
             "item": "#aeadditions:dustFluix"
         },
         "b": {
-            "type": "forge:ore_dict",
-            "ore": "gemDiamond"
+            "item": "aeadditions:certustank"
         },
         "d": {
             "item": "#aeadditions:glassQuartz"
         },
         "s": {
             "item": "appliedenergistics2:material",
-            "data": 62
+            "data": 70
         }
     }
 }

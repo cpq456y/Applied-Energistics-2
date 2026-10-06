@@ -19,11 +19,6 @@ public final class OpenComputers {
         add(new DriverOreDictExportBus());
         add(new DriverFluidInterface());
 
-        if (Integration.Mods.MEKANISMGAS.isEnabled()) {
-            add(new DriverGasExportBus());
-            add(new DriverGasImportBus());
-        }
-
         // TODO: Re-enable when fixed
 //        add(ItemOCUpgrade)
 //        AEApi.instance().registries().wireless().registerWirelessHandler(WirelessHandlerUpgradeAE)

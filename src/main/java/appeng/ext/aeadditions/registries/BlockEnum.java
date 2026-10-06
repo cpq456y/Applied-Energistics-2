@@ -18,13 +18,11 @@ import appeng.ext.aeadditions.block.BlockCertusTank;
 import appeng.ext.aeadditions.block.BlockCraftingStorage;
 import appeng.ext.aeadditions.block.BlockFluidCrafter;
 import appeng.ext.aeadditions.block.BlockFluidFiller;
-import appeng.ext.aeadditions.block.BlockGasInterface;
 import appeng.ext.aeadditions.block.BlockHardMEDrive;
 import appeng.ext.aeadditions.block.BlockVibrationChamberFluid;
 import appeng.ext.aeadditions.integration.Integration;
 import appeng.ext.aeadditions.item.block.ItemBlockCertusTank;
 import appeng.ext.aeadditions.item.block.ItemBlockFluidFiller;
-import appeng.ext.aeadditions.item.block.ItemBlockGasInterface;
 import appeng.ext.aeadditions.util.CreativeTabEC;
 
 /** Ported from BlockEnum.kt. */
@@ -35,8 +33,6 @@ public enum BlockEnum {
     FILLER("fluidfiller", new BlockFluidFiller(), b -> new ItemBlockFluidFiller(b)),
     BLASTRESISTANTMEDRIVE("hardmedrive", new BlockHardMEDrive()),
     VIBRANTCHAMBERFLUID("vibrantchamberfluid", new BlockVibrationChamberFluid()),
-    GASINTERFACE("gas_interface", new BlockGasInterface(), b -> new ItemBlockGasInterface(b),
-            Integration.Mods.MEKANISMGAS),
     UPGRADEDCRAFTINGSTORAGE256("crafting_storage_256",
             new BlockCraftingStorage(BlockCraftingUnit.CraftingUnitType.STORAGE_1K), false),
     UPGRADEDCRAFTINGSTORAGE1024("crafting_storage_1024",

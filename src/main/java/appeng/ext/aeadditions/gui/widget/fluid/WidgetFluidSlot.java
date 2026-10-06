@@ -4,9 +4,6 @@ import java.util.Collections;
 import java.util.List;
 
 import appeng.ext.aeadditions.Constants;
-import appeng.ext.aeadditions.part.gas.PartGasLevelEmitter;
-import appeng.ext.aeadditions.tileentity.TileEntityGasInterface;
-import mekanism.api.gas.Gas;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.renderer.texture.TextureManager;
@@ -19,7 +16,6 @@ import net.minecraft.util.text.translation.I18n;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 
-import net.minecraftforge.fml.common.Optional;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -29,13 +25,8 @@ import appeng.ext.aeadditions.gui.widget.AbstractWidget;
 import appeng.ext.aeadditions.gui.widget.WidgetManager;
 import appeng.ext.aeadditions.integration.Integration;
 import appeng.ext.aeadditions.network.packet.other.PacketFluidSlotSelect;
-import appeng.ext.aeadditions.part.gas.PartGasExport;
-import appeng.ext.aeadditions.part.gas.PartGasImport;
-import appeng.ext.aeadditions.part.gas.PartGasStorage;
 import appeng.ext.aeadditions.util.FluidHelper;
-import appeng.ext.aeadditions.util.GasUtil;
 import appeng.ext.aeadditions.util.NetworkUtil;
-import mekanism.api.gas.GasStack;
 
 @SideOnly(Side.CLIENT)
 public class WidgetFluidSlot extends AbstractWidget {
@@ -122,15 +113,7 @@ public class WidgetFluidSlot extends AbstractWidget {
 		textureManager.bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
 		TextureAtlasSprite sprite = manager.mc.getTextureMapBlocks().getAtlasSprite(fluid.getStill().toString());
 
-		Gas gas = GasUtil.getGas(fluid);
-
-		if (gas != null) {
-			int color = gas.getTint();
-
-			GlStateManager.color(getRed(color), getGreen(color), getBlue(color));
-		} else {
-			GlStateManager.color(1.0f, 1.0f, 1.0f);
-		}
+		GlStateManager.color(1.0f, 1.0f, 1.0f);
 		manager.gui.drawTexturedModalRect(this.xPos + 1, this.yPos + 1, sprite, 16, 16);
 	}
 
@@ -161,23 +144,11 @@ public class WidgetFluidSlot extends AbstractWidget {
 		if (!isVisable()) {
 			return;
 		}
-		if (Integration.Mods.MEKANISMGAS.isEnabled() && (listener instanceof PartGasImport || listener instanceof PartGasExport || listener instanceof PartGasStorage || listener instanceof PartGasLevelEmitter || listener instanceof TileEntityGasInterface)) {
-			handleGasContainer(stack);
-		} else {
-			handleFluidContainer(stack);
-		}
+		handleFluidContainer(stack);
 	}
 
 	public void handleFluidContainer(ItemStack stack) {
 		FluidStack fluidStack = FluidHelper.getFluidFromContainer(stack);
-		this.fluid = fluidStack == null ? null : fluidStack.getFluid();
-		NetworkUtil.sendToServer(new PacketFluidSlotSelect(listener, id, fluid));
-	}
-
-	@Optional.Method(modid = "mekanism")
-	public void handleGasContainer(ItemStack stack) {
-		GasStack gasStack = GasUtil.getGasFromContainer(stack);
-		FluidStack fluidStack = GasUtil.getFluidStack(gasStack);
 		this.fluid = fluidStack == null ? null : fluidStack.getFluid();
 		NetworkUtil.sendToServer(new PacketFluidSlotSelect(listener, id, fluid));
 	}

@@ -2,9 +2,7 @@ package appeng.ext.aeadditions.gridblock;
 
 import java.util.EnumSet;
 
-import appeng.ext.aeadditions.api.gas.IAEGasStack;
 import appeng.ext.aeadditions.integration.Integration;
-import appeng.ext.aeadditions.integration.mekanism.gas.MEMonitorFluidGasWrapper;
 import appeng.ext.aeadditions.util.StorageChannels;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
@@ -43,13 +41,6 @@ public class ECBaseGridBlock implements IGridBlock {
 		return EnumSet.of(GridFlags.REQUIRE_CHANNEL);
 	}
 
-	public IMEMonitor<IAEFluidStack> getFluidGasMonitor() {
-		IMEMonitor<IAEGasStack> gasMonitor = getGasMonitor();
-		if (gasMonitor == null)
-			return null;
-		return new MEMonitorFluidGasWrapper(gasMonitor);
-	}
-
 	public IMEMonitor<IAEFluidStack> getFluidMonitor() {
 		IGridNode node = this.host.getGridNode();
 		if (node == null) {
@@ -67,25 +58,6 @@ public class ECBaseGridBlock implements IGridBlock {
 
 	}
 
-	public IMEMonitor<IAEGasStack> getGasMonitor() {
-		if (!Integration.Mods.MEKANISMGAS.isEnabled())
-			return null;
-
-		IGridNode node = this.host.getGridNode();
-		if (node == null) {
-			return null;
-		}
-		IGrid grid = node.getGrid();
-		if (grid == null) {
-			return null;
-		}
-		IStorageGrid storageGrid = grid.getCache(IStorageGrid.class);
-		if (storageGrid == null) {
-			return null;
-		}
-		return storageGrid.getInventory(StorageChannels.GAS);
-
-	}
 
 	@Override
 	public final AEColor getGridColor() {

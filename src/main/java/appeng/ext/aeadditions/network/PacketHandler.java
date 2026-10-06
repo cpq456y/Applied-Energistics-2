@@ -26,15 +26,10 @@ import appeng.ext.aeadditions.network.packet.other.PacketFluidSlotSelect;
 import appeng.ext.aeadditions.network.packet.other.PacketFluidSlotUpdate;
 import appeng.ext.aeadditions.network.packet.part.PacketFluidInterface;
 import appeng.ext.aeadditions.network.packet.part.PacketOreDictExport;
-import appeng.ext.aeadditions.network.packet.part.PacketPartConfig;
 import appeng.ext.aeadditions.network.packet.part.PacketStorageOpenContainer;
 import appeng.ext.aeadditions.network.packet.part.PacketStorageSelectFluid;
 import appeng.ext.aeadditions.network.packet.part.PacketStorageUpdateFluid;
 import appeng.ext.aeadditions.network.packet.part.PacketStorageUpdateState;
-import appeng.ext.aeadditions.network.packet.part.PacketTerminalOpenContainer;
-import appeng.ext.aeadditions.network.packet.part.PacketTerminalSelectFluidClient;
-import appeng.ext.aeadditions.network.packet.part.PacketTerminalSelectFluidServer;
-import appeng.ext.aeadditions.network.packet.part.PacketTerminalUpdateFluid;
 import appeng.ext.aeadditions.util.Log;
 
 public class PacketHandler {
@@ -51,13 +46,9 @@ public class PacketHandler {
 		PacketId.FLUID_SLOT.registerHandler(new PacketFluidSlotSelect.Handler());
 		PacketId.FLUID_CONTAINER_SLOT.registerHandler(new PacketFluidContainerSlot.Handler());
 		PacketId.EXPORT_ORE.registerHandler(new PacketOreDictExport.HandlerServer());
-		PacketId.TERMINAL_SELECT_FLUID.registerHandler(new PacketTerminalSelectFluidServer.Handler());
-		PacketId.TERMINAL_OPEN_CONTAINER.registerHandler(new PacketTerminalOpenContainer.Handler());
 		PacketId.STORAGE_OPEN_CONTAINER.registerHandler(new PacketStorageOpenContainer.Handler());
 		PacketId.STORAGE_SELECT_FLUID.registerHandler(new PacketStorageSelectFluid.Handler());
-		PacketId.PART_CONFIG.registerHandler(new PacketPartConfig.HandlerServer());
 		PacketId.FLUID_FILLER_SYNC_CLIENT.registerHandler(new PacketFluidFillerSyncClient.HandlerServer());
-		PacketId.GAS_INTERFACE_SERVER.registerHandler(new PacketGasInterfaceServer.HandlerServer());
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -65,15 +56,11 @@ public class PacketHandler {
 		PacketId.FLUID_SLOT.registerHandler(new PacketFluidSlotUpdate.Handler());
 		PacketId.FLUID_INTERFACE.registerHandler(new PacketFluidInterface.Handler());
 		PacketId.EXPORT_ORE.registerHandler(new PacketOreDictExport.HandlerClient());
-		PacketId.TERMINAL_UPDATE_FLUID.registerHandler(new PacketTerminalUpdateFluid.Handler());
-		PacketId.TERMINAL_SELECT_FLUID.registerHandler(new PacketTerminalSelectFluidClient.Handler());
 		PacketId.STORAGE_UPDATE_FLUID.registerHandler(new PacketStorageUpdateFluid.Handler());
 		PacketId.STORAGE_UPDATE_STATE.registerHandler(new PacketStorageUpdateState.Handler());
-		PacketId.PART_CONFIG.registerHandler(new PacketPartConfig.HandlerClient());
 		PacketId.FLUID_CRAFTER_CAPACITY.registerHandler(new PacketCrafterCapacity.Companion.HandlerClient());
 		PacketId.FLUID_CRAFTER_DROPPED_ITEM.registerHandler(new PacketCrafterDroppedItem.Companion.HandlerClient());
 		PacketId.FLUID_FILLER_SLOT_UPDATE.registerHandler(new PacketFluidFillerSlotUpdate.Companion.HandlerClient());
-		PacketId.GAS_INTERFACE.registerHandler(new PacketGasInterface.Handler());
 	}
 
 	@SubscribeEvent

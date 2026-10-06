@@ -3,8 +3,6 @@ package appeng.ext.aeadditions.gui.widget.fluid;
 import java.util.ArrayList;
 import java.util.List;
 
-import appeng.ext.aeadditions.util.GasUtil;
-import mekanism.api.gas.Gas;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
@@ -95,16 +93,7 @@ public class WidgetFluidSelector extends AbstractFluidWidget {
 			TextureMap map = Minecraft.getMinecraft().getTextureMapBlocks();
 			TextureAtlasSprite sprite = map.getAtlasSprite(fluid.getStill().toString());
 
-			Gas gas = GasUtil.getGas(fluid);
-
-
-			if (gas != null) {
-				int color = gas.getTint();
-
-				GlStateManager.color(getRed(color), getGreen(color), getBlue(color));
-			} else {
-				GlStateManager.color(1.0f, 1.0f, 1.0f);
-			}
+			GlStateManager.color(1.0f, 1.0f, 1.0f);
 
 			drawTexturedModalRect(posX + 1, posY + 1,
 				sprite, this.height - 2, this.width - 2);

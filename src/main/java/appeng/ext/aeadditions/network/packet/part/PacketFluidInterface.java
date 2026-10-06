@@ -13,7 +13,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import appeng.api.util.AEPartLocation;
 import appeng.ext.aeadditions.container.fluid.ContainerFluidInterface;
-import appeng.ext.aeadditions.gui.gas.GuiFluidInterface;
+import appeng.ext.aeadditions.gui.fluid.GuiFluidInterface;
 import appeng.ext.aeadditions.network.packet.IPacketHandlerClient;
 import appeng.ext.aeadditions.network.packet.Packet;
 import appeng.ext.aeadditions.network.packet.PacketBufferEC;

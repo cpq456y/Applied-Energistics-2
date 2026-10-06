@@ -95,8 +95,6 @@ public final class AEAdditionsIntegration {
         proxy.registerPackets();
 
         integration.init();
-
-        appeng.ext.aeadditions.util.datafix.AEDataFixers.register();
     }
 
     public static void postInit() {

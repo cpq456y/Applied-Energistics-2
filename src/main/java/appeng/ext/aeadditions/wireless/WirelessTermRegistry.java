@@ -5,15 +5,16 @@ import java.util.List;
 
 import net.minecraft.item.ItemStack;
 
-import appeng.ext.aeadditions.api.IWirelessGasFluidTermHandler;
+import appeng.ext.aeadditions.api.IWirelessFluidTermHandler;
+
 
 public class WirelessTermRegistry {
 
-	public static IWirelessGasFluidTermHandler getWirelessTermHandler(ItemStack is) {
+	public static IWirelessFluidTermHandler getWirelessTermHandler(ItemStack is) {
 		if (is == null) {
 			return null;
 		}
-		for (IWirelessGasFluidTermHandler handler : handlers) {
+		for (IWirelessFluidTermHandler handler : handlers) {
 			if (handler.canHandle(is)) {
 				return handler;
 			}
@@ -25,7 +26,7 @@ public class WirelessTermRegistry {
 		if (is == null) {
 			return false;
 		}
-		for (IWirelessGasFluidTermHandler handler : handlers) {
+		for (IWirelessFluidTermHandler handler : handlers) {
 			if (handler.canHandle(is)) {
 				return true;
 			}
@@ -34,12 +35,12 @@ public class WirelessTermRegistry {
 	}
 
 	public static void registerWirelessTermHandler(
-		IWirelessGasFluidTermHandler handler) {
+		IWirelessFluidTermHandler handler) {
 		if (!handlers.contains(handler)) {
 			handlers.add(handler);
 		}
 	}
 
-	static List<IWirelessGasFluidTermHandler> handlers = new ArrayList<IWirelessGasFluidTermHandler>();
+	static List<IWirelessFluidTermHandler> handlers = new ArrayList<IWirelessFluidTermHandler>();
 
 }

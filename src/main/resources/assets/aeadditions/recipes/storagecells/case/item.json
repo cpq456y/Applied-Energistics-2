@@ -1,6 +1,7 @@
 {
     "result": {
-        "item": "appliedenergistics2:material", "data": 76
+        "item": "appliedenergistics2:material",
+        "data": 79
     },
     "type": "forge:ore_shaped",
     "pattern": [
@@ -10,14 +11,14 @@
     ],
     "key": {
         "a": {
-			"item": "#aeadditions:dustFluix"
+            "item": "#aeadditions:dustFluix"
         },
-		"b": {
-			"type": "forge:ore_dict",
+        "b": {
+            "type": "forge:ore_dict",
             "ore": "gemDiamond"
-		},
-		"d": {
-			"item": "#aeadditions:glassQuartz"
-		}
+        },
+        "d": {
+            "item": "#aeadditions:glassQuartz"
+        }
     }
 }

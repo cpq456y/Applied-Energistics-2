@@ -10,16 +10,17 @@
     ],
     "key": {
         "a": {
-			"item": "#aeadditions:dustFluix"
+            "item": "#aeadditions:dustFluix"
         },
-		"b": {
-			"item": "aeadditions:certustank"
-		},
-		"d": {
-			"item": "#aeadditions:glassQuartz"
-		},
-		"s": {
-			"item": "appliedenergistics2:material", "data": 66
-		}
+        "b": {
+            "item": "aeadditions:certustank"
+        },
+        "d": {
+            "item": "#aeadditions:glassQuartz"
+        },
+        "s": {
+            "item": "appliedenergistics2:material",
+            "data": 67
+        }
     }
 }

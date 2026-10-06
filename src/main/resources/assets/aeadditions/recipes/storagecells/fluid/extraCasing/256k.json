@@ -4,11 +4,13 @@
     },
     "type": "forge:ore_shapeless",
     "ingredients": [
-		{
-			"item": "appliedenergistics2:material", "data": 77
+        {
+            "item": "appliedenergistics2:material",
+            "data": 80
         },
-		{
-			"item": "appliedenergistics2:material", "data": 66
+        {
+            "item": "appliedenergistics2:material",
+            "data": 67
         }
     ]
 }

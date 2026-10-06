@@ -1,6 +1,7 @@
 {
     "result": {
-        "item": "appliedenergistics2:material", "data": 77
+        "item": "appliedenergistics2:material",
+        "data": 80
     },
     "type": "forge:ore_shaped",
     "pattern": [
@@ -10,13 +11,13 @@
     ],
     "key": {
         "a": {
-			"item": "#aeadditions:dustFluix"
+            "item": "#aeadditions:dustFluix"
         },
-		"b": {
-			"item": "aeadditions:certustank"
-		},
-		"d": {
-			"item": "#aeadditions:glassQuartz"
-		}
+        "b": {
+            "item": "aeadditions:certustank"
+        },
+        "d": {
+            "item": "#aeadditions:glassQuartz"
+        }
     }
 }

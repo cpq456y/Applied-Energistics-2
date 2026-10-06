@@ -102,9 +102,6 @@ public class CommonProxy {
 		movable.whiteListTileEntity(TileEntityFluidFiller.class);
 		movable.whiteListTileEntity(TileEntityHardMeDrive.class);
 		movable.whiteListTileEntity(TileEntityVibrationChamberFluid.class);
-		if (Integration.Mods.MEKANISMGAS.isEnabled()) {
-			movable.whiteListTileEntity(TileEntityGasInterface.class);
-		}
 	}
 
 	public void registerRenderers() {
@@ -124,9 +121,6 @@ public class CommonProxy {
 		GameRegistry.registerTileEntity(TileEntityHardMeDrive.class, "tileEntityHardMEDrive");
 		GameRegistry.registerTileEntity(TileEntityVibrationChamberFluid.class, "tileEntityVibrationChamberFluid");
 
-		if (Integration.Mods.MEKANISMGAS.isEnabled()) {
-			GameRegistry.registerTileEntity(TileEntityGasInterface.class, "tileEntityGasInterface");
-		}
 	}
 
 	public void registerFluidBurnTimes() {

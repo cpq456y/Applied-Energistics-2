@@ -1,7 +1,7 @@
 {
     "result": {
         "item": "appliedenergistics2:material",
-        "data": 67
+        "data": 70
     },
     "type": "forge:ore_shaped",
     "pattern": [
@@ -17,8 +17,8 @@
             "item": "#aeadditions:engProcessor"
         },
         "c": {
-            "type": "appliedenergistics2:part",
-            "part": "material.fluid_cell64k_part"
+            "item": "appliedenergistics2:material",
+            "data": 69
         },
         "d": {
             "item": "#aeadditions:logProcessor"

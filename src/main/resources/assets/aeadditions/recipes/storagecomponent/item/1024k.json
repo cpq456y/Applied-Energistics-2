@@ -1,6 +1,7 @@
 {
     "result": {
-        "item": "appliedenergistics2:material", "data": 63
+        "item": "appliedenergistics2:material",
+        "data": 63
     },
     "type": "forge:ore_shaped",
     "pattern": [
@@ -10,16 +11,17 @@
     ],
     "key": {
         "a": {
-			"item": "#aeadditions:dustGlowstone"
+            "item": "#aeadditions:dustGlowstone"
         },
-		"b": {
-			"item": "#aeadditions:engProcessor"
-		},
-		"c": {
-			"item": "appliedenergistics2:material", "data": 62
-		},
-		"d": {
-			"item": "#aeadditions:logProcessor"
-		}
+        "b": {
+            "item": "#aeadditions:engProcessor"
+        },
+        "c": {
+            "item": "appliedenergistics2:material",
+            "data": 62
+        },
+        "d": {
+            "item": "#aeadditions:logProcessor"
+        }
     }
 }

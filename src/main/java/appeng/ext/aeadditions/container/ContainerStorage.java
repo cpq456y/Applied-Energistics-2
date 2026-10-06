@@ -21,7 +21,7 @@ import appeng.api.storage.IMEMonitorHandlerReceiver;
 import appeng.api.storage.data.IAEFluidStack;
 import appeng.api.storage.data.IItemList;
 import appeng.ext.aeadditions.api.IPortableStorageCell;
-import appeng.ext.aeadditions.api.IWirelessGasFluidTermHandler;
+import appeng.ext.aeadditions.api.IWirelessFluidTermHandler;
 import appeng.ext.aeadditions.container.slot.SlotOutput;
 import appeng.ext.aeadditions.container.slot.SlotPlayerInventory;
 import appeng.ext.aeadditions.container.slot.SlotRespective;
@@ -46,7 +46,7 @@ public abstract class ContainerStorage extends Container implements
 	protected EntityPlayer player;
 	protected IMEMonitor<IAEFluidStack> monitor;
 	protected ICellInventoryHandler<IAEFluidStack> storageFluid;
-	protected IWirelessGasFluidTermHandler handler = null;
+	protected IWirelessFluidTermHandler handler = null;
 	protected IPortableStorageCell storageCell = null;
 	public boolean hasWirelessTermHandler = false;
 	protected InventoryPlain inventory;
@@ -61,7 +61,7 @@ public abstract class ContainerStorage extends Container implements
 		this.storageCell = storageCell;
 	}
 
-	public ContainerStorage(StorageType storageType, IMEMonitor<IAEFluidStack> monitor, EntityPlayer player, IWirelessGasFluidTermHandler handler, EnumHand hand) {
+	public ContainerStorage(StorageType storageType, IMEMonitor<IAEFluidStack> monitor, EntityPlayer player, IWirelessFluidTermHandler handler, EnumHand hand) {
 		this(storageType, monitor, player, hand);
 		this.hasWirelessTermHandler = handler != null;
 		this.handler = handler;

@@ -1,4 +1,4 @@
-package appeng.ext.aeadditions.gui.gas;
+package appeng.ext.aeadditions.gui.fluid;
 
 import javax.annotation.Nullable;
 

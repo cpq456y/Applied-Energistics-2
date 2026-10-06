@@ -23,14 +23,9 @@ import appeng.api.storage.data.IAEFluidStack;
 import appeng.api.util.AEPartLocation;
 import appeng.ext.aeadditions.AEAdditionsIntegration;
 import appeng.ext.aeadditions.api.IPortableFluidStorageCell;
-import appeng.ext.aeadditions.api.IPortableGasStorageCell;
-import appeng.ext.aeadditions.api.IWirelessGasTermHandler;
-import appeng.ext.aeadditions.api.gas.IAEGasStack;
 import appeng.ext.aeadditions.block.IGuiBlock;
 import appeng.ext.aeadditions.container.fluid.ContainerFluidStorage;
-import appeng.ext.aeadditions.container.gas.ContainerGasStorage;
 import appeng.ext.aeadditions.gui.GuiStorage;
-import appeng.ext.aeadditions.integration.mekanism.gas.MEMonitorFluidGasWrapper;
 import appeng.ext.aeadditions.part.PartECBase;
 
 /** Ported from GuiHandler.kt (Kotlin {@code object}, kept as a singleton). */
@@ -50,23 +45,6 @@ public class GuiHandler implements IGuiHandler {
 
                 return new ContainerFluidStorage(fluidInventory, player, storageCell, this.hand);
             }
-            case 4: {
-                final MEMonitorFluidGasWrapper gasInventory = new MEMonitorFluidGasWrapper(
-                        (IMEMonitor<IAEGasStack>) args[0]);
-                return new ContainerGasStorage(gasInventory, player, this.hand);
-            }
-            case 5: {
-                final MEMonitorFluidGasWrapper gasInventory = new MEMonitorFluidGasWrapper(
-                        (IMEMonitor<IAEGasStack>) args[0]);
-                final IWirelessGasTermHandler handler = (IWirelessGasTermHandler) args[1];
-                return new ContainerGasStorage(gasInventory, player, handler, this.hand);
-            }
-            case 6: {
-                final MEMonitorFluidGasWrapper gasInventory = new MEMonitorFluidGasWrapper(
-                        (IMEMonitor<IAEGasStack>) args[0]);
-                final IPortableGasStorageCell storageCell = (IPortableGasStorageCell) args[1];
-                return new ContainerGasStorage(gasInventory, player, storageCell, this.hand);
-            }
             default: {
                 return null;
             }
@@ -79,15 +57,6 @@ public class GuiHandler implements IGuiHandler {
             case 3:
                 return new GuiStorage(new ContainerFluidStorage(player, this.hand),
                         "appeng.ext.aeadditions.item.storage.fluid.portable.name");
-            case 4:
-                return new GuiStorage(new ContainerGasStorage(player, this.hand),
-                        "appeng.ext.aeadditions.part.gas.terminal.name");
-            case 5:
-                return new GuiStorage(new ContainerGasStorage(player, this.hand),
-                        "appeng.ext.aeadditions.part.gas.terminal.name");
-            case 6:
-                return new GuiStorage(new ContainerGasStorage(player, this.hand),
-                        "appeng.ext.aeadditions.item.storage.gas.portable.name");
             default:
                 return null;
         }

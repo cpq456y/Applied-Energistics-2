@@ -10,10 +10,10 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import appeng.api.util.AEPartLocation;
+import appeng.ext.aeadditions.gui.fluid.GuiFluidInterface;
 import appeng.ext.aeadditions.api.IFluidInterface;
 import appeng.ext.aeadditions.container.IContainerListener;
 import appeng.ext.aeadditions.container.slot.SlotRespective;
-import appeng.ext.aeadditions.gui.gas.GuiFluidInterface;
 import appeng.ext.aeadditions.network.packet.part.PacketFluidInterface;
 import appeng.ext.aeadditions.part.fluid.PartFluidInterface;
 import appeng.ext.aeadditions.tileentity.TileEntityFluidInterface;
