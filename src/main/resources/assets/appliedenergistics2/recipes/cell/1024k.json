@@ -1,0 +1,30 @@
+{
+    "type": "appliedenergistics2:part_shaped",
+    "result": {
+        "item": "appliedenergistics2:material",
+        "data": 76,
+        "count": 1
+    },
+    "pattern": [
+        "aba",
+        "cdc",
+        "aca"
+    ],
+    "key": {
+        "a": {
+            "type": "forge:ore_dict",
+            "ore": "dustRefinedObsidian"
+        },
+        "b": {
+            "type": "appliedenergistics2:part",
+            "part": "material.engineering_processor"
+        },
+        "c": {
+            "item": "appliedenergistics2:material",
+            "data": 75
+        },
+        "d": {
+            "item": "appliedenergistics2:quartz_glass"
+        }
+    }
+}

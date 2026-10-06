@@ -1,0 +1,6 @@
+{
+  "parent": "appliedenergistics2:item/part/fluid_import_bus",
+  "textures": {
+    "front": "appliedenergistics2:parts/io_bus/gas_import_bus"
+  }
+}

@@ -1,0 +1,77 @@
+package appeng.ext.mekeng.network.packet;
+
+import appeng.container.AEBaseContainer;
+import appeng.container.ContainerOpenContext;
+import appeng.ext.mekeng.container.handler.GuiFactory;
+import appeng.ext.mekeng.container.handler.GuiHandler;
+import appeng.ext.mekeng.container.handler.MkEGuis;
+import appeng.ext.mekeng.util.Ae2Reflect;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.inventory.Container;
+import net.minecraft.network.PacketBuffer;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
+
+public class CSwitchGuis extends MkEMessage<CSwitchGuis> {
+
+    private GuiFactory<?> factory;
+    private GuiFactory.GuiMode mode;
+
+    public CSwitchGuis(GuiFactory<?> guiType, GuiFactory.GuiMode mode) {
+        this.factory = guiType;
+        this.mode = mode;
+    }
+
+    public CSwitchGuis() {
+        // NO-OP
+    }
+
+    @Override
+    void fromBytes(PacketBuffer byteBuf) {
+        factory = MkEGuis.getFactory(byteBuf.readByte());
+        mode = GuiFactory.GuiMode.values()[byteBuf.readByte()];
+    }
+
+    @Override
+    void toBytes(PacketBuffer byteBuf) {
+        byteBuf.writeByte(factory != null ? factory.getId() : 0);
+        byteBuf.writeByte(mode.ordinal());
+    }
+
+    @Override
+    public boolean isClient() {
+        return false;
+    }
+
+    @Override
+    public IMessageHandler<CSwitchGuis, IMessage> getHandler() {
+        return (message, ctx) -> {
+            if (message.factory == null) {
+                return null;
+            }
+            EntityPlayerMP player = ctx.getServerHandler().player;
+            Container cont = player.openContainer;
+            if (!(cont instanceof AEBaseContainer)) {
+                return null;
+            }
+            ContainerOpenContext context = ((AEBaseContainer) cont).getOpenContext();
+            if (context == null) {
+                return null;
+            }
+            player.getServerWorld().addScheduledTask(
+                    () -> GuiHandler.openGui(
+                            player,
+                            player.world,
+                            Ae2Reflect.getContextX(context),
+                            Ae2Reflect.getContextY(context),
+                            Ae2Reflect.getContextZ(context),
+                            message.mode,
+                            context.getSide().getFacing(),
+                            message.factory
+                    )
+            );
+            return null;
+        };
+    }
+
+}

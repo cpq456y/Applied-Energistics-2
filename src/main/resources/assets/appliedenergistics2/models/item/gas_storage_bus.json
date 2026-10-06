@@ -1,0 +1,6 @@
+{
+  "parent": "appliedenergistics2:item/part/fluid_storage_bus",
+  "textures": {
+    "front": "appliedenergistics2:parts/gas_storage_bus"
+  }
+}

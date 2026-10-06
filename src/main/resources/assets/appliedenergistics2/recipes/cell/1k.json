@@ -1,0 +1,26 @@
+{
+    "type": "appliedenergistics2:part_shaped",
+    "result": {
+        "item": "appliedenergistics2:material",
+        "data": 71,
+        "count": 1
+    },
+    "pattern": [
+        "aba",
+        "bcb",
+        "aba"
+    ],
+    "key": {
+        "a": {
+            "type": "forge:ore_dict",
+            "ore": "dustGold"
+        },
+        "b": {
+            "item": "#appliedenergistics2:certusCrystal"
+        },
+        "c": {
+            "type": "appliedenergistics2:part",
+            "part": "material.logic_processor"
+        }
+    }
+}

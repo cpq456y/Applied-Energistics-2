@@ -27,12 +27,17 @@ import java.util.Map;
 @IFMLLoadingPlugin.Name("AE2ELCore")
 @IFMLLoadingPlugin.MCVersion("1.12.2")
 @IFMLLoadingPlugin.SortingIndex(1001)
-@IFMLLoadingPlugin.TransformerExclusions("appeng.core.transformer")
+@IFMLLoadingPlugin.TransformerExclusions({"appeng.core.transformer", "appeng.ext.mekeng.core"})
 public class AE2ELCore implements IFMLLoadingPlugin {
     @Override
     public String[] getASMTransformerClass() {
         return new String[]{
-                "appeng.core.transformer.AE2ELTransformer"
+                "appeng.core.transformer.AE2ELTransformer",
+                // The merged Mekanism Energistics content brings its own ASM transformers
+                // (TileChest GUI bridge, pressurized tube capability, P2P tunnel). They must run from the
+                // coremod, before the patched AE2 classes are loaded, so they are chained here instead of
+                // getting a second FMLCorePlugin.
+                "appeng.ext.mekeng.core.MkEClassTransformer"
         };
     }
 

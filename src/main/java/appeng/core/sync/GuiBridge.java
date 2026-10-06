@@ -102,8 +102,6 @@ public enum GuiBridge implements IGuiHandler {
     GUI_PORTABLE_CELL(ContainerMEPortableCell.class, IPortableCell.class, GuiHostType.ITEM, null),
     GUI_PORTABLE_FLUID_CELL(appeng.ext.aeadditions.container.fluid.ContainerPortableFluidCell.class,
             appeng.api.implementations.guiobjects.IGuiItemObject.class, GuiHostType.ITEM, null),
-    GUI_PORTABLE_GAS_CELL(appeng.ext.aeadditions.container.gas.ContainerPortableGasCell.class,
-            appeng.api.implementations.guiobjects.IGuiItemObject.class, GuiHostType.ITEM, null),
 
     GUI_WIRELESS_TERM(ContainerWirelessTerm.class, WirelessTerminalGuiObject.class, GuiHostType.ITEM, null),
     GUI_WIRELESS_CRAFTING_TERMINAL(ContainerWirelessCraftingTerminal.class, WirelessTerminalGuiObject.class, GuiHostType.ITEM, null),
@@ -181,6 +179,19 @@ public enum GuiBridge implements IGuiHandler {
     GUI_INTERFACE_CONFIGURATION_TERMINAL(ContainerInterfaceConfigurationTerminal.class, PartInterfaceConfigurationTerminal.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
     GUI_FLUID_INTERFACE_CONFIGURATION_TERMINAL(ContainerFluidInterfaceConfigurationTerminal.class, PartFluidInterfaceConfigurationTerminal.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 
+    // --- Merged Mekanism Energistics (MkE) gas GUIs -------------------------------------------------
+    // These are why MkE's containers were moved to appeng.ext.mekeng.container: GuiBridge derives the GUI
+    // class name from the container name ("container." -> "client.gui.", ".Container" -> ".Gui"), and MkE's
+    // GUIs already live in appeng.ext.mekeng.client.gui.
+    GUI_GAS_TERMINAL(appeng.ext.mekeng.container.ContainerGasTerminal.class, ITerminalHost.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+    GUI_GAS_IO_BUS(appeng.ext.mekeng.container.ContainerGasIO.class, appeng.ext.mekeng.common.part.PartSharedGasBus.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+    GUI_GAS_INTERFACE(appeng.ext.mekeng.container.ContainerGasInterface.class, appeng.ext.mekeng.common.me.duality.IGasInterfaceHost.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+    GUI_GAS_STORAGE_BUS(appeng.ext.mekeng.container.ContainerGasStorageBus.class, appeng.ext.mekeng.common.part.PartGasStorageBus.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+    GUI_GAS_LEVEL_EMITTER(appeng.ext.mekeng.container.ContainerGasLevelEmitter.class, appeng.ext.mekeng.common.part.PartGasLevelEmitter.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+    GUI_GAS_INTERFACE_TERMINAL(appeng.ext.mekeng.container.ContainerGasInterfaceConfigurationTerminal.class, appeng.ext.mekeng.common.part.PartGasInterfaceConfigurationTerminal.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+    GUI_PORTABLE_GAS_CELL(appeng.ext.mekeng.container.ContainerMEPortableGasCell.class, appeng.ext.mekeng.common.me.storage.IPortableGasCell.class, GuiHostType.ITEM, null),
+    GUI_WIRELESS_GAS_TERMINAL(appeng.ext.mekeng.container.ContainerWirelessGasTerminal.class, appeng.helpers.WirelessTerminalGuiObject.class, GuiHostType.ITEM, null),
+
     GUI_RENAMER(ContainerRenamer.class, ICustomNameObject.class, GuiHostType.WORLD, SecurityPermissions.BUILD);
 
     private final Class tileClass;
@@ -251,6 +262,12 @@ public enum GuiBridge implements IGuiHandler {
         if (ordinal < 16) {
             return appeng.ext.aeadditions.network.GuiHandler.INSTANCE.getServerGuiElement(ordinal, player, w, x, y,
                     z);
+        }
+        // The merged Mekanism Energistics layer encodes its ids above MkEGuis.GUI_ID_BASE so that they cannot be
+        // confused with AE2's own (ordinal << 4 | side) range or with the AE-Additions range above.
+        if (ordinal >= appeng.ext.mekeng.container.handler.MkEGuis.GUI_ID_BASE) {
+            return appeng.ext.mekeng.container.handler.GuiHandler.INSTANCE.getServerGuiElement(ordinal, player,
+                    w, x, y, z);
         }
         final AEPartLocation side = AEPartLocation.fromOrdinal(ordinal & 0x07);
         final GuiBridge ID = values()[ordinal >> 4];
@@ -371,6 +388,11 @@ public enum GuiBridge implements IGuiHandler {
         if (ordinal < 16) {
             return appeng.ext.aeadditions.network.GuiHandler.INSTANCE.getClientGuiElement(ordinal, player, w, x, y,
                     z);
+        }
+        // See getServerGuiElement: Mekanism Energistics GUI ids start at MkEGuis.GUI_ID_BASE.
+        if (ordinal >= appeng.ext.mekeng.container.handler.MkEGuis.GUI_ID_BASE) {
+            return appeng.ext.mekeng.container.handler.GuiHandler.INSTANCE.getClientGuiElement(ordinal, player,
+                    w, x, y, z);
         }
         final AEPartLocation side = AEPartLocation.fromOrdinal(ordinal & 0x07);
         final GuiBridge ID = values()[ordinal >> 4];

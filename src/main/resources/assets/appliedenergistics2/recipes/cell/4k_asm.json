@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shapeless",
+    "result": {
+        "item": "appliedenergistics2:gas_cell_4k"
+    },
+    "ingredients": [
+        {
+            "item": "appliedenergistics2:material",
+            "data": 81
+        },
+        {
+            "item": "appliedenergistics2:material",
+            "data": 72
+        }
+    ]
+}
