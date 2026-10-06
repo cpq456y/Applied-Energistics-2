@@ -88,6 +88,8 @@ public interface IMaterials {
 
     IItemDefinition cell16384kPart();
 
+    IItemDefinition cell65536kPart();
+
     IItemDefinition emptyStorageCell();
 
     IItemDefinition itemCellCasing();
@@ -95,6 +97,7 @@ public interface IMaterials {
     IItemDefinition fluidCellCasing();
 
     IItemDefinition gasCellCasing();
+
 
     IItemDefinition cardRedstone();
 
@@ -169,4 +172,6 @@ public interface IMaterials {
     IItemDefinition fluidCell1024kPart();
 
     IItemDefinition fluidCell4096kPart();
+
+    IItemDefinition fluidCell16384kPart();
 }

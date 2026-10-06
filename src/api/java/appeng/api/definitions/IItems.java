@@ -23,9 +23,7 @@
 
 package appeng.api.definitions;
 
-
 import appeng.api.util.AEColoredItemDefinition;
-
 
 /**
  * A list of all items in AE
@@ -87,8 +85,6 @@ public interface IItems {
 
 	IItemDefinition fluidPortableCell();
 
-	IItemDefinition gasPortableCell();
-
 	IItemDefinition cellCreative();
 
 	IItemDefinition viewCell();
@@ -109,6 +105,8 @@ public interface IItems {
 
     IItemDefinition cell16384k();
 
+    IItemDefinition cell65536k();
+
 	IItemDefinition fluidCell1k();
 
 	IItemDefinition fluidCell4k();
@@ -123,19 +121,7 @@ public interface IItems {
 
     IItemDefinition fluidCell4096k();
 
-    IItemDefinition gasCell1k();
-
-    IItemDefinition gasCell4k();
-
-    IItemDefinition gasCell16k();
-
-    IItemDefinition gasCell64k();
-
-    IItemDefinition gasCell256k();
-
-    IItemDefinition gasCell1024k();
-
-    IItemDefinition gasCell4096k();
+    IItemDefinition fluidCell16384k();
 
 	IItemDefinition spatialCell2();
 

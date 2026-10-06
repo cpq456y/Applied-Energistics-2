@@ -83,12 +83,13 @@ public final class ApiMaterials implements IMaterials {
     private final IItemDefinition cell1024kPart;
     private final IItemDefinition cell4096kPart;
     private final IItemDefinition cell16384kPart;
+    private final IItemDefinition cell65536kPart;
     private final IItemDefinition emptyStorageCell;
     private final IItemDefinition itemCellCasing;
     private final IItemDefinition fluidCellCasing;
     private final IItemDefinition gasCellCasing;
 
-    /** Gas storage components: created for their metadata mapping only, see the constructor. */
+    /** Gas storage components: created for their metadata mapping, addressed by item + metadata. */
     private static final java.util.List<MaterialType> GAS_STORAGE_PARTS = java.util.Arrays.asList(
             MaterialType.GAS_CELL1K_PART,
             MaterialType.GAS_CELL4K_PART,
@@ -96,7 +97,9 @@ public final class ApiMaterials implements IMaterials {
             MaterialType.GAS_CELL64K_PART,
             MaterialType.GAS_CELL256K_PART,
             MaterialType.GAS_CELL1024K_PART,
-            MaterialType.GAS_CELL4096K_PART);
+            MaterialType.GAS_CELL4096K_PART,
+            MaterialType.GAS_CELL16384K_PART);
+
 
     private final IItemDefinition cardRedstone;
     private final IItemDefinition cardSpeed;
@@ -143,6 +146,7 @@ public final class ApiMaterials implements IMaterials {
     private final IItemDefinition fluidCell256kPart;
     private final IItemDefinition fluidCell1024kPart;
     private final IItemDefinition fluidCell4096kPart;
+    private final IItemDefinition fluidCell16384kPart;
 
     public ApiMaterials(FeatureFactory registry) {
         final ItemMaterial materials = new ItemMaterial();
@@ -222,19 +226,24 @@ public final class ApiMaterials implements IMaterials {
         this.cell1024kPart = new DamagedItemDefinition("material.cell.storage.1024k", materials.createMaterial(MaterialType.CELL1024K_PART));
         this.cell4096kPart = new DamagedItemDefinition("material.cell.storage.4096k", materials.createMaterial(MaterialType.CELL4096K_PART));
         this.cell16384kPart = new DamagedItemDefinition("material.cell.storage.16384k", materials.createMaterial(MaterialType.CELL16384K_PART));
+        this.cell65536kPart = new DamagedItemDefinition("material.cell.storage.65536k", materials.createMaterial(MaterialType.CELL65536K_PART));
         this.emptyStorageCell = new DamagedItemDefinition("material.cell.storage.empty", materials.createMaterial(MaterialType.EMPTY_STORAGE_CELL));
         this.itemCellCasing = new DamagedItemDefinition("material.cell.casing.item", materials.createMaterial(MaterialType.ITEM_CELL_CASING));
         this.fluidCellCasing = new DamagedItemDefinition("material.cell.casing.fluid", materials.createMaterial(MaterialType.FLUID_CELL_CASING));
         this.gasCellCasing = new DamagedItemDefinition("material.cell.casing.gas", materials.createMaterial(MaterialType.GAS_CELL_CASING));
+
+        // Gas storage components. Every material must be created exactly once: ItemMaterial#createMaterial is
+        // what maps the metadata in dmgToMaterial, and a material that is never created resolves to
+        // MaterialType.INVALID_TYPE in getTypeByStack (an invisible item named "该物品已被禁用").
+        for (final MaterialType gasPart : GAS_STORAGE_PARTS) {
+            materials.createMaterial(gasPart);
+        }
 
         // The gas storage components are referenced by item + metadata only (the recipes address them that way),
         // so they do not need an API field - but every material must still be created exactly once, because
         // ItemMaterial#createMaterial is what maps the metadata in dmgToMaterial. A material that is never
         // created resolves to MaterialType.INVALID_TYPE in ItemMaterial#getTypeByStack, which shows up in game
         // as an invisible item whose name is "该物品已被禁用" (material.invalid_type).
-        for (final MaterialType gasPart : GAS_STORAGE_PARTS) {
-            materials.createMaterial(gasPart);
-        }
 
         this.cardRedstone = new DamagedItemDefinition("material.card.redstone", materials.createMaterial(MaterialType.CARD_REDSTONE));
         this.cardSpeed = new DamagedItemDefinition("material.card.acceleration", materials.createMaterial(MaterialType.CARD_SPEED));
@@ -284,6 +293,7 @@ public final class ApiMaterials implements IMaterials {
         this.fluidCell256kPart = new DamagedItemDefinition("material.fluid_cell.storage.256k", materials.createMaterial(MaterialType.FLUID_CELL256K_PART));
         this.fluidCell1024kPart = new DamagedItemDefinition("material.fluid_cell.storage.1024k", materials.createMaterial(MaterialType.FLUID_CELL1024K_PART));
         this.fluidCell4096kPart = new DamagedItemDefinition("material.fluid_cell.storage.4096k", materials.createMaterial(MaterialType.FLUID_CELL4096K_PART));
+        this.fluidCell16384kPart = new DamagedItemDefinition("material.fluid_cell.storage.16384k", materials.createMaterial(MaterialType.FLUID_CELL16384K_PART));
     }
 
     @Override
@@ -434,6 +444,11 @@ public final class ApiMaterials implements IMaterials {
     @Override
     public IItemDefinition cell16384kPart() {
         return this.cell16384kPart;
+    }
+
+    @Override
+    public IItemDefinition cell65536kPart() {
+        return this.cell65536kPart;
     }
 
     @Override
@@ -639,5 +654,10 @@ public final class ApiMaterials implements IMaterials {
     @Override
     public IItemDefinition fluidCell4096kPart() {
         return this.fluidCell4096kPart;
+    }
+
+    @Override
+    public IItemDefinition fluidCell16384kPart() {
+        return this.fluidCell16384kPart;
     }
 }

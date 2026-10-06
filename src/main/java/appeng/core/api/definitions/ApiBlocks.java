@@ -44,6 +44,7 @@ import appeng.block.storage.BlockSkyChest.SkyChestType;
 import appeng.bootstrap.BlockRenderingCustomizer;
 import appeng.bootstrap.FeatureFactory;
 import appeng.bootstrap.IBlockRendering;
+import appeng.bootstrap.RegistrationSlots;
 import appeng.bootstrap.IItemRendering;
 import appeng.bootstrap.components.IEntityRegistrationComponent;
 import appeng.bootstrap.components.IOreDictComponent;
@@ -347,6 +348,11 @@ public final class ApiBlocks implements IBlocks {
                 .features(AEFeature.FLUID_INTERFACE)
                 .tileEntity(new TileEntityDefinition(TileFluidInterface.class))
                 .build();
+        // The gas interface of the bundled Mekanism Energistics layer is registered through this slot so
+        // that its items stay directly behind the fluid interface in the item registry, which is the order
+        // JEI and the creative tabs use. The block itself is still registered by the extension.
+        registry.addBootstrapComponent(RegistrationSlots.AFTER_FLUID_INTERFACE);
+
         this.cellWorkbench = registry.block("cell_workbench", BlockCellWorkbench::new)
                 .features(AEFeature.STORAGE_CELLS)
                 .tileEntity(new TileEntityDefinition(TileCellWorkbench.class))

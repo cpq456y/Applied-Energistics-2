@@ -90,7 +90,13 @@ public enum MaterialType {
     CELL16_SPATIAL_PART(33, "material_cell16_spatial_part", EnumSet.of(AEFeature.SPATIAL_IO)),
     CELL128_SPATIAL_PART(34, "material_cell128_spatial_part", EnumSet.of(AEFeature.SPATIAL_IO)),
 
-    // Item storage components: 1k, 4k, 16k, 64k, 256k, 1M, 4M, 16M
+    // Storage components, ordered item -> fluid -> gas, each by tier. The upstream mod already used meta 0-61
+    // (item components 35-38, empty cell 39, fluid components 54-57 and various others), so the fork cannot
+    // interleave its own entries with those without renumbering upstream ids. Everything the fork adds
+    // therefore starts right after the last upstream id (61) and is kept contiguous, tier by tier, so that a
+    // component's meta value and the position it is listed at agree (see ItemMaterial.STORAGE_COMPONENT_ORDER).
+
+    // Item storage components: 1k, 4k, 16k, 64k, 256k, 1M, 4M, 16M, 64M
     CELL1K_PART(35, "material_cell1k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
     CELL4K_PART(36, "material_cell4k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
     CELL16K_PART(37, "material_cell16k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
@@ -99,32 +105,34 @@ public enum MaterialType {
     CELL1024K_PART(63, "material_cell1024k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
     CELL4096K_PART(64, "material_cell4096k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
     CELL16384K_PART(65, "material_cell16384k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    CELL65536K_PART(66, "material_cell65536k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
 
-    // Fluid storage components: 1k, 4k, 16k, 64k, 256k, 1M, 4M
+    // Fluid storage components: 1k, 4k, 16k, 64k, 256k, 1M, 4M, 16M
     FLUID_CELL1K_PART(54, "material_fluid_cell1k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
     FLUID_CELL4K_PART(55, "material_fluid_cell4k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
     FLUID_CELL16K_PART(56, "material_fluid_cell16k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
     FLUID_CELL64K_PART(57, "material_fluid_cell64k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    FLUID_CELL256K_PART(66, "material_fluid_cell256k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    FLUID_CELL1024K_PART(67, "material_fluid_cell1024k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    FLUID_CELL4096K_PART(68, "material_fluid_cell4096k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    FLUID_CELL256K_PART(67, "material_fluid_cell256k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    FLUID_CELL1024K_PART(68, "material_fluid_cell1024k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    FLUID_CELL4096K_PART(69, "material_fluid_cell4096k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    FLUID_CELL16384K_PART(70, "material_fluid_cell16384k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
 
-    // Gas storage components: 1k, 4k, 16k, 64k, 256k, 1M, 4M
-    GAS_CELL1K_PART(69, "material_gas_cell1k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    GAS_CELL4K_PART(70, "material_gas_cell4k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    GAS_CELL16K_PART(71, "material_gas_cell16k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    GAS_CELL64K_PART(72, "material_gas_cell64k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    GAS_CELL256K_PART(73, "material_gas_cell256k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    GAS_CELL1024K_PART(74, "material_gas_cell1024k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    GAS_CELL4096K_PART(75, "material_gas_cell4096k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    // Gas storage components: 1k, 4k, 16k, 64k, 256k, 1M, 4M, 16M
+    GAS_CELL1K_PART(71, "material_gas_cell1k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    GAS_CELL4K_PART(72, "material_gas_cell4k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    GAS_CELL16K_PART(73, "material_gas_cell16k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    GAS_CELL64K_PART(74, "material_gas_cell64k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    GAS_CELL256K_PART(75, "material_gas_cell256k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    GAS_CELL1024K_PART(76, "material_gas_cell1024k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    GAS_CELL4096K_PART(77, "material_gas_cell4096k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    GAS_CELL16384K_PART(78, "material_gas_cell16384k_part", EnumSet.of(AEFeature.STORAGE_CELLS)),
 
     EMPTY_STORAGE_CELL(39, "material_empty_storage_cell", EnumSet.of(AEFeature.STORAGE_CELLS)),
 
-    // Storage casings, needed to craft the storage cells above. Declared after the vanilla housing so that it
-    // keeps coming first in the creative tab and JEI.
-    ITEM_CELL_CASING(76, "material_item_cell_casing", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    FLUID_CELL_CASING(77, "material_fluid_cell_casing", EnumSet.of(AEFeature.STORAGE_CELLS)),
-    GAS_CELL_CASING(78, "material_gas_cell_casing", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    // Storage cell housings for the tiers that have no upstream counterpart.
+    ITEM_CELL_CASING(79, "material_item_cell_casing", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    FLUID_CELL_CASING(80, "material_fluid_cell_casing", EnumSet.of(AEFeature.STORAGE_CELLS)),
+    GAS_CELL_CASING(81, "material_gas_cell_casing", EnumSet.of(AEFeature.STORAGE_CELLS)),
 
     WOODEN_GEAR(40, "material_wooden_gear", EnumSet.of(AEFeature.GRIND_STONE), "gearWood"),
 

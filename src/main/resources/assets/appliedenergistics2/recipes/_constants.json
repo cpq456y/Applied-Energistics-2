@@ -237,5 +237,16 @@
                 "part": "material.purified_fluix_crystal"
             }
         ]
+    },
+    {
+        "name": "appliedenergistics2:gas_interface",
+        "ingredient": [
+            {
+                "item": "appliedenergistics2:gas_interface"
+            },
+            {
+                "item": "appliedenergistics2:gas_interface_part"
+            }
+        ]
     }
 ]

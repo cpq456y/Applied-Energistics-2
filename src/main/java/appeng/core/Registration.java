@@ -139,6 +139,9 @@ final class Registration {
 
         // 初始化合并进来的 AE-Additions 扩展层
         appeng.ext.aeadditions.AEAdditionsIntegration.preInit(event);
+
+        // 初始化合并进来的 Mekanism Energistics 气体层
+        appeng.ext.mekeng.MekEng.preInit(event);
     }
 
     private void registerSpatialBiome(IForgeRegistry<Biome> registry) {
@@ -202,6 +205,9 @@ final class Registration {
 
         // 初始化合并进来的 AE-Additions 扩展层
         appeng.ext.aeadditions.AEAdditionsIntegration.init();
+
+        // 初始化合并进来的 Mekanism Energistics 气体层
+        appeng.ext.mekeng.MekEng.init(event);
 
         MinecraftForge.EVENT_BUS.register(new WrenchClickHook());
 
@@ -330,6 +336,9 @@ final class Registration {
         // 收尾合并进来的 AE-Additions 扩展层
         appeng.ext.aeadditions.AEAdditionsIntegration.postInit();
 
+        // 收尾合并进来的 Mekanism Energistics 气体层
+        appeng.ext.mekeng.MekEng.postInit(event);
+
         this.registerSpatialDimension();
 
         // default settings..
@@ -398,6 +407,10 @@ final class Registration {
         Upgrades.FUZZY.registerItem(items.cell64k(), 1);
         Upgrades.INVERTER.registerItem(items.cell64k(), 1);
         Upgrades.STICKY.registerItem(items.cell64k(), 1);
+
+        Upgrades.FUZZY.registerItem(items.cell65536k(), 1);
+        Upgrades.INVERTER.registerItem(items.cell65536k(), 1);
+        Upgrades.STICKY.registerItem(items.cell65536k(), 1);
 
         Upgrades.FUZZY.registerItem(items.portableCell(), 1);
         Upgrades.INVERTER.registerItem(items.portableCell(), 1);
