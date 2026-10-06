@@ -30,7 +30,6 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.ItemStack;
 
-import java.io.IOException;
 
 
 public class GuiWirelessPatternTerminal extends GuiPatternTerm {

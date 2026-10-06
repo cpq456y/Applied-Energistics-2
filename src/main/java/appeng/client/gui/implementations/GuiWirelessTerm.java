@@ -19,7 +19,6 @@
 package appeng.client.gui.implementations;
 
 
-import appeng.api.implementations.guiobjects.IPortableCell;
 import appeng.container.implementations.ContainerWirelessTerm;
 import appeng.ext.wut.ItemWirelessUniversalTerminal;
 import appeng.ext.wut.WUTPlugin;
@@ -31,7 +30,6 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.ItemStack;
 
-import java.io.IOException;
 
 
 public class GuiWirelessTerm extends GuiMEMonitorable {

@@ -33,7 +33,6 @@ import net.minecraft.util.ResourceLocation;
 import javax.annotation.Nonnull;
 
 import static appeng.helpers.PatternHelper.CRAFTING_GRID_DIMENSION;
-import static appeng.helpers.PatternHelper.CRAFTING_OUTPUT_LIMIT;
 
 
 public class PartPatternTerminal extends AbstractPartEncoder {

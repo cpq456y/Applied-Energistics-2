@@ -19,7 +19,6 @@
 package appeng.container.slot;
 
 
-import appeng.api.storage.data.IAEFluidStack;
 import appeng.fluids.util.FluidSlotMarker;
 import appeng.fluids.util.IAEFluidTank;
 import net.minecraft.entity.player.EntityPlayer;

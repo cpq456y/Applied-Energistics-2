@@ -36,7 +36,6 @@ import appeng.tile.grid.AENetworkInvTile;
 import appeng.tile.inventory.AppEngInternalInventory;
 import appeng.util.Platform;
 import appeng.util.inv.InvOperation;
-import appeng.util.inv.filter.AEItemDefinitionFilter;
 import appeng.util.inv.filter.IAEItemFilter;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.block.Block;

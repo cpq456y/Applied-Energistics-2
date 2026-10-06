@@ -20,7 +20,6 @@ package appeng.container.slot;
 
 
 import appeng.util.helpers.ItemHandlerUtil;
-import appeng.util.inv.WrapperInvItemHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;

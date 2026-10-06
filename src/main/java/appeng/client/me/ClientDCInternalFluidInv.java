@@ -21,7 +21,6 @@ package appeng.client.me;
 
 import appeng.fluids.util.AEFluidInventory;
 import appeng.fluids.util.IAEFluidTank;
-import appeng.tile.inventory.AppEngInternalInventory;
 import net.minecraft.util.text.translation.I18n;
 
 import javax.annotation.Nonnull;

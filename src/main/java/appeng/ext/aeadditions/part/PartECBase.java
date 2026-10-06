@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Random;
 
 import appeng.api.networking.events.MENetworkChannelsChanged;
-import appeng.ext.aeadditions.util.MachineSource;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -25,10 +24,8 @@ import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.fluids.capability.IFluidHandler;
 
 import net.minecraftforge.fml.common.FMLCommonHandler;
-import net.minecraftforge.fml.common.Optional;
 
 import appeng.api.AEApi;
-import appeng.api.config.Actionable;
 import appeng.api.implementations.IPowerChannelState;
 import appeng.api.networking.IGrid;
 import appeng.api.networking.IGridHost;
@@ -42,13 +39,10 @@ import appeng.api.parts.IPart;
 import appeng.api.parts.IPartCollisionHelper;
 import appeng.api.parts.IPartHost;
 import appeng.api.parts.PartItemStack;
-import appeng.api.storage.IMEMonitor;
-import appeng.api.storage.data.IAEFluidStack;
 import appeng.api.util.AECableType;
 import appeng.api.util.AEPartLocation;
 import appeng.api.util.DimensionalCoord;
 import appeng.ext.aeadditions.gridblock.ECBaseGridBlock;
-import appeng.ext.aeadditions.integration.Integration;
 import appeng.ext.aeadditions.network.GuiHandler;
 import appeng.ext.aeadditions.registries.ItemEnum;
 import appeng.ext.aeadditions.registries.PartEnum;

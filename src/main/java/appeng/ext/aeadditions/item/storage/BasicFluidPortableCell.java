@@ -34,7 +34,6 @@ import appeng.core.localization.GuiText;
 import appeng.ext.aeadditions.util.StorageChannels;
 import appeng.items.tools.powered.powersink.AEBasePoweredItem;
 import appeng.util.Platform;
-import appeng.ext.aeadditions.api.AEAApi;
 import appeng.ext.aeadditions.api.IPortableFluidStorageCell;
 import appeng.fluids.helper.FluidCellConfig;
 import appeng.items.contents.CellUpgrades;

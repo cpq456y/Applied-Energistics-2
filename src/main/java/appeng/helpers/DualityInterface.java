@@ -55,7 +55,6 @@ import appeng.capabilities.Capabilities;
 import appeng.core.AELog;
 import appeng.core.settings.TickRates;
 import appeng.fluids.util.AEFluidInventory;
-import appeng.fluids.util.AEFluidStack;
 import appeng.fluids.util.AENetworkFluidInventory;
 import appeng.fluids.util.IAEFluidInventory;
 import appeng.fluids.util.IAEFluidTank;

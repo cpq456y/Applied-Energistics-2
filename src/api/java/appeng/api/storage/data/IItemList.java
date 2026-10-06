@@ -26,7 +26,6 @@ package appeng.api.storage.data;
 
 import java.util.Iterator;
 
-import appeng.api.storage.IStorageChannel;
 
 
 /**

@@ -25,7 +25,6 @@ import appeng.core.features.AEFeature;
 import appeng.core.localization.WailaText;
 import appeng.parts.networking.PartCableSmart;
 import appeng.parts.networking.PartDenseCableSmart;
-import it.unimi.dsi.fastutil.objects.Object2ByteMap;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import mcp.mobius.waila.api.IWailaConfigHandler;

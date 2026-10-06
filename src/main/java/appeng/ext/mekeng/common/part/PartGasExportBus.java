@@ -17,7 +17,6 @@ import appeng.items.parts.PartModels;
 import appeng.me.GridAccessException;
 import appeng.me.helpers.MachineSource;
 import appeng.parts.PartModel;
-import appeng.ext.mekeng.MekEng;
 import appeng.ext.mekeng.common.me.GasTickRates;
 import appeng.ext.mekeng.common.me.data.IAEGasStack;
 import appeng.ext.mekeng.common.me.data.impl.AEGasStack;

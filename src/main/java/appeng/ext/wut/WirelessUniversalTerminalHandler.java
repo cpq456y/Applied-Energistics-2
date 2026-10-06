@@ -4,7 +4,6 @@ import appeng.api.AEApi;
 import appeng.api.features.IWirelessTermHandler;
 import appeng.api.util.IConfigManager;
 import appeng.core.sync.GuiBridge;
-import appeng.items.tools.powered.ToolWirelessTerminal;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

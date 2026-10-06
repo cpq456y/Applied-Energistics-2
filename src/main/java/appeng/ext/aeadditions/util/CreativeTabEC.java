@@ -1,7 +1,6 @@
 package appeng.ext.aeadditions.util;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import appeng.ext.aeadditions.registries.ItemEnum;

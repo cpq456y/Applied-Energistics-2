@@ -2,7 +2,6 @@ package appeng.ext.aeadditions.gridblock;
 
 import java.util.EnumSet;
 
-import appeng.ext.aeadditions.integration.Integration;
 import appeng.ext.aeadditions.util.StorageChannels;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;

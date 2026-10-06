@@ -25,7 +25,6 @@ import appeng.api.config.StorageFilter;
 import appeng.api.util.IConfigManager;
 import appeng.core.AELog;
 import net.minecraft.nbt.NBTTagCompound;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.EnumMap;
 import java.util.Map;

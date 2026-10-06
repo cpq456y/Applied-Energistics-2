@@ -20,7 +20,6 @@ package appeng.client.gui.implementations;
 
 
 import appeng.api.AEApi;
-import appeng.api.features.IWirelessTermHandler;
 import appeng.api.storage.ITerminalHost;
 import appeng.api.storage.channels.IItemStorageChannel;
 import appeng.api.storage.data.IAEItemStack;

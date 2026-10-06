@@ -2,11 +2,9 @@ package appeng.ext.mekeng.common.part;
 
 import appeng.api.parts.IPartModel;
 import appeng.core.AppEng;
-import appeng.items.parts.PartModels;
 import appeng.parts.PartModel;
 import appeng.parts.reporting.AbstractPartDisplay;
 import appeng.util.Platform;
-import appeng.ext.mekeng.MekEng;
 import appeng.ext.mekeng.container.handler.GuiHandler;
 import appeng.ext.mekeng.container.handler.MkEGuis;
 import net.minecraft.entity.player.EntityPlayer;

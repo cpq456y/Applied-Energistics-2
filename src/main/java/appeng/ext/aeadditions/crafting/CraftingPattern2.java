@@ -4,7 +4,6 @@ import appeng.ext.aeadditions.util.StorageChannels;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 
-import appeng.api.AEApi;
 import appeng.api.networking.crafting.ICraftingPatternDetails;
 import appeng.api.storage.data.IAEItemStack;
 import appeng.ext.aeadditions.registries.ItemEnum;

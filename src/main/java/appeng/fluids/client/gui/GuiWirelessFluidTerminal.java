@@ -19,7 +19,6 @@
 package appeng.fluids.client.gui;
 
 
-import appeng.api.implementations.guiobjects.IPortableCell;
 import appeng.ext.wut.ItemWirelessUniversalTerminal;
 import appeng.ext.wut.WUTPlugin;
 import appeng.ext.wut.client.CycleTerminalButton;

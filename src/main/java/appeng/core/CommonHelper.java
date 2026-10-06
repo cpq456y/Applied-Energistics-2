@@ -25,7 +25,6 @@ import appeng.client.ActionKey;
 import appeng.client.EffectType;
 import appeng.core.sync.AppEngPacket;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;

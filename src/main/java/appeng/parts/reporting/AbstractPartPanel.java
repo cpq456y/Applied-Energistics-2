@@ -19,7 +19,6 @@
 package appeng.parts.reporting;
 
 
-import appeng.api.util.AEColor;
 import appeng.core.AppEng;
 import appeng.items.parts.PartModels;
 import net.minecraft.item.ItemStack;

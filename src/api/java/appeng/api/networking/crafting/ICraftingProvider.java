@@ -24,7 +24,6 @@
 package appeng.api.networking.crafting;
 
 
-import appeng.api.networking.events.MENetworkCraftingPatternChange;
 
 
 /**

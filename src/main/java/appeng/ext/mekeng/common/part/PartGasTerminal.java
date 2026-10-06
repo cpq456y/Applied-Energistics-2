@@ -20,7 +20,6 @@ import appeng.util.IConfigManagerHost;
 import appeng.util.Platform;
 import appeng.util.inv.IAEAppEngInventory;
 import appeng.util.inv.InvOperation;
-import appeng.ext.mekeng.MekEng;
 import appeng.ext.mekeng.container.handler.GuiHandler;
 import appeng.ext.mekeng.container.handler.MkEGuis;
 import net.minecraft.entity.player.EntityPlayer;

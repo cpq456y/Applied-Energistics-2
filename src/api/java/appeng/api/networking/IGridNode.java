@@ -31,7 +31,6 @@ import javax.annotation.Nonnull;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 
-import appeng.api.IAppEngApi;
 import appeng.api.util.AEPartLocation;
 import appeng.api.util.IReadOnlyCollection;
 

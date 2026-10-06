@@ -26,7 +26,6 @@ import appeng.items.parts.PartModels;
 import appeng.parts.PartBasicState;
 import appeng.parts.PartModel;
 import appeng.util.Platform;
-import appeng.ext.mekeng.MekEng;
 import appeng.ext.mekeng.common.ItemAndBlocks;
 import appeng.ext.mekeng.container.handler.AEGuiBridge;
 import appeng.ext.mekeng.container.handler.GuiHandler;

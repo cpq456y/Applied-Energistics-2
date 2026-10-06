@@ -24,7 +24,6 @@
 package appeng.api.exceptions;
 
 
-import appeng.api.networking.IGridNode;
 
 
 /**

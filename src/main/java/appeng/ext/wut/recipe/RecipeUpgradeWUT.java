@@ -2,7 +2,6 @@ package appeng.ext.wut.recipe;
 
 import appeng.api.AEApi;
 import appeng.ext.wut.ItemWirelessUniversalTerminal;
-import appeng.ext.wut.WirelessUniversalTerminalHandler;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;

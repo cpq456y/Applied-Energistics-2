@@ -29,7 +29,6 @@ import javax.annotation.Nonnull;
 
 import net.minecraft.item.Item;
 
-import appeng.api.implementations.items.IAEItemPowerStorage;
 
 
 /**

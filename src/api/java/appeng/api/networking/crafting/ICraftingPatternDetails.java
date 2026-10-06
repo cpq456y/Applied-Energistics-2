@@ -28,7 +28,6 @@ import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-import appeng.api.implementations.ICraftingPatternItem;
 import appeng.api.storage.data.IAEItemStack;
 
 import java.util.Collections;

@@ -23,7 +23,6 @@ import org.lwjgl.opengl.GL11;
 
 import appeng.ext.aeadditions.gui.widget.AbstractWidget;
 import appeng.ext.aeadditions.gui.widget.WidgetManager;
-import appeng.ext.aeadditions.integration.Integration;
 import appeng.ext.aeadditions.network.packet.other.PacketFluidSlotSelect;
 import appeng.ext.aeadditions.util.FluidHelper;
 import appeng.ext.aeadditions.util.NetworkUtil;

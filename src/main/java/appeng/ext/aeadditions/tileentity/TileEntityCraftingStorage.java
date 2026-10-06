@@ -5,7 +5,6 @@ import java.util.Optional;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemStack;
 
-import appeng.api.definitions.IItemDefinition;
 import appeng.ext.aeadditions.api.AEAApi;
 import appeng.ext.aeadditions.registries.BlockEnum;
 import appeng.tile.crafting.TileCraftingStorageTile;

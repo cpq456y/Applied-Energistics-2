@@ -43,7 +43,6 @@ import net.minecraftforge.common.property.ExtendedBlockState;
 import net.minecraftforge.common.property.IExtendedBlockState;
 import net.minecraftforge.common.property.IUnlistedProperty;
 
-import javax.annotation.Nonnull;
 import java.util.EnumSet;
 
 

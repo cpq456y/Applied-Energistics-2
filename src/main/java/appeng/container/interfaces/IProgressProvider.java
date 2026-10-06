@@ -19,7 +19,6 @@
 package appeng.container.interfaces;
 
 
-import appeng.client.gui.widgets.GuiProgressBar;
 
 
 /**

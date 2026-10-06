@@ -54,9 +54,7 @@ import appeng.fluids.util.AENetworkFluidInventory;
 import appeng.fluids.util.IAEFluidInventory;
 import appeng.fluids.util.IAEFluidTank;
 import appeng.helpers.ICustomNameObject;
-import appeng.helpers.IInterfaceHost;
 import appeng.me.GridAccessException;
-import appeng.me.GridNodeCollection;
 import appeng.me.helpers.AENetworkProxy;
 import appeng.me.helpers.MachineSource;
 import appeng.me.storage.MEMonitorIFluidHandler;
@@ -89,7 +87,6 @@ import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.fluids.capability.IFluidHandler;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.items.IItemHandler;
 
 import javax.annotation.Nullable;

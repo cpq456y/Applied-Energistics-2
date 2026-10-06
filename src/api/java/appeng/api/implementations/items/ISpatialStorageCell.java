@@ -24,7 +24,6 @@
 package appeng.api.implementations.items;
 
 
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 

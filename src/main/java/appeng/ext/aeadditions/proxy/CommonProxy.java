@@ -7,17 +7,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 import appeng.ext.aeadditions.Constants;
-import appeng.ext.aeadditions.integration.Integration;
 import appeng.ext.aeadditions.tileentity.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
-import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fluids.FluidRegistry;
 
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 

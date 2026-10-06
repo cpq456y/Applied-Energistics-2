@@ -9,7 +9,6 @@ import net.minecraft.world.World;
 
 import net.minecraftforge.fluids.FluidStack;
 
-import appeng.api.AEApi;
 import appeng.api.networking.crafting.ICraftingPatternDetails;
 import appeng.api.storage.data.IAEFluidStack;
 import appeng.api.storage.data.IAEItemStack;

@@ -20,7 +20,6 @@ package appeng.container.slot;
 
 
 import appeng.api.AEApi;
-import appeng.api.config.Upgrades;
 import appeng.api.definitions.IDefinitions;
 import appeng.api.definitions.IItems;
 import appeng.api.definitions.IMaterials;

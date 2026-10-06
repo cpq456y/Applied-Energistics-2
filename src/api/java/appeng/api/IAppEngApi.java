@@ -27,7 +27,6 @@ package appeng.api;
 import appeng.api.definitions.IDefinitions;
 import appeng.api.features.IRegistryContainer;
 import appeng.api.networking.IGridHelper;
-import appeng.api.networking.IGridNode;
 import appeng.api.parts.IPartHelper;
 import appeng.api.storage.IStorageHelper;
 import appeng.api.util.IClientHelper;

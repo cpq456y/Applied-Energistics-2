@@ -24,7 +24,6 @@
 package appeng.api.parts;
 
 
-import java.util.Set;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;

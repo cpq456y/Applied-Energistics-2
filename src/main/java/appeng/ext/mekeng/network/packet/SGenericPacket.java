@@ -4,7 +4,6 @@ import appeng.ext.mekeng.network.packet.sync.IActionHolder;
 import appeng.ext.mekeng.network.packet.sync.ParaSerializer;
 import appeng.ext.mekeng.network.packet.sync.Paras;
 import net.minecraft.client.Minecraft;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.network.PacketBuffer;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;

@@ -29,7 +29,6 @@ import javax.annotation.Nonnull;
 
 import appeng.api.config.Actionable;
 import appeng.api.networking.IGridCache;
-import appeng.api.networking.events.MENetworkPowerStatusChange;
 
 
 /**

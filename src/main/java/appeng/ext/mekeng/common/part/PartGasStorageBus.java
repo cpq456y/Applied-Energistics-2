@@ -49,7 +49,6 @@ import appeng.util.ConfigManager;
 import appeng.util.Platform;
 import appeng.util.prioritylist.FuzzyPriorityList;
 import appeng.util.prioritylist.PrecisePriorityList;
-import appeng.ext.mekeng.MekEng;
 import appeng.ext.mekeng.common.ItemAndBlocks;
 import appeng.ext.mekeng.container.handler.AEGuiBridge;
 import appeng.ext.mekeng.container.handler.GuiHandler;

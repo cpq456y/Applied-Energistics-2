@@ -49,7 +49,6 @@ import net.minecraftforge.common.capabilities.Capability;
 import javax.annotation.Nullable;
 import java.io.IOException;
 import java.util.List;
-import java.util.Set;
 
 
 public class TileCableBus extends AEBaseTile implements AEMultiTile, ICustomCollision {

@@ -24,7 +24,6 @@
 package appeng.api.networking.events;
 
 
-import appeng.api.networking.IGridNode;
 
 
 /**

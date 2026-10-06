@@ -25,7 +25,6 @@ import appeng.api.storage.data.IAEFluidStack;
 import appeng.me.helpers.IGridProxyable;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
-import net.minecraftforge.fluids.FluidStack;
 
 import java.util.EnumSet;
 

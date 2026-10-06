@@ -38,7 +38,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -50,7 +49,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import appeng.api.networking.IGridNode;
 import appeng.api.util.AECableType;
-import appeng.api.util.AEColor;
 import appeng.api.util.AEPartLocation;
 
 

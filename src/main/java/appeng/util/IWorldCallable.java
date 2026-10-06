@@ -22,7 +22,6 @@ package appeng.util;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
-import java.util.concurrent.Callable;
 
 
 /**

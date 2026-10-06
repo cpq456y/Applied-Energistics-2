@@ -26,7 +26,6 @@ import net.minecraft.util.math.BlockPos;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.message.ParameterizedMessage;
 
 import javax.annotation.Nonnull;
 

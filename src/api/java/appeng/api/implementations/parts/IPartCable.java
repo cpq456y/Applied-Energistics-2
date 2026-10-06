@@ -32,10 +32,8 @@ import net.minecraft.util.EnumFacing;
 import appeng.api.networking.IGridHost;
 import appeng.api.parts.BusSupport;
 import appeng.api.parts.IPart;
-import appeng.api.parts.IPartHost;
 import appeng.api.util.AECableType;
 import appeng.api.util.AEColor;
-import appeng.api.util.AEPartLocation;
 
 
 /**

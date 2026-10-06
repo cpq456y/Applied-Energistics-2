@@ -22,7 +22,6 @@ package appeng.thirdparty.codechicken.lib.model.pipeline;
 import appeng.thirdparty.codechicken.lib.model.CachedFormat;
 import appeng.thirdparty.codechicken.lib.model.ISmartVertexConsumer;
 import appeng.thirdparty.codechicken.lib.model.Quad;
-import appeng.thirdparty.codechicken.lib.model.pipeline.transformers.QuadReInterpolator;
 import net.minecraftforge.client.model.pipeline.IVertexConsumer;
 
 

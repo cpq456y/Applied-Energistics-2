@@ -2,11 +2,9 @@ package appeng.ext.mekeng.proxy;
 
 import appeng.api.AEApi;
 import appeng.api.config.Upgrades;
-import appeng.util.Platform;
 import appeng.ext.mekeng.MekEng;
 import appeng.ext.mekeng.common.ItemAndBlocks;
 import appeng.ext.mekeng.common.RegistryHandler;
-import appeng.ext.mekeng.container.handler.GuiHandler;
 import appeng.ext.mekeng.common.me.storage.IGasStorageChannel;
 import appeng.ext.mekeng.common.me.storage.impl.GasCellGuiHandler;
 import appeng.ext.mekeng.common.me.storage.impl.GasStorageChannel;

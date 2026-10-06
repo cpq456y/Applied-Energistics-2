@@ -52,7 +52,6 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.fml.common.Loader;
 import org.lwjgl.input.Mouse;
 
-import javax.annotation.Nonnull;
 import java.io.IOException;
 import java.text.NumberFormat;
 import java.util.ArrayList;

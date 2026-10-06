@@ -15,9 +15,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 import net.minecraftforge.fluids.Fluid;
-import net.minecraftforge.fluids.FluidStack;
 
-import net.minecraftforge.fml.common.Optional;
 
 import appeng.api.AEApi;
 import appeng.api.implementations.tiles.IWirelessAccessPoint;
@@ -31,7 +29,6 @@ import appeng.ext.aeadditions.api.definitions.IBlockDefinition;
 import appeng.ext.aeadditions.api.definitions.IPartDefinition;
 import appeng.ext.aeadditions.definitions.BlockDefinition;
 import appeng.ext.aeadditions.definitions.PartDefinition;
-import appeng.ext.aeadditions.integration.Integration;
 import appeng.ext.aeadditions.network.GuiHandler;
 import appeng.ext.aeadditions.wireless.WirelessTermRegistry;
 

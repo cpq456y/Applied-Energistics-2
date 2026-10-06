@@ -9,7 +9,6 @@ import java.util.Map;
 
 import appeng.ext.aeadditions.block.BlockHardMEDrive;
 import net.minecraft.block.Block;
-import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.client.renderer.block.model.IBakedModel;

@@ -2,7 +2,6 @@ package appeng.ext.aeadditions.tileentity;
 
 import appeng.api.networking.IGrid;
 import appeng.api.networking.IGridHost;
-import appeng.api.networking.IGridNode;
 import appeng.api.networking.storage.IStorageGrid;
 import appeng.api.storage.IMEMonitor;
 import appeng.api.storage.data.IAEFluidStack;

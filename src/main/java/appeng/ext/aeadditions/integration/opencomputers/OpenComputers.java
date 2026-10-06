@@ -7,7 +7,6 @@ import li.cil.oc.api.driver.DriverItem;
 import li.cil.oc.api.driver.EnvironmentProvider;
 import li.cil.oc.api.driver.InventoryProvider;
 
-import appeng.ext.aeadditions.integration.Integration;
 
 /** Ported from OpenComputers.kt. */
 public final class OpenComputers {

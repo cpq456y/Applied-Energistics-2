@@ -11,7 +11,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 
 import appeng.api.config.SecurityPermissions;
@@ -38,7 +37,6 @@ import appeng.ext.aeadditions.models.drive.IECDrive;
 import appeng.ext.aeadditions.util.AEUtils;
 import appeng.ext.aeadditions.util.PermissionUtil;
 import io.netty.buffer.ByteBuf;
-import net.minecraft.world.World;
 
 public class PartDrive extends PartECBase implements ICellContainer, IInventoryListener, IECDrive {
 

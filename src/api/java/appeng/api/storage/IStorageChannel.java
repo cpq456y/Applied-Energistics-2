@@ -31,9 +31,7 @@ import javax.annotation.Nullable;
 
 import io.netty.buffer.ByteBuf;
 
-import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraftforge.fluids.FluidStack;
 
 import appeng.api.storage.data.IAEStack;
 import appeng.api.storage.data.IItemList;

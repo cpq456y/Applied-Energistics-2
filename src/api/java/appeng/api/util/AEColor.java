@@ -27,7 +27,6 @@ package appeng.api.util;
 import java.util.Arrays;
 import java.util.List;
 
-import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.util.text.translation.I18n;
 

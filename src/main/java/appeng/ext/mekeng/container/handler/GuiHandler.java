@@ -3,7 +3,6 @@ package appeng.ext.mekeng.container.handler;
 import appeng.ext.mekeng.MekEng;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.IGuiHandler;

@@ -24,7 +24,6 @@
 package appeng.api.features;
 
 
-import appeng.api.events.LocatableEventAnnounce;
 
 
 /**

@@ -13,7 +13,6 @@ import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import appeng.api.AEApi;
 import appeng.api.networking.storage.IBaseMonitor;
 import appeng.api.storage.ICellInventoryHandler;
 import appeng.api.storage.IMEMonitor;

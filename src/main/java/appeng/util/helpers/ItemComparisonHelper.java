@@ -22,10 +22,8 @@ package appeng.util.helpers;
 import appeng.api.config.FuzzyMode;
 import appeng.util.item.OreHelper;
 import appeng.util.item.OreReference;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTBase;
-import net.minecraftforge.oredict.OreDictionary;
 
 import javax.annotation.Nonnull;
 

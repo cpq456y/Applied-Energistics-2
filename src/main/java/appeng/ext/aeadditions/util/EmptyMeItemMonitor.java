@@ -1,6 +1,5 @@
 package appeng.ext.aeadditions.util;
 
-import appeng.api.AEApi;
 import appeng.api.config.AccessRestriction;
 import appeng.api.config.Actionable;
 import appeng.api.networking.security.IActionSource;
