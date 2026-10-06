@@ -100,7 +100,7 @@ public class ItemAndBlocks {
         // The gas interface mirrors AE2's fluid interface, so both of its items go into the slot that
         // ApiBlocks placed directly behind the fluid interface.
         RegistrationSlots.AFTER_FLUID_INTERFACE.add(regHandler.deferredBlockItem("gas_interface", GAS_INTERFACE));
-        RegistrationSlots.AFTER_FLUID_INTERFACE.add(regHandler.deferredItem("gas_interface_part", GAS_INTERFACE_PART = new ItemMkEPart<>(PartGasInterface::new)));
+        regHandler.item("gas_interface_part", GAS_INTERFACE_PART = new ItemMkEPart<>(PartGasInterface::new));
     }
 
 }
