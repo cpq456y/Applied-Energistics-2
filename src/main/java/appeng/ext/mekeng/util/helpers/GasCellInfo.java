@@ -35,8 +35,9 @@ public class GasCellInfo {
         final ICellInventory<?> cellInventory = handler.getCellInv();
 
         if (cellInventory != null) {
-            lines.add(Tooltips.bytesUsed(cellInventory.getUsedBytes(), cellInventory.getTotalBytes()).getFormattedText());
-            lines.add(Tooltips.typesUsed(cellInventory.getStoredItemTypes(), cellInventory.getTotalItemTypes()).getFormattedText());
+            lines.add(cellInventory.getUsedBytes() + " " + GuiText.Of.getLocal() + ' ' + cellInventory.getTotalBytes() + ' ' + GuiText.BytesUsed.getLocal());
+            lines.add(cellInventory.getStoredItemTypes() + " " + GuiText.Of.getLocal() + ' ' + cellInventory.getTotalItemTypes() + ' ' + GuiText.Types
+                    .getLocal());
         }
 
         if (cellInventory == null) {
